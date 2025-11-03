@@ -1,0 +1,13 @@
+@use "../abstracts" as *;
+
+.section {
+  &-inner {
+    @include px(var(--pag-hor-sm));
+
+    &-full {
+      width: 100%;
+      margin: 0;
+      padding: 0;
+    }
+  }
+}
