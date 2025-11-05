@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- 기본 -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- 페이지별 고유값 -->
+    <title>Playground | Jinkyeong Lim</title>
+    <meta
+      name="description"
+      content="Jinkyeong Lim — a multidisciplinary designer bringing clarity and purpose to every project"
+    />
+    <link rel="canonical" href="https://studioimjin.com" />
+    <meta property="og:url" content="https://studioimjin.com" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Playground | Jinkyeong Lim" />
+    <meta
+      property="og:description"
+      content="Jinkyeong Lim — a multidisciplinary designer bringing clarity and purpose to every project"
+    />
+    <meta property="og:image" content="https://jinkyeong.work/og-image.jpg" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_CA" />
+    <meta property="og:site_name" content="Playground | Jinkyeong Lim" />
+
+    <!-- Twitter 카드 -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Playground | Jinkyeong Lim" />
+    <meta
+      name="twitter:description"
+      content="Jinkyeong Lim — a multidisciplinary designer bringing clarity and purpose to every project"
+    />
+    <meta name="twitter:image" content="https://jinkyeong.work/og-image.jpg" />
+
+    <!-- Favicon (루트에 파일 두고 절대경로 권장) -->
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+
+    <!-- 웹폰트 -->
+    <link rel="stylesheet" href="https://use.typekit.net/jsf4yyr.css" />
+
+    <!-- 스타일 -->
+    <link rel="stylesheet" href="../css/style.css" />
+
+    <!-- 스크립트 -->
+    <script defer src="../js/common.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.3.min.js"
+      integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.19.0/matter.min.js"></script>
+
+    <!-- AOS.js -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script defer src="../js/aos.js"></script>
+
+    <!-- GSAP -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js"></script>
+  </head>
+
+  <body>
+    <header id="header"></header>
+
+    <main id="main">
+      <!-- Intro / Hero -->
+      <section class="intro" id="intro">
+        <div class="intro__inner section-inner">
+          <div class="intro__head">
+            <h1 class="split">
+              Welcome! Here’s a peek into my creative side beyond client work —
+              a mix of quick studies, small projects, and visual notes that keep
+              me curious.
+            </h1>
+          </div>
+        </div>
+      </section>
+
+      <!-- Work Grid -->
+      <section class="work" id="work" aria-labelledby="work-title">
+        <div class="work__inner section-inner">
+          <h2 id="work-title" class="hide">Work</h2>
+          <div class="work__list layout-grid">
+            <!-- Biophilia -->
+            <article class="card-list col-6 md:col-4">
+              <a class="card-list__link" href="/play/biophilia">
+                <figure class="card-list__img ar-16-10">
+                  <video
+                    src="/videos/thumb/biophilia.mp4"
+                    autoplay
+                    loop
+                    muted
+                    playsinline
+                    preload="metadata"
+                    poster="/images/thumb/biophilia.jpg"
+                  ></video>
+                  <div class="card-list__dim">
+                    <p class="txt"></p>
+                    <span class="view">VIEW PROJECT</span>
+                  </div>
+                </figure>
+                <div class="card-list__txt">
+                  <h3 class="tit">BIOPHILIA</h3>
+                  <ul class="roles">
+                    <li class="tag">Poster Design</li>
+                    <li class="tag">Editorial Design</li>
+                  </ul>
+                </div>
+              </a>
+            </article>
+
+            <!-- 2024 New Year’s Card -->
+            <article class="card-list col-6 md:col-4">
+              <a class="card-list__link" href="/play/newyear2024">
+                <figure class="card-list__img ar-16-10">
+                  <img
+                    src="/images/thumb/newyear2024.jpg"
+                    alt="2024 New Year’s Card"
+                    loading="lazy"
+                  />
+                  <div class="card-list__dim">
+                    <p class="txt"></p>
+                    <span class="view">VIEW PROJECT</span>
+                  </div>
+                </figure>
+                <div class="card-list__txt">
+                  <h3 class="tit">2024 New Year’s Card</h3>
+                  <ul class="roles">
+                    <li class="tag">Poster Design</li>
+                  </ul>
+                </div>
+              </a>
+            </article>
+
+            <!-- Seoul Culture Nuri Card -->
+            <article class="card-list col-6 md:col-4">
+              <a class="card-list__link" href="/play/nuri">
+                <figure class="card-list__img ar-16-10">
+                  <img
+                    src="/images/thumb/nuri.jpg"
+                    alt="Seoul Culture Nuri Card"
+                    loading="lazy"
+                  />
+                  <div class="card-list__dim">
+                    <p class="txt"></p>
+                    <span class="view">VIEW PROJECT</span>
+                  </div>
+                </figure>
+                <div class="card-list__txt">
+                  <h3 class="tit">Seoul Culture Nuri Card</h3>
+                  <ul class="roles">
+                    <li class="tag">Character Design</li>
+                    <li class="tag">Poster Design</li>
+                  </ul>
+                </div>
+              </a>
+            </article>
+
+            <!-- Where We Stand Now -->
+            <article class="card-list col-6 md:col-4">
+              <a class="card-list__link" href="/play/metoo">
+                <figure class="card-list__img ar-16-10">
+                  <video
+                    src="/videos/thumb/metoo.mp4"
+                    autoplay
+                    loop
+                    muted
+                    playsinline
+                    preload="metadata"
+                    poster="/images/thumb/metoo.jpg"
+                  ></video>
+                  <div class="card-list__dim">
+                    <p class="txt"></p>
+                    <span class="view">VIEW PROJECT</span>
+                  </div>
+                </figure>
+                <div class="card-list__txt">
+                  <h3 class="tit">Where We Stand Now</h3>
+                  <ul class="roles">
+                    <li class="tag">Website Design</li>
+                    <li class="tag">Web Development</li>
+                  </ul>
+                </div>
+              </a>
+            </article>
+
+            <!-- Fun Collage -->
+            <article class="card-list col-6 md:col-4">
+              <a class="card-list__link" href="/play/funcollage">
+                <figure class="card-list__img ar-16-10">
+                  <video
+                    src="/videos/thumb/funcollage.mp4"
+                    autoplay
+                    loop
+                    muted
+                    playsinline
+                    preload="metadata"
+                    poster="/images/thumb/funcollage.jpg"
+                  ></video>
+                  <div class="card-list__dim">
+                    <p class="txt"></p>
+                    <span class="view">VIEW PROJECT</span>
+                  </div>
+                </figure>
+                <div class="card-list__txt">
+                  <h3 class="tit">Fun Collage</h3>
+                  <ul class="roles">
+                    <li class="tag">Poster Design</li>
+                    <li class="tag">Website Design</li>
+                    <li class="tag">Web Development</li>
+                  </ul>
+                </div>
+              </a>
+            </article>
+
+            <!-- 2021 New Year’s Card -->
+            <article class="card-list col-6 md:col-4">
+              <a class="card-list__link" href="/play/newyear2021">
+                <figure class="card-list__img ar-16-10">
+                  <img
+                    src="/images/thumb/newyear2021.jpg"
+                    alt="2021 New Year’s Card"
+                    loading="lazy"
+                  />
+                  <div class="card-list__dim">
+                    <p class="txt"></p>
+                    <span class="view">VIEW PROJECT</span>
+                  </div>
+                </figure>
+                <div class="card-list__txt">
+                  <h3 class="tit">2021 New Year’s Card</h3>
+                  <ul class="roles">
+                    <li class="tag">Poster Design</li>
+                  </ul>
+                </div>
+              </a>
+            </article>
+
+            <!-- There was no 88 Olympics for them -->
+            <article class="card-list col-6 md:col-4">
+              <a class="card-list__link" href="/play/project88">
+                <figure class="card-list__img ar-16-10">
+                  <img
+                    src="/images/thumb/project88.jpg"
+                    alt="There was no 88 Olympics for them"
+                    loading="lazy"
+                  />
+                  <div class="card-list__dim">
+                    <p class="txt"></p>
+                    <span class="view">VIEW PROJECT</span>
+                  </div>
+                </figure>
+                <div class="card-list__txt">
+                  <h3 class="tit">There was no 88 Olympics for them</h3>
+                  <ul class="roles">
+                    <li class="tag">Poster Design</li>
+                  </ul>
+                </div>
+              </a>
+            </article>
+
+            <!-- Jjirasi -->
+            <article class="card-list col-6 md:col-4">
+              <a class="card-list__link" href="/play/jjirasi">
+                <figure class="card-list__img ar-16-10">
+                  <video
+                    src="/videos/thumb/jjirasi.mp4"
+                    autoplay
+                    loop
+                    muted
+                    playsinline
+                    preload="metadata"
+                    poster="/images/thumb/jjirasi.jpg"
+                  ></video>
+                  <div class="card-list__dim">
+                    <p class="txt"></p>
+                    <span class="view">VIEW PROJECT</span>
+                  </div>
+                </figure>
+                <div class="card-list__txt">
+                  <h3 class="tit">Jjirasi</h3>
+                  <ul class="roles">
+                    <li class="tag">Poster Design</li>
+                    <li class="tag">Website Design</li>
+                    <li class="tag">Web Development</li>
+                  </ul>
+                </div>
+              </a>
+            </article>
+
+            <!-- A Small Mistake -->
+            <article class="card-list col-6 md:col-4">
+              <a class="card-list__link" href="/play/smallmistake">
+                <figure class="card-list__img ar-16-10">
+                  <img
+                    src="/images/thumb/smallmistake.jpg"
+                    alt="A Small Mistake"
+                    loading="lazy"
+                  />
+                  <div class="card-list__dim">
+                    <p class="txt"></p>
+                    <span class="view">VIEW PROJECT</span>
+                  </div>
+                </figure>
+                <div class="card-list__txt">
+                  <h3 class="tit">A Small Mistake</h3>
+                  <ul class="roles">
+                    <li class="tag">Editorial Design</li>
+                    <li class="tag">Installation</li>
+                  </ul>
+                </div>
+              </a>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer id="footer"></footer>
+  </body>
+</html>

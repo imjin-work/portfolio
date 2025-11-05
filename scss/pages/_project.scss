@@ -75,6 +75,19 @@
     .section {
       @include py(rem(10));
 
+      &.is-full {
+        .section-inner {
+          display: block;
+          padding: 0;
+
+          .img,
+          .vid {
+            overflow: hidden;
+            aspect-ratio: 2 / 1;
+          }
+        }
+      }
+
       &-inner {
         display: grid;
         grid-template-columns: repeat(12, minmax(0, 1fr));
@@ -113,8 +126,25 @@
         overflow: hidden;
         aspect-ratio: 16 / 9;
 
+        &.ver {
+          aspect-ratio: 1 / 1;
+        }
+
+        &.double,
+        &.rightwide,
         &.triple {
-          aspect-ratio: unset;
+          @include flex(flex-start, flex-start, rem(10));
+          aspect-ratio: 2 / 1;
+
+          > * {
+            @include rounded(md);
+          }
+        }
+
+        &.triple {
+          > * {
+            flex: 1;
+          }
         }
 
         img,
