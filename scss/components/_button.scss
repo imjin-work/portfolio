@@ -1,0 +1,51 @@
+@use "../abstracts" as *;
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  color: inherit;
+
+  &-link {
+    @include txt(var(--h4-size), 1, 600);
+    position: relative;
+    text-decoration: none;
+    padding-bottom: rem(3);
+    transition: filter 0.3s ease, border 0.2s ease;
+
+    @include mobile {
+      font-size: var(--body-sm-size);
+    }
+
+    &::after {
+      content: "";
+      display: block;
+      width: rem(12);
+      height: rem(12);
+      margin-left: rem(8);
+      @include bg("ico/arrow-right-top-black.svg", center, center, contain);
+    }
+
+    &:hover {
+      filter: blur(1px);
+    }
+
+    &-sm {
+      @include txt(var(--body-sm-size), 1, 500);
+      background: none;
+      border-bottom: 1px solid transparent;
+
+      &:hover {
+        border-bottom: 1px solid $black;
+        filter: unset;
+      }
+
+      &::after {
+        width: rem(8);
+        height: rem(8);
+        margin-left: rem(6);
+      }
+    }
+  }
+}

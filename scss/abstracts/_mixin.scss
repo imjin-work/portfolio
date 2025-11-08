@@ -1,0 +1,118 @@
+@use "sass:map";
+@use "sass:string";
+@use "function" as *;
+@use "variable" as *;
+
+/* =========================
+   MIXINS (use tokens from _variable.scss)
+   ========================= */
+
+// 배경이미지
+// 이미지명, x축, y축, 배경색, 가로크기, 세로크기
+@mixin bg($img, $x: null, $y: null, $w: null, $h: null, $color: null) {
+  background-image: url(#{$imgurl}#{$img});
+  background-repeat: no-repeat;
+
+  // position (x/y)
+  @if $x != null and $y != null {
+    background-position: $x $y;
+  } @else if $x != null {
+    background-position: $x;
+  }
+
+  // background color
+  @if $color != null {
+    background-color: $color;
+  }
+
+  // size (accept single keyword like 'contain'/'cover' or two values)
+  @if $w != null and $h != null {
+    background-size: $w $h;
+  } @else if $w != null {
+    background-size: $w;
+  } @else if $h != null {
+    background-size: $h;
+  }
+}
+
+// 텍스트 스타일
+// 폰트 크기, 행간, 폰트 두께, 자간
+@mixin txt($fs, $lh, $fw: null) {
+  font-size: $fs;
+  line-height: $lh;
+  font-weight: $fw;
+}
+
+/* Spacing (simple helpers) */
+@mixin px($k) {
+  padding-left: $k;
+  padding-right: $k;
+}
+@mixin py($k) {
+  padding-top: $k;
+  padding-bottom: $k;
+}
+@mixin mx($k) {
+  margin-left: $k;
+  margin-right: $k;
+}
+@mixin my($k) {
+  margin-top: $k;
+  margin-bottom: $k;
+}
+@mixin gap($k) {
+  gap: $k;
+}
+
+// Radius
+@mixin rounded($size: base) {
+  border-radius: map.get($radius, $size);
+}
+
+/* Motion */
+@mixin transition($prop: color, $speed: normal, $ease: $easing) {
+  transition: #{$prop} map.get($duration, $speed) $ease;
+}
+
+@mixin shadow($k: md) {
+  box-shadow: map.get($shadow, $k);
+}
+
+// Flexbox
+// Generic flex helper (direction, justify, align, wrap)
+@mixin flex($justify: flex-start, $align: stretch, $gap: null, $wrap: nowrap) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  flex-wrap: $wrap;
+  gap: $gap;
+}
+
+@mixin flex-center($direction: row) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flex-col($justify: flex-start, $align: stretch, $gap: null, $wrap: nowrap) {
+  display: flex;
+  flex-direction: column;
+  justify-content: $justify;
+  align-items: $align;
+  flex-wrap: $wrap;
+  gap: $gap;
+}
+
+// Breakpoints
+@mixin mobile {
+  @media (max-width: $bp-mobile) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (max-width: $bp-tablet) {
+    @content;
+  }
+}

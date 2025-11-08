@@ -1,0 +1,110 @@
+@use "../abstracts" as *;
+
+.card {
+  /* 메인 페이지 : 카드*/
+  &-list {
+    display: block;
+
+    &__link {
+      &:hover {
+        .card-list {
+          &__img {
+            img {
+              filter: blur(5px);
+            }
+          }
+
+          &__dim {
+            opacity: 1;
+          }
+        }
+      }
+    }
+
+    &__img {
+      @include rounded(md);
+      overflow: hidden;
+      position: relative;
+
+      img,
+      video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+        @include transition(filter, slow);
+      }
+    }
+
+    &__dim {
+      @include flex(space-between, flex-end);
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      padding: rem(30);
+      color: $white;
+      background: linear-gradient(
+        180deg,
+        rgba(20, 20, 20, 0) 0%,
+        rgba(20, 20, 20, 0.8) 80%
+      );
+      opacity: 0;
+      @include transition(opacity, slow);
+
+      @include tablet {
+        padding: rem(20);
+        flex-wrap: wrap;
+      }
+
+      .txt {
+        @include txt(var(--h4-size), 1.4);
+        width: 60%;
+        max-width: rem(500);
+        min-width: rem(300);
+
+        @include tablet {
+          font-size: var(--body-md-size);
+        }
+      }
+
+      .view {
+        @include txt(var(--caption-md-size), 1);
+        @include flex(flex-end, center, rem(6));
+
+        &::after {
+          content: "";
+          display: block;
+          width: rem(12);
+          height: rem(12);
+          @include bg("ico/arrow-right-white.svg", center, center, contain);
+        }
+      }
+    }
+
+    &__txt {
+      @include flex(space-between, flex-start);
+      margin-top: rem(10);
+
+      @include mobile {
+        @include flex-col(flex-start, flex-start, rem(10));
+      }
+
+      .tit {
+        @include txt(var(--h2-size), 1.2);
+        width: 60%;
+
+        @include mobile {
+          width: unset;
+        }
+      }
+
+      .roles {
+        @include flex(flex-end, center, rem(3));
+        flex: 1;
+        flex-wrap: wrap;
+      }
+    }
+  }
+}

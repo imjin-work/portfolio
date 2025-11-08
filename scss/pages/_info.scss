@@ -1,0 +1,206 @@
+@use "../abstracts" as *;
+
+.about {
+  margin-bottom: var(--pag-gap);
+
+  &-hero {
+    align-items: end;
+
+    @include tablet {
+      align-items: start;
+    }
+
+    &__txt {
+      align-self: end;
+
+      .tit {
+        @include txt(var(--title-size), 1.25, 600);
+        margin-bottom: var(--gap-tit-body);
+      }
+
+      .desc {
+        margin-bottom: var(--gap-txt-btn);
+
+        p {
+          @include txt(var(--body-sm-size), 1.6);
+          &:not(:last-child) {
+            margin-bottom: rem(15);
+          }
+        }
+      }
+
+      .links {
+        @include flex(flex-start, flex-start, rem(30));
+        margin-bottom: var(--gap-txt-btn);
+      }
+    }
+
+    &__img {
+      @include rounded(md);
+      align-self: end;
+      overflow: hidden;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+      }
+    }
+  }
+}
+
+.experience {
+  margin-bottom: var(--pag-gap);
+
+  .exp {
+    &__row {
+      @include flex(flex-start, flex-start, rem(24));
+
+      &:not(:first-child) {
+        padding-top: var(--gap-txt-list);
+        border-top: 1px solid $black;
+      }
+
+      &:not(:last-child) {
+        padding-bottom: var(--gap-txt-list);
+      }
+
+      @include mobile {
+        flex-direction: column;
+      }
+    }
+
+    &__meta {
+      width: 20%;
+      min-width: rem(150);
+
+      .company {
+        @include txt(var(--h3-size), 1.4);
+        margin-bottom: rem(10);
+      }
+
+      .term {
+        @include txt(var(--caption-md-size), 1.5);
+        color: $grey;
+      }
+    }
+
+    &__desc {
+      @include txt(var(--body-sm-size), 1.6);
+      flex: 1;
+    }
+  }
+}
+
+.community {
+  margin-bottom: var(--pag-gap);
+
+  .com {
+    &-item {
+      &:not(:last-child) {
+        margin-bottom: rem(80);
+      }
+
+      &__img {
+        @include rounded(md);
+        overflow: hidden;
+        margin-bottom: var(--gap-img-txt);
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          display: block;
+        }
+      }
+
+      &__txt {
+        @include flex(flex-start, flex-start, rem(24));
+
+        @include mobile {
+          flex-direction: column;
+          gap: rem(10);
+        }
+
+        .tit {
+          width: 30%;
+          min-width: rem(20);
+
+          @include mobile {
+            width: unset;
+            min-width: unset;
+          }
+        }
+
+        .desc {
+          @include txt(var(--body-sm-size), 1.6);
+          flex: 1;
+        }
+      }
+    }
+  }
+}
+
+.free {
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: rem(80);
+    }
+
+    .free {
+      &__img {
+        display: grid;
+        gap: rem(5);
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        margin-bottom: var(--gap-img-txt);
+
+        .item {
+          aspect-ratio: 1 / 1;
+          overflow: hidden;
+          @include rounded(md);
+
+          img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+      }
+
+      &__txt {
+        @include flex(flex-start, flex-start, rem(24));
+
+        @include mobile {
+          flex-direction: column;
+          gap: rem(10);
+        }
+
+        .tit {
+          @include txt(var(--h3-size), 1.4);
+          width: 30%;
+          min-width: rem(20);
+
+          @include mobile {
+            width: unset;
+            min-width: unset;
+          }
+        }
+
+        .desc {
+          @include txt(var(--body-sm-size), 1.6);
+          flex: 1;
+
+          p {
+            margin-bottom: rem(10);
+
+            &:last-of-type {
+              margin-bottom: var(--gap-tit-body);
+            }
+          }
+        }
+      }
+    }
+  }
+}

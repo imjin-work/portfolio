@@ -1,0 +1,13 @@
+@use "../abstracts" as *;
+
+.tag {
+  @include txt(var(--caption-sm-size), 1, 500);
+  @include rounded(sm);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  color: $grey;
+  padding: rem(5) rem(7);
+  border: 1px solid $grey;
+}
