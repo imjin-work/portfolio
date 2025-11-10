@@ -20,10 +20,7 @@
       property="og:description"
       content="Jinkyeong Lim — a multidisciplinary designer bringing clarity and purpose to every project"
     />
-    <meta
-      property="og:image"
-      content="https://jinkyeong.work/og-image.jpg"
-    />
+    <meta property="og:image" content="https://jinkyeong.work/og-image.jpg" />
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="en_CA" />
     <meta property="og:site_name" content="Jinkyeong Lim" />
@@ -35,10 +32,7 @@
       name="twitter:description"
       content="Jinkyeong Lim — a multidisciplinary designer bringing clarity and purpose to every project"
     />
-    <meta
-      name="twitter:image"
-      content="https://jinkyeong.work/og-image.jpg"
-    />
+    <meta name="twitter:image" content="https://jinkyeong.work/og-image.jpg" />
 
     <!-- Favicon (루트에 파일 두고 절대경로 권장) -->
     <link rel="icon" href="/favicon.ico" sizes="any" />
@@ -66,6 +60,9 @@
     <!-- GSAP -->
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js"></script>
+
+    <!-- ScrollTrigger -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
   </head>
 
   <body>
@@ -78,8 +75,8 @@
           <div class="intro__head">
             <h1 class="split">
               Hi, I'm Jinkyeong!<br />
-              A multidisciplinary designer bringing clarity and
-              purpose to every project — from brand to digital products.
+              A multidisciplinary designer bringing clarity and purpose to every
+              project — from brand to digital products.
             </h1>
             <a class="intro__scroll btn" href="#work"
               >Scroll to see my work below</a
@@ -149,10 +146,37 @@
               </a>
             </article>
 
+            <!-- Online Hanpyeong Park -->
+            <article class="card-list col-6 md:col-4">
+              <a class="card-list__link" href="work/hanpyeong">
+                <figure class="card-list__img ar-1-1">
+                  <img
+                    src="images/thumb/hanpyeong.jpg"
+                    alt="Online hanpyeong park"
+                    loading="lazy"
+                  />
+                  <div class="card-list__dim">
+                    <p class="txt">
+                      Remembering the disappearing landscape of Ipjeong-dong
+                      through a digital archive
+                    </p>
+                    <span class="view">VIEW PROJECT</span>
+                  </div>
+                </figure>
+                <div class="card-list__txt">
+                  <h3 class="tit">Online Hanpyeong Park</h3>
+                  <ul class="roles">
+                    <li class="tag">Website Design</li>
+                    <li class="tag">Web Development</li>
+                  </ul>
+                </div>
+              </a>
+            </article>
+
             <!-- EMDASH -->
             <article class="card-list col-6 md:col-4">
               <a class="card-list__link" href="work/emdash">
-                <figure class="card-list__img ar-1-1">
+                <figure class="card-list__img ar-16-10">
                   <img
                     src="images/thumb/emdash.jpg"
                     alt="EMDASH brand card"
@@ -170,34 +194,6 @@
                   <h3 class="tit">EMDASH Brand Card</h3>
                   <ul class="roles">
                     <li class="tag">Editorial Design</li>
-                  </ul>
-                </div>
-              </a>
-            </article>
-
-            <!-- Online Hanpyeong Park -->
-            <article class="card-list col-6 md:col-4">
-              <a class="card-list__link" href="work/hanpyeong">
-                <figure class="card-list__img ar-16-10">
-                  <img
-                    src="images/thumb/hanpyeong.jpg"
-                    alt="Online hanpyeong park"
-                    loading="lazy"
-                  />
-                  <div class="card-list__dim">
-                    <p class="txt">
-                      Documenting the transformation of Seoul’s
-                      Cheonggyecheon–Euljiro district through an interactive
-                      online archive
-                    </p>
-                    <span class="view">VIEW PROJECT</span>
-                  </div>
-                </figure>
-                <div class="card-list__txt">
-                  <h3 class="tit">Online Hanpyeong Park</h3>
-                  <ul class="roles">
-                    <li class="tag">Website Design</li>
-                    <li class="tag">Web Development</li>
                   </ul>
                 </div>
               </a>
@@ -329,7 +325,8 @@
                   <div class="card-list__dim">
                     <p class="txt">
                       Visualizing Amnesty’s Write for Rights campaign through
-                      interactive motion and bold, story-driven typography</p>
+                      interactive motion and bold, story-driven typography
+                    </p>
                     <span class="view">VIEW PROJECT</span>
                   </div>
                 </figure>

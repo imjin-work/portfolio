@@ -20,10 +20,7 @@
       property="og:description"
       content="Jinkyeong Lim — a multidisciplinary designer bringing clarity and purpose to every project"
     />
-    <meta
-      property="og:image"
-      content="https://jinkyeong.work/og-image.jpg"
-    />
+    <meta property="og:image" content="https://jinkyeong.work/og-image.jpg" />
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="en_CA" />
     <meta property="og:site_name" content="Floyd | Jinkyeong Lim" />
@@ -35,10 +32,7 @@
       name="twitter:description"
       content="Jinkyeong Lim — a multidisciplinary designer bringing clarity and purpose to every project"
     />
-    <meta
-      name="twitter:image"
-      content="https://jinkyeong.work/og-image.jpg"
-    />
+    <meta name="twitter:image" content="https://jinkyeong.work/og-image.jpg" />
 
     <!-- Favicon (루트에 파일 두고 절대경로 권장) -->
     <link rel="icon" href="/favicon.ico" sizes="any" />
@@ -66,6 +60,9 @@
     <!-- GSAP -->
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js"></script>
+
+    <!-- ScrollTrigger -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
   </head>
 
   <body>
@@ -83,7 +80,9 @@
       <section class="section intro" data-theme="light">
         <div class="section-inner layout-grid">
           <!-- Title -->
-          <div class="intro__title start-2 span-10 md:start-1 md:span-8 split">Floyd</div>
+          <div class="intro__title start-2 span-10 md:start-1 md:span-8 split">
+            Floyd
+          </div>
 
           <!-- Meta -->
           <div class="intro__info start-2 span-4 md:start-1 md:span-2">
@@ -175,27 +174,122 @@
           </div>
         </section>
 
-        <!-- Section : Image -->
-        <section class="section is-wide">
+        <!-- Section : Image Left Stack  -->
+        <section class="section is-leftstack">
           <div class="section-inner">
-            <div class="img">
-              <img src="/images/work/floyd/img-03.jpg" alt="" />
+            <div class="wrap">
+              <div class="col">
+                <div class="vid">
+                  <video
+                    src="/videos/work/floyd/vid-02.mp4"
+                    autoplay
+                    loop
+                    muted
+                    playsinline
+                    preload="metadata"
+                    poster="/images/work/floyd/img-03-01.jpg"
+                  ></video>
+                </div>
+                <div class="img">
+                  <img src="/images/work/floyd/img-03-02.jpg" alt="" />
+                </div>
+              </div>
+
+              <div class="img">
+                <img src="/images/work/floyd/img-03-03.jpg" alt="" />
+              </div>
             </div>
           </div>
         </section>
 
-        <!-- Section : Image -->
+        <!-- Section : Text Right -->
+        <section class="section is-txt-right">
+          <div class="section-inner">
+            <div class="txt">
+              <p class="eyebrow">Brand Background</p>
+              <h1 class="tit">
+                Redefining modern travel through color and individuality
+              </h1>
+              <p class="desc">
+                Floyd is a premium suitcase brand inspired by skateboard wheels,
+                combining durability with bold, playful design. Created to stand
+                out from the uniform black luggage crowding airports, Floyd
+                turns travel into a form of self-expression.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Section : Image Triple Flip -->
         <section class="section is-wide">
           <div class="section-inner">
-            <div class="img rightwide">
-              <img src="/images/work/floyd/img-04-01.jpg" alt="" />
-              <img src="/images/work/floyd/img-04-02.jpg" alt="" />
+            <div class="img triple flip">
+              <img
+                src="/images/work/floyd/img-04-01.jpg"
+                data-alt="/images/work/floyd/img-04-01b.jpg"
+                alt=""
+                class="flip-img"
+              />
+              <img
+                src="/images/work/floyd/img-04-02.jpg"
+                data-alt="/images/work/floyd/img-04-02b.jpg"
+                alt=""
+                class="flip-img"
+              />
+              <img
+                src="/images/work/floyd/img-04-03.jpg"
+                data-alt="/images/work/floyd/img-04-03b.jpg"
+                alt=""
+                class="flip-img"
+              />
             </div>
           </div>
         </section>
 
         <!-- Section : Text Center -->
         <section class="section is-txt-center">
+          <div class="section-inner">
+            <div class="txt">
+              <p class="eyebrow">Target Audience</p>
+              <h1 class="tit">
+                Designing for users who balance efficiency, individuality, and
+                experience
+              </h1>
+              <p class="desc">
+                Floyd primarily appeals to modern travelers in their 20s and 30s
+                who seek both practicality and personality. To meet the
+                expectations of Korean users — who value speed, clarity, and
+                intuitive navigation — the localized UX was simplified while
+                maintaining Floyd’s vibrant visual energy. The strong use of
+                black heightened contrast and emphasized product color
+                diversity, aligning with style-driven consumers who favor bold
+                aesthetics and expressive design.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Section : Image -->
+        <section class="section is-wide">
+          <div class="section-inner">
+            <div class="img">
+              <img src="/images/work/floyd/img-05.jpg" alt="" />
+            </div>
+          </div>
+        </section>
+
+        <!-- Section : Image Right Wide -->
+        <section class="section is-wide">
+          <div class="section-inner">
+            <div class="img rightwide">
+              <img src="/images/work/floyd/img-06-01.jpg" alt="" />
+              <img src="/images/work/floyd/img-06-02.jpg" alt="" />
+            </div>
+          </div>
+        </section>
+
+        <!-- Section : Text Right -->
+        <section class="section is-txt-right">
           <div class="section-inner">
             <div class="txt">
               <p class="eyebrow">Solution</p>
@@ -212,6 +306,208 @@
                 that feels both authentic to the brand and natural to Korean
                 consumers.
               </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Section : Video -->
+        <section class="section is-wide">
+          <div class="section-inner">
+            <div class="vid">
+              <video
+                src="/videos/work/floyd/vid-03.mp4"
+                autoplay
+                loop
+                muted
+                playsinline
+                preload="metadata"
+                poster="/images/work/floyd/img-07.jpg"
+              ></video>
+            </div>
+          </div>
+        </section>
+
+        <!-- Section : Text + Image -->
+        <section class="section is-media-txt">
+          <div class="section-inner">
+            <div class="vid">
+              <video
+                src="/videos/work/floyd/vid-04.mp4"
+                autoplay
+                loop
+                muted
+                playsinline
+                preload="metadata"
+                poster="/images/work/floyd/img-08.jpg"
+              ></video>
+            </div>
+            <div class="txt">
+              <p class="eyebrow">Navigation Redesign</p>
+              <h1 class="tit">
+                Simplifying structure and emphasizing hierarchy
+              </h1>
+              <p class="desc">
+                To align with Clarity, secondary products were grouped under an
+                Extras category, keeping the focus on Floyd’s main items —
+                suitcases and bags. Unnecessary icons such as language toggles
+                and brand mini-games were removed for a cleaner interface. The
+                Floyd logo was enlarged and recolored in black to strengthen
+                Contrast and visual balance within the header.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Section : Image Double -->
+        <section class="section is-wide">
+          <div class="section-inner">
+            <div class="img double long">
+              <img src="/images/work/floyd/img-09-01.jpg" alt="" />
+              <video
+                src="/videos/work/floyd/vid-05.mp4"
+                autoplay
+                loop
+                muted
+                playsinline
+                preload="metadata"
+                poster="/images/work/floyd/img-09-02.jpg"
+              ></video>
+            </div>
+          </div>
+        </section>
+
+        <!-- Section : Text Center -->
+        <section class="section is-txt-center">
+          <div class="section-inner">
+            <div class="txt">
+              <p class="eyebrow">Button and Typography</p>
+              <h1 class="tit">Balancing friendliness with visual strength</h1>
+              <p class="desc">
+                While Floyd’s original design language carried a strong,
+                distinctive tone, it could also feel rigid and overly bold. To
+                create a friendlier impression for the Korean market, rounded
+                buttons and soft typography were introduced — inspired by the
+                curved edges of Floyd’s signature suitcases. This update
+                replaced the brand’s strict aesthetic with a warmer, more
+                approachable look.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Section : Image Left Stack  -->
+        <section class="section is-leftstack">
+          <div class="section-inner">
+            <div class="wrap">
+              <div class="col">
+                <div class="img">
+                  <img src="/images/work/floyd/img-10-01.jpg" alt="" />
+                </div>
+                <div class="img">
+                  <img src="/images/work/floyd/img-10-02.jpg" alt="" />
+                </div>
+              </div>
+
+              <div class="img">
+                <img src="/images/work/floyd/img-10-03.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Section : Image Right Stack  -->
+        <section class="section is-rightstack short">
+          <div class="section-inner">
+            <div class="wrap">
+              <div class="row">
+                <div class="img colorchip" style="background-color: #af4690">
+                  <div class="colorchip__txt">
+                    <p class="name">Purple</p>
+                    <p class="code">#AF4690</p>
+                  </div>
+                </div>
+                <div class="img colorchip" style="background-color: #ff9601">
+                  <div class="colorchip__txt">
+                    <p class="name">Orange</p>
+                    <p class="code">#FF9601</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="img colorchip" style="background-color: #000">
+                  <div class="colorchip__txt">
+                    <p class="name">Black</p>
+                    <p class="code">#000000</p>
+                  </div>
+                </div>
+                <div class="img colorchip" style="background-color: #7a7a7a">
+                  <div class="colorchip__txt">
+                    <p class="name">Gray</p>
+                    <p class="code">#7A7A7A</p>
+                  </div>
+                </div>
+                <div
+                  class="img colorchip border"
+                  style="background-color: #fff"
+                >
+                  <div class="colorchip__txt light">
+                    <p class="name">White</p>
+                    <p class="code">#FFFFFF</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Section : Image Right Wide -->
+        <section class="section is-wide mt-200">
+          <div class="section-inner">
+            <div class="img rightwide">
+              <img src="/images/work/floyd/img-12-01.jpg" alt="" />
+              <video
+                src="/videos/work/floyd/vid-06.mp4"
+                autoplay
+                loop
+                muted
+                playsinline
+                preload="metadata"
+                poster="/images/work/floyd/img-12-02.jpg"
+              ></video>
+            </div>
+          </div>
+        </section>
+
+        <!-- Section : Text Right -->
+        <section class="section is-txt-right">
+          <div class="section-inner">
+            <div class="txt">
+              <p class="eyebrow">Purchase Section</p>
+              <h1 class="tit">Improving clarity in color selection</h1>
+              <p class="desc">
+                Floyd’s diverse color palette is one of its defining strengths,
+                but it can also be overwhelming for new visitors. A hover
+                interaction displaying color names was introduced to bring
+                clarity and help users browse options effortlessly.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Section : Video -->
+        <section class="section is-wide">
+          <div class="section-inner">
+            <div class="vid">
+              <video
+                src="/videos/work/floyd/vid-07.mp4"
+                autoplay
+                loop
+                muted
+                playsinline
+                preload="metadata"
+                poster="/images/work/floyd/img-13.jpg"
+              ></video>
             </div>
           </div>
         </section>

@@ -24,10 +24,7 @@
       property="og:description"
       content="Jinkyeong Lim — a multidisciplinary designer bringing clarity and purpose to every project"
     />
-    <meta
-      property="og:image"
-      content="https://jinkyeong.work/og-image.jpg"
-    />
+    <meta property="og:image" content="https://jinkyeong.work/og-image.jpg" />
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="en_CA" />
     <meta
@@ -43,10 +40,7 @@
       name="twitter:description"
       content="Jinkyeong Lim — a multidisciplinary designer bringing clarity and purpose to every project"
     />
-    <meta
-      name="twitter:image"
-      content="https://jinkyeong.work/og-image.jpg"
-    />
+    <meta name="twitter:image" content="https://jinkyeong.work/og-image.jpg" />
 
     <!-- Favicon (루트에 파일 두고 절대경로 권장) -->
     <link rel="icon" href="/favicon.ico" sizes="any" />
@@ -74,6 +68,9 @@
     <!-- GSAP -->
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js"></script>
+
+    <!-- ScrollTrigger -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
   </head>
 
   <body>
@@ -83,7 +80,10 @@
       <!-- 0) Hero (full-bleed) -->
       <section class="section is-full hero">
         <figure class="img">
-          <img src="/images/work/emdash/hero.jpg" alt="EMDASH Brand Card hero" />
+          <img
+            src="/images/work/emdash/hero.jpg"
+            alt="EMDASH Brand Card hero"
+          />
         </figure>
       </section>
 
@@ -134,19 +134,64 @@
       </section>
 
       <div class="detail">
-        <!-- Section : Video -->
+        <!-- Section : Image -->
         <section class="section is-wide">
           <div class="section-inner">
-            <div class="vid">
-              <video
-                src="/videos/work/emdash/vid-01.mp4"
-                autoplay
-                loop
-                muted
-                playsinline
-                preload="metadata"
-                poster="/images/work/emdash/img-01.jpg"
-              ></video>
+            <div class="img">
+              <img src="/images/work/emdash/img-01.jpg" alt="" />
+            </div>
+          </div>
+        </section>
+
+        <!-- Section : Text Center -->
+        <section class="section is-txt-center">
+          <div class="section-inner">
+            <div class="txt">
+              <p class="eyebrow">Brand Background</p>
+              <h1 class="tit">Wearing a message that sparks change</h1>
+              <p class="desc">
+                EMDASH is a Korean fashion brand that embeds messages within
+                clothing, encouraging people to express their beliefs and
+                inspire positive change through what they wear. Each collection
+                turns garments into statements — transforming everyday fashion
+                into a medium for self-expression and social dialogue.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Section : Image -->
+        <section class="section is-wide">
+          <div class="section-inner">
+            <div class="img">
+              <img src="/images/work/emdash/img-02.jpg" alt="" />
+            </div>
+          </div>
+        </section>
+
+        <!-- Section : Text Right -->
+        <section class="section is-txt-right">
+          <div class="section-inner">
+            <div class="txt">
+              <p class="eyebrow">Project Goal</p>
+              <h1 class="tit">Delivering brand values through packaging</h1>
+              <p class="desc">
+                The goal was to design EMDASH’s brand card and packaging,
+                enclosed with each product shipment. The packaging was intended
+                to make the brand’s concept visually tangible — allowing
+                customers to immediately sense EMDASH’s identity and philosophy
+                the moment they receive their order.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Section : Image Right Wide -->
+        <section class="section is-wide">
+          <div class="section-inner">
+            <div class="img rightwide">
+              <img src="/images/work/emdash/img-03-01.jpg" alt="" />
+              <img src="/images/work/emdash/img-03-02.jpg" alt="" />
             </div>
           </div>
         </section>
@@ -155,7 +200,7 @@
         <section class="section is-txt-media">
           <div class="section-inner">
             <div class="txt">
-              <p class="eyebrow">Project Goal</p>
+              <p class="eyebrow">Solution</p>
               <h1 class="tit">Expressing mystery through form and material</h1>
               <p class="desc">
                 To visualize EMDASH’s philosophy of delivering hidden messages
@@ -166,17 +211,7 @@
               </p>
             </div>
             <div class="img">
-              <img src="/images/work/emdash/img-02.jpg" alt="" />
-            </div>
-          </div>
-        </section>
-
-        <!-- Section : Image -->
-        <section class="section is-wide">
-          <div class="section-inner">
-            <div class="img rightwide">
-              <img src="/images/work/emdash/img-03-01.jpg" alt="" />
-              <img src="/images/work/emdash/img-03-02.jpg" alt="" />
+              <img src="/images/work/emdash/img-04.jpg" alt="" />
             </div>
           </div>
         </section>
