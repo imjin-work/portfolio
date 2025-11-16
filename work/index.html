@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- 기본 -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- 페이지별 고유값 -->
+    <title>Work | Jinkyeong Lim</title>
+    <meta
+      name="description"
+      content="A multidisciplinary designer bringing clarity and purpose to every project"
+    />
+    <link rel="canonical" href="https://jinkyeong.work/" />
+    <meta property="og:url" content="https://jinkyeong.work/" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Work | Jinkyeong Lim" />
+    <meta
+      property="og:description"
+      content="Jinkyeong Lim — a multidisciplinary designer bringing clarity and purpose to every project"
+    />
+    <meta property="og:image" content="https://jinkyeong.work/og-image.jpg" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_CA" />
+    <meta property="og:site_name" content="Work | Jinkyeong Lim" />
+
+    <!-- Twitter 카드 -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Work | Jinkyeong Lim" />
+    <meta
+      name="twitter:description"
+      content="Jinkyeong Lim — a multidisciplinary designer bringing clarity and purpose to every project"
+    />
+    <meta name="twitter:image" content="https://jinkyeong.work/og-image.jpg" />
+
+    <!-- Favicon (루트에 파일 두고 절대경로 권장) -->
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+
+    <!-- 웹폰트 -->
+    <link rel="stylesheet" href="https://use.typekit.net/jsf4yyr.css" />
+
+    <!-- 스타일 -->
+    <link rel="stylesheet" href="../css/style.css" />
+
+    <!-- 스크립트 -->
+    <script defer src="../js/common.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.3.min.js"
+      integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.19.0/matter.min.js"></script>
+
+    <!-- AOS.js -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script defer src="../js/aos.js"></script>
+
+    <!-- GSAP -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js"></script>
+
+    <!-- ScrollTrigger -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+
+    <!-- Shuffle.js -->
+    <script src="https://cdn.jsdelivr.net/npm/shufflejs@6"></script>
+
+    <!-- 페이지 전용 스크립트 -->
+    <script defer src="/js/work.js"></script>
+  </head>
+
+  <body>
+    <header id="header"></header>
+
+    <main id="work">
+      <!-- Intro / Hero -->
+      <section class="intro" id="intro">
+        <div class="intro__inner section-inner">
+          <div class="intro__head">
+            <div class="intro__title split-letters">WORK</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Work Grid -->
+      <section class="work" aria-labelledby="work-title">
+        <div class="work__inner section-inner">
+          <h2 id="work-title" class="hide">Work</h2>
+          <div class="work__filter" aria-label="Filter projects by role">
+            <button
+              class="work__filter-btn is-active"
+              type="button"
+              data-filter="all"
+            >
+              All
+            </button>
+            <button
+              class="work__filter-btn"
+              type="button"
+              data-filter="branding"
+            >
+              Branding
+            </button>
+            <button class="work__filter-btn" type="button" data-filter="ux-ui">
+              UX/UI
+            </button>
+            <button
+              class="work__filter-btn"
+              type="button"
+              data-filter="web-dev"
+            >
+              Web Development
+            </button>
+            <button
+              class="work__filter-btn"
+              type="button"
+              data-filter="marketing"
+            >
+              Marketing
+            </button>
+            <button
+              class="work__filter-btn"
+              type="button"
+              data-filter="editorial"
+            >
+              Editorial Design
+            </button>
+            <button
+              class="work__filter-btn"
+              type="button"
+              data-filter="character"
+            >
+              Character Design
+            </button>
+            <button class="work__filter-btn" type="button" data-filter="poster">
+              Poster Design
+            </button>
+          </div>
+          <div class="work__list">
+            <!-- Rementary -->
+            <article
+              class="card-list"
+              data-groups='["ux-ui","marketing","web-dev"]'
+            >
+              <a class="card-list__link" href="/work/rementary">
+                <figure class="card-list__img ar-16-10">
+                  <img
+                    src="/images/thumb/rementary.jpg"
+                    alt="Rementary website"
+                    loading="lazy"
+                  />
+                  <div class="card-list__dim">
+                    <p class="txt">
+                      Designing an elegant e-commerce experience with clean
+                      layouts and minimal design for a modern women's fashion
+                      brand
+                    </p>
+                    <span class="view">VIEW PROJECT</span>
+                  </div>
+                </figure>
+                <div class="card-list__txt">
+                  <h3 class="tit">Rementary</h3>
+                  <ul class="roles">
+                    <li class="tag">UX/UI</li>
+                    <li class="tag">Marketing</li>
+                    <li class="tag">Web Development</li>
+                  </ul>
+                </div>
+              </a>
+            </article>
+
+            <!-- Floyd -->
+            <article
+              class="card-list"
+              data-groups='["ux-ui","web-dev"]'
+            >
+              <a class="card-list__link" href="/work/floyd">
+                <figure class="card-list__img ar-16-10">
+                  <img
+                    src="/images/thumb/floyd.jpg"
+                    alt="Floyd website"
+                    loading="lazy"
+                  />
+                  <div class="card-list__dim">
+                    <p class="txt">
+                      Localizing a premium suitcase brand's digital presence for
+                      the Korean market while maintaining brand identity and
+                      adapting the experience to cultural preferences.
+                    </p>
+                    <span class="view">VIEW PROJECT</span>
+                  </div>
+                </figure>
+                <div class="card-list__txt">
+                  <h3 class="tit">Floyd</h3>
+                  <ul class="roles">
+                    <li class="tag">UX/UI</li>
+                    <li class="tag">Web Development</li>
+                  </ul>
+                </div>
+              </a>
+            </article>
+
+            <!-- Online Hanpyeong Park -->
+            <article
+              class="card-list"
+              data-groups='["ux-ui","web-dev"]'
+            >
+              <a class="card-list__link" href="/work/hanpyeong">
+                <figure class="card-list__img ar-16-10">
+                  <img
+                    src="/images/thumb/hanpyeong.jpg"
+                    alt="Online hanpyeong park"
+                    loading="lazy"
+                  />
+                  <div class="card-list__dim">
+                    <p class="txt">
+                      Remembering the disappearing landscape of Ipjeong-dong
+                      through a digital archive
+                    </p>
+                    <span class="view">VIEW PROJECT</span>
+                  </div>
+                </figure>
+                <div class="card-list__txt">
+                  <h3 class="tit">Online Hanpyeong Park</h3>
+                  <ul class="roles">
+                    <li class="tag">UX/UI</li>
+                    <li class="tag">Web Development</li>
+                  </ul>
+                </div>
+              </a>
+            </article>
+
+            <!-- DESKER Brandbook -->
+            <article
+              class="card-list"
+              data-groups='["branding","editorial"]'
+            >
+              <a class="card-list__link" href="/work/desker">
+                <figure class="card-list__img ar-16-10">
+                  <img
+                    src="/images/thumb/desker.jpg"
+                    alt="DESKER Brandbook"
+                    loading="lazy"
+                  />
+                  <div class="card-list__dim">
+                    <p class="txt">
+                      Expressing Desker’s values of simplicity and expansion in
+                      a minimal, ink-free brand book
+                    </p>
+                    <span class="view">VIEW PROJECT</span>
+                  </div>
+                </figure>
+                <div class="card-list__txt">
+                  <h3 class="tit">DESKER Brandbook</h3>
+                  <ul class="roles">
+                    <li class="tag">Branding</li>
+                    <li class="tag">Editorial Design</li>
+                  </ul>
+                </div>
+              </a>
+            </article>
+
+            <!-- Cosmotic -->
+            <article
+              class="card-list"
+              data-groups='["ux-ui","web-dev"]'
+            >
+              <a class="card-list__link" href="/work/cosmotic">
+                <figure class="card-list__img ar-16-10">
+                  <video
+                    src="/videos/thumb/cosmotic.mp4"
+                    autoplay
+                    loop
+                    muted
+                    playsinline
+                    preload="metadata"
+                    poster="/images/thumb/cosmotic.jpg"
+                  ></video>
+                  <div class="card-list__dim">
+                    <p class="txt">
+                      Developing a cohesive web experience for Cosmotic through
+                      logotype-inspired graphics
+                    </p>
+                    <span class="view">VIEW PROJECT</span>
+                  </div>
+                </figure>
+                <div class="card-list__txt">
+                  <h3 class="tit">Cosmotic</h3>
+                  <ul class="roles">
+                    <li class="tag">UX/UI</li>
+                    <li class="tag">Web Development</li>
+                  </ul>
+                </div>
+              </a>
+            </article>
+
+            <!-- Seoul Culture Nuri Card -->
+            <article
+              class="card-list"
+              data-groups='["character","poster"]'
+            >
+              <a class="card-list__link" href="/work/nuri">
+                <figure class="card-list__img ar-16-10">
+                  <img
+                    src="/images/thumb/nuri.jpg"
+                    alt="Seoul Culture Nuri Card"
+                    loading="lazy"
+                  />
+                  <div class="card-list__dim">
+                    <p class="txt">
+                      Updating the Culture Nuri Card mascot with a friendlier,
+                      more accessible public identity
+                    </p>
+                    <span class="view">VIEW PROJECT</span>
+                  </div>
+                </figure>
+                <div class="card-list__txt">
+                  <h3 class="tit">Seoul Culture Nuri Card</h3>
+                  <ul class="roles">
+                    <li class="tag">Character Design</li>
+                    <li class="tag">Poster Design</li>
+                  </ul>
+                </div>
+              </a>
+            </article>
+
+            <!-- Double A Note Design -->
+            <article
+              class="card-list"
+              data-groups='["character","editorial","illustration"]'
+            >
+              <a class="card-list__link" href="/work/double-a">
+                <figure class="card-list__img ar-16-10">
+                  <img
+                    src="/images/thumb/double-a.jpg"
+                    alt="Double A Note Design"
+                    loading="lazy"
+                  />
+                  <div class="card-list__dim">
+                    <p class="txt">
+                      Designing an elegant e-commerce experience with clean
+                      layouts and minimal design for a modern women's fashion
+                      brand
+                    </p>
+                    <span class="view">VIEW PROJECT</span>
+                  </div>
+                </figure>
+                <div class="card-list__txt">
+                  <h3 class="tit">Double A Note Design</h3>
+                  <ul class="roles">
+                    <li class="tag">Character Design</li>
+                    <li class="tag">Editorial Design</li>
+                    <li class="tag">Illustration</li>
+                  </ul>
+                </div>
+              </a>
+            </article>
+
+            <!-- Happy Birthday, Rans -->
+            <article
+              class="card-list"
+              data-groups='["campaign","ux-ui"]'
+            >
+              <a class="card-list__link" href="/work/happy-rans">
+                <figure class="card-list__img ar-16-10">
+                  <img
+                    src="/images/thumb/happy-rans.jpg"
+                    alt="Happy Birthday, Rans"
+                    loading="lazy"
+                  />
+                  <div class="card-list__dim">
+                    <p class="txt">
+                      Celebrating transgender visibility through a campaign with
+                      Amnesty and the Transgender Liberation Front
+                    </p>
+                    <span class="view">VIEW PROJECT</span>
+                  </div>
+                </figure>
+                <div class="card-list__txt">
+                  <h3 class="tit">Happy Birthday, Rans</h3>
+                  <ul class="roles">
+                    <li class="tag">Project Management</li>
+                    <li class="tag">Campaign Identity</li>
+                    <li class="tag">UX/UI</li>
+                  </ul>
+                </div>
+              </a>
+            </article>
+
+            <!-- Write for Rights 2020 -->
+            <article
+              class="card-list"
+              data-groups='["campaign","ux-ui","editorial"]'
+            >
+              <a class="card-list__link" href="/work/w4r">
+                <figure class="card-list__img ar-16-10">
+                  <img
+                    src="/images/thumb/w4r.jpg"
+                    alt="Write for Rights 2020"
+                    loading="lazy"
+                  />
+                  <div class="card-list__dim">
+                    <p class="txt">
+                      Visualizing Amnesty’s Write for Rights campaign through
+                      interactive motion and bold, story-driven typography
+                    </p>
+                    <span class="view">VIEW PROJECT</span>
+                  </div>
+                </figure>
+                <div class="card-list__txt">
+                  <h3 class="tit">Write for Rights 2020</h3>
+                  <ul class="roles">
+                    <li class="tag">Campaign Identity</li>
+                    <li class="tag">UX/UI</li>
+                    <li class="tag">Editorial Design</li>
+                  </ul>
+                </div>
+              </a>
+            </article>
+
+            <!-- Drawn by the Wind Exhibition -->
+            <article class="card-list" data-groups='["poster"]'>
+              <a class="card-list__link" href="/work/drawn-wind">
+                <figure class="card-list__img ar-16-10">
+                  <video
+                    src="/videos/thumb/drawn-wind.mp4"
+                    autoplay
+                    loop
+                    muted
+                    playsinline
+                    preload="metadata"
+                    poster="/images/thumb/drawn-wind.jpg"
+                  ></video>
+                  <div class="card-list__dim">
+                    <p class="txt">
+                      Creating a motion poster where Shin Yun-bok and Jeong
+                      Seon’s paintings dissolve and re-form in harmony
+                    </p>
+                    <span class="view">VIEW PROJECT</span>
+                  </div>
+                </figure>
+                <div class="card-list__txt">
+                  <h3 class="tit">Drawn by the Wind Exhibition</h3>
+                  <ul class="roles">
+                    <li class="tag">Poster Design</li>
+                  </ul>
+                </div>
+              </a>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer id="footer"></footer>
+  </body>
+</html>

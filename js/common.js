@@ -141,6 +141,29 @@ document.addEventListener("DOMContentLoaded", (event) => {
         return split;
       },
     });
+
+    // 추가: 레터 단위 애니메이션 (.split-letters)
+    const letterTargets = document.querySelectorAll(".split-letters");
+    if (letterTargets.length) {
+      letterTargets.forEach((el) => {
+        const splitLetters = new SplitText(el, {
+          type: "chars", // 문자 단위로 쪼개기
+          charsClass: "char", // 필요하면 CSS에서 .char 스타일링 가능
+        });
+
+        // 시작 상태
+        gsap.set(splitLetters.chars, { opacity: 0, yPercent: 80 });
+
+        // 애니메이션
+        gsap.to(splitLetters.chars, {
+          duration: 0.4,
+          opacity: 1,
+          yPercent: 0,
+          stagger: 0.03, // 한 글자씩 순서대로
+          ease: "sine.out",
+        });
+      });
+    }
   });
 });
 
@@ -225,8 +248,8 @@ function initTripleFlip() {
     "(min-width: 769px)": () => {
       ScrollTrigger.create({
         trigger: wrap,
-        start: "center 65%",      // triple 중앙이 화면 높이 65% 지점에 올 때 (센터보다 살짝 이르게)
-        end: "center+=200 center",   // 약간의 구간
+        start: "center 65%", // triple 중앙이 화면 높이 65% 지점에 올 때 (센터보다 살짝 이르게)
+        end: "center+=200 center", // 약간의 구간
         onEnter() {
           if (!imgs[0].__isFlipped) {
             flipAllToAlt();
@@ -249,7 +272,7 @@ function initTripleFlip() {
       imgs.forEach((img) => {
         ScrollTrigger.create({
           trigger: img,
-          start: "center 65%",    // 이미지가 화면 높이 65% 지점에 올 때 (센터보다 살짝 이르게)
+          start: "center 65%", // 이미지가 화면 높이 65% 지점에 올 때 (센터보다 살짝 이르게)
           end: "center+=150 center",
           onEnter() {
             if (!img.__isFlipped) {

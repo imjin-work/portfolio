@@ -1,6 +1,6 @@
 // AOS auto-attach + init
 document.addEventListener("DOMContentLoaded", () => {
-  const items = document.querySelectorAll(".card-list, #project .detail .section");
+  const items = document.querySelectorAll("#main .card-list, #project .detail .section");
   items.forEach((el, i) => {
     el.setAttribute("data-aos", "fade-up");
     el.setAttribute("data-aos-delay", String(i * 80)); // optional stagger
