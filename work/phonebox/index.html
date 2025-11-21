@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- 기본 -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- 페이지별 고유값 -->
+    <title>PhoneBox | Jinkyeong Lim</title>
+    <meta
+      name="description"
+      content="A multidisciplinary designer bringing clarity and purpose to every project"
+    />
+    <link rel="canonical" href="https://jinkyeong.work/" />
+    <meta property="og:url" content="https://jinkyeong.work/" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="PhoneBox | Jinkyeong Lim" />
+    <meta
+      property="og:description"
+      content="Jinkyeong Lim — a multidisciplinary designer bringing clarity and purpose to every project"
+    />
+    <meta property="og:image" content="https://jinkyeong.work/og-image.jpg" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_CA" />
+    <meta property="og:site_name" content="PhoneBox | Jinkyeong Lim" />
+
+    <!-- Twitter 카드 -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="PhoneBox | Jinkyeong Lim" />
+    <meta
+      name="twitter:description"
+      content="Jinkyeong Lim — a multidisciplinary designer bringing clarity and purpose to every project"
+    />
+    <meta name="twitter:image" content="https://jinkyeong.work/og-image.jpg" />
+
+    <!-- Favicon (루트에 파일 두고 절대경로 권장) -->
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+
+    <!-- 웹폰트 -->
+    <link rel="stylesheet" href="https://use.typekit.net/jsf4yyr.css" />
+
+    <!-- 스타일 -->
+    <link rel="stylesheet" href="../../css/style.css" />
+
+    <!-- 스크립트 -->
+    <script defer src="../../js/common.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.3.min.js"
+      integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.19.0/matter.min.js"></script>
+
+    <!-- AOS.js -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script defer src="../../js/aos.js"></script>
+
+    <!-- GSAP -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js"></script>
+
+    <!-- ScrollTrigger -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+  </head>
+
+  <body>
+    <header id="header"></header>
+
+    <main id="project" class="project">
+      <!-- 0) Hero (full-bleed) -->
+      <section class="section is-full hero" data-theme="dark">
+        <figure class="img">
+          <img src="/images/work/phonebox/hero.jpg" alt="Rémentary hero" />
+        </figure>
+      </section>
+
+      <!-- 1) Intro (title / meta / summary / tags / CTA) -->
+      <section class="section intro" data-theme="light">
+        <div class="section-inner layout-grid">
+          <!-- Title -->
+          <div class="intro__title start-2 span-10 md:start-1 md:span-8 split">
+            Rementary
+          </div>
+
+          <!-- Meta -->
+          <div class="intro__info start-2 span-4 md:start-1 md:span-2">
+            <ul class="list">
+              <li>
+                <div class="label">Term</div>
+                <p class="value">Aug - Sep 2025</p>
+              </li>
+              <li>
+                <div class="label">Client</div>
+                <p class="value">PhoneBox</p>
+              </li>
+              <li>
+                <div class="label">Work Scope</div>
+                <ul class="value">
+                  <li>Brand Identity Refinement</li>
+                  <li>Brand Guideline</li>
+                  <li>Package Design</li>
+                  <li>Email Design</li>
+                  <li>Motion Design</li>
+                </ul>
+              </li>
+              <li>
+                <div class="label">Team</div>
+                <ul class="value">
+                  <li>1 Project Manager</li>
+                  <li>2 Designers</li>
+                  <li>2 Content Writers</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Summary -->
+          <div class="intro__summary start-6 span-6 md:start-3 md:span-6">
+            <h1 class="tit">
+              Creating a cohesive visual system to strengthen PhoneBox’s brand
+              experience
+            </h1>
+
+            <p class="desc">
+              I established an updated brand design system for PhoneBox—defining
+              a cohesive visual language across the logo, color system,
+              packaging, and email communication. This system enables consistent
+              brand expression and a clearer user experience across all internal
+              and customer-facing touchpoints.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <div class="detail">
+        <!-- Section : Video -->
+        <section class="section is-wide">
+          <div class="section-inner">
+            <div class="vid">
+              <video
+                src="/videos/work/phonebox/vid-01.mp4"
+                autoplay
+                loop
+                muted
+                playsinline
+                preload="metadata"
+                poster="/images/work/phonebox/img-01.jpg"
+              ></video>
+            </div>
+          </div>
+        </section>
+
+        <!-- Section : Text + Image -->
+        <section class="section is-txt-media">
+          <div class="section-inner">
+            <div class="txt">
+              <p class="eyebrow">Project Goal</p>
+              <h1 class="tit">
+                Unifying a fragmented brand into one clear, modern system
+              </h1>
+              <p class="desc">
+                PhoneBox’s visual identity had become inconsistent across web,
+                email, and packaging, making it difficult for users—and even
+                internal teams—to recognize a single cohesive brand. The goal of
+                this project was to consolidate scattered assets, refine legacy
+                elements, and establish a unified visual standard that
+                strengthens brand recognition and delivers a more consistent
+                experience across all touchpoints.
+              </p>
+            </div>
+            <div class="img">
+              <img src="/images/work/phonebox/img-02.jpg" alt="" />
+            </div>
+          </div>
+        </section>
+
+        <!-- Section : Image Triple -->
+        <section class="section is-wide">
+          <div class="section-inner">
+            <div class="img triple">
+              <img src="/images/work/phonebox/img-03-01.jpg" alt="" />
+              <img src="/images/work/phonebox/img-03-02.jpg" alt="" />
+              <img src="/images/work/phonebox/img-03-03.jpg" alt="" />
+            </div>
+          </div>
+          <p class="cap">Previous PhoneBox designs for social media, packaging, and email</p>
+        </section>
+
+        <!-- Section : Image Triple -->
+        <section class="section is-wide mt-200">
+          <div class="section-inner">
+            <div class="img triple mo-ver">
+              <img src="/images/work/phonebox/img-04-01.jpg" alt="" />
+              <img src="/images/work/phonebox/img-04-02.jpg" alt="" />
+              <img src="/images/work/phonebox/img-04-03.jpg" alt="" />
+            </div>
+          </div>
+        </section>
+
+        <!-- Section : Text Center -->
+        <section class="section is-txt-center">
+          <div class="section-inner">
+            <div class="txt">
+              <p class="eyebrow">Brand Strategy</p>
+              <h1 class="tit">
+                Driving clarity, consistency, and approachability across the
+                brand
+              </h1>
+              <p class="desc">
+                To strengthen PhoneBox’s visual and verbal identity, the brand
+                strategy was built around three core principles: Clear
+                Communication for instant understanding, Unified Experience for
+                system-wide consistency, and Approachability for a more human,
+                energetic brand tone. Together, these pillars reshape PhoneBox
+                into a clearer, more cohesive, and more welcoming experience
+                across every touchpoint.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Section : Image -->
+        <section class="section is-wide">
+          <div class="section-inner">
+            <div class="img">
+              <img src="/images/work/phonebox/img-05.jpg" alt="" />
+            </div>
+          </div>
+        </section>
+
+        <!-- Section : Image Quad -->
+        <section class="section is-wide">
+          <div class="section-inner">
+            <div class="img quad">
+              <div class="row">
+                <div class="logo border" style="background-color: white">
+                  <img src="/images/work/phonebox/img-06-01.svg" alt="" />
+                </div>
+                <div class="logo" style="background-color: #050f1f">
+                  <img src="/images/work/phonebox/img-06-02.svg" alt="" />
+                </div>
+              </div>
+              <div class="row">
+                <div class="logo" style="background-color: #0cacf0">
+                  <img src="/images/work/phonebox/img-06-03.svg" alt="" />
+                </div>
+                <div class="logo" style="background-color: #050f1f">
+                  <img src="/images/work/phonebox/img-06-04.svg" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Section : Image + Text -->
+        <section class="section is-media-txt">
+          <div class="section-inner">
+            <div class="img">
+              <img src="/images/work/phonebox/img-07.jpg" alt="" />
+            </div>
+            <div class="txt">
+              <p class="eyebrow">Logo Refinement</p>
+              <h1 class="tit">
+                Strengthening the brand’s core mark for clarity and consistency
+              </h1>
+              <p class="desc">
+                To resolve inconsistencies caused by outdated and unstructured
+                logo files, the PhoneBox logotype was rebuilt and standardized
+                across all formats (AI/SVG/PNG). Kerning and baseline alignment
+                were refined to achieve visual balance, while subtle optical
+                adjustments improved clarity in digital environments. The result
+                is a cleaner, more reliable core mark that enhances the
+                credibility of the entire design system.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Section : Image Colorchip  -->
+        <section class="section is-colorchip">
+          <div class="section-inner">
+            <div class="wrap">
+              <div class="row">
+                <div class="img colorchip" style="background-color: #0cacf0">
+                  <div class="colorchip__txt">
+                    <div class="label">
+                      <p class="cate">Primary</p>
+                      <p class="name">Blue</p>
+                    </div>
+                    <p class="code">#0CACF0</p>
+                  </div>
+                </div>
+                <div class="img colorchip" style="background-color: #1e6898">
+                  <div class="colorchip__txt">
+                    <div class="label">
+                      <p class="cate">Primary</p>
+                      <p class="name">Dark Blue</p>
+                    </div>
+                    <p class="code">#1E6898</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="img colorchip" style="background-color: #5ac33a">
+                  <div class="colorchip__txt">
+                    <div class="label">
+                      <p class="cate">Secondary</p>
+                      <p class="name">Green</p>
+                    </div>
+                    <p class="code">#5AC33A</p>
+                  </div>
+                </div>
+                <div class="img colorchip" style="background-color: #fbbb25">
+                  <div class="colorchip__txt">
+                    <div class="label">
+                      <p class="cate">Secondary</p>
+                      <p class="name">Yellow</p>
+                    </div>
+                    <p class="code">#FBBB25</p>
+                  </div>
+                </div>
+                <div class="img colorchip" style="background-color: #ee445d">
+                  <div class="colorchip__txt">
+                    <div class="label">
+                      <p class="cate">Secondary</p>
+                      <p class="name">Red</p>
+                    </div>
+                    <p class="code">#EE445D</p>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="img colorchip" style="background-color: #050f1f">
+                    <div class="colorchip__txt">
+                      <div class="label">
+                        <!-- <p class="cate">Secondary</p> -->
+                        <p class="name">Black</p>
+                      </div>
+                      <p class="code">#050F1F</p>
+                    </div>
+                  </div>
+                  <div
+                    class="img colorchip border"
+                    style="background-color: #ffffff"
+                  >
+                    <div class="colorchip__txt light">
+                      <div class="label">
+                        <!-- <p class="cate">Secondary</p> -->
+                        <p class="name">White</p>
+                      </div>
+                      <p class="code">#FFFFFF</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Section : Text Center -->
+        <section class="section is-txt-center">
+          <div class="section-inner">
+            <div class="txt">
+              <p class="eyebrow">Color System</p>
+              <h1 class="tit">
+                Updating legacy colours for a younger, more energetic audience
+              </h1>
+              <p class="desc">
+                To modernize PhoneBox’s visual presence, the core blue, navy,
+                and green palette was refined with brighter, higher-contrast
+                tones. The updated colours maintain the brand’s legacy identity
+                while delivering a fresher look that resonates better with
+                students and travellers — PhoneBox’s most active user groups.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Section : Image Double -->
+        <section class="section is-wide">
+          <div class="section-inner">
+            <div class="img double">
+              <img src="/images/work/phonebox/img-08-01.jpg" alt="" />
+              <div class="col">
+                <img src="/images/work/phonebox/img-08-02.jpg" alt="" />
+                <img src="/images/work/phonebox/img-08-03.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Section : Text Center -->
+        <section class="section is-txt-center">
+          <div class="section-inner">
+            <div class="txt">
+              <p class="eyebrow">Typography</p>
+              <h1 class="tit">
+                A streamlined system built for clarity and consistency
+              </h1>
+              <p class="desc">
+                PhoneBox uses a paired typographic system designed to keep
+                communication clean and accessible. Inter delivers high
+                readability for all body copy, while Inter Tight provides a
+                sharper, more expressive voice for headlines. This combination
+                creates clear hierarchy across every touchpoint without adding
+                visual noise.
+              </p>
+              <p class="desc">
+                For social media communication, two additional display typefaces
+                introduce flexibility and personality. These fonts are reserved
+                exclusively for high-impact posts and promotional visuals,
+                ensuring the core brand identity remains consistent across
+                product and service touchpoints.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Section : Image Double -->
+        <section class="section is-wide">
+          <div class="section-inner">
+            <div class="img double">
+              <img src="/images/work/phonebox/img-09-01.jpg" alt="" />
+              <img src="/images/work/phonebox/img-09-02.jpg" alt="" />
+            </div>
+          </div>
+        </section>
+
+        <!-- Section : Image -->
+        <section class="section is-wide">
+          <div class="section-inner">
+            <div class="img">
+              <img src="/images/work/phonebox/img-10.jpg" alt="" />
+            </div>
+          </div>
+        </section>
+
+        <!-- Section : Video -->
+        <section class="section is-wide">
+          <div class="section-inner">
+            <div class="vid">
+              <video
+                src="/videos/work/phonebox/vid-02.mp4"
+                autoplay
+                loop
+                muted
+                playsinline
+                preload="metadata"
+                poster="/images/work/phonebox/img-11.jpg"
+              ></video>
+            </div>
+          </div>
+        </section>
+
+        <!-- Section : Text Right -->
+        <section class="section is-txt-right">
+          <div class="section-inner">
+            <div class="txt">
+              <p class="eyebrow">Social Media Communication</p>
+              <h1 class="tit">
+                Establishing a clear visual standard across all channels
+              </h1>
+              <p class="desc">
+                PhoneBox had no defined rules for typography, imagery, or colour
+                usage on social media, resulting in mixed styles across posts. I
+                consolidated the scattered assets and set practical guidelines
+                for type, photo selection, and colour ranges, enabling the team
+                to produce consistent, on-brand content across all digital
+                channels.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Section : Image Left Stack  -->
+        <section class="section is-leftstack">
+          <div class="section-inner">
+            <div class="wrap">
+              <div class="img as-is">
+                <img src="/images/work/phonebox/img-12-01.jpg" alt="" />
+              </div>
+
+              <div class="img">
+                <img src="/images/work/phonebox/img-12-02.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Section : Image -->
+        <section class="section is-wide">
+          <div class="section-inner">
+            <div class="img">
+              <img src="/images/work/phonebox/img-13.jpg" alt="" />
+            </div>
+          </div>
+        </section>
+
+        <!-- Section : Text + Image -->
+        <section class="section is-txt-media">
+          <div class="section-inner">
+            <div class="txt">
+              <p class="eyebrow">Email Design System</p>
+              <h1 class="tit">
+                Creating a consistent, user-focused email experience
+              </h1>
+              <p class="desc">
+                All service emails were redesigned under a unified structure,
+                aligning visuals and messaging across the entire user journey.
+                Missing information was clarified, frequently-asked details were
+                reorganized, and responsive layouts were introduced for seamless
+                readability. This consolidation strengthened clarity and built a
+                more reliable, cohesive brand experience.
+              </p>
+            </div>
+            <div class="img">
+              <img src="/images/work/phonebox/img-14.jpg" alt="" />
+            </div>
+          </div>
+        </section>
+
+        <!-- Section : Image Left Stack  -->
+        <section class="section is-leftstack">
+          <div class="section-inner">
+            <div class="wrap">
+              <div class="img as-is">
+                <img src="/images/work/phonebox/img-15-01.jpg" alt="" />
+              </div>
+
+              <div class="vid">
+                <video
+                  src="/videos/work/phonebox/vid-03.mp4"
+                  autoplay
+                  loop
+                  muted
+                  playsinline
+                  preload="metadata"
+                  poster="/images/work/phonebox/img-15-02.jpg"
+                ></video>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Section : Image -->
+        <section class="section is-wide">
+          <div class="section-inner">
+            <div class="img">
+              <img src="/images/work/phonebox/img-16.jpg" alt="" />
+            </div>
+          </div>
+        </section>
+
+        <!-- Section : Text Center -->
+        <section class="section is-txt-center">
+          <div class="section-inner">
+            <div class="txt">
+              <p class="eyebrow">Packaging System</p>
+              <h1 class="tit">Creating a clear, unified unboxing experience</h1>
+              <p class="desc">
+                To eliminate fragmentation across regions, all package formats
+                used in Canada, the U.S., and Amazon were consolidated into one
+                cohesive system. Product information was reorganized into a
+                clear hierarchy, helping users immediately understand what they
+                purchased. The structural format was also upgraded from a simple
+                folded card to a design that securely holds the SIM pin and SIM
+                card, improving protection during shipping and elevating the
+                unboxing experience.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Section : Video -->
+        <section class="section is-wide">
+          <div class="section-inner">
+            <div class="vid">
+              <video
+                src="/videos/work/phonebox/vid-04.mp4"
+                autoplay
+                loop
+                muted
+                playsinline
+                preload="metadata"
+                poster="/images/work/phonebox/img-17.jpg"
+              ></video>
+            </div>
+          </div>
+        </section>
+
+        <!-- Section : Image Double -->
+        <section class="section is-wide">
+          <div class="section-inner">
+            <div class="img double">
+              <div class="vid">
+                <video
+                  src="/videos/work/phonebox/vid-05.mp4"
+                  autoplay
+                  loop
+                  muted
+                  playsinline
+                  preload="metadata"
+                  poster="/images/work/phonebox/img-18-01.jpg"
+                ></video>
+              </div>
+              <img src="/images/work/phonebox/img-18-02.jpg" alt="" />
+            </div>
+          </div>
+        </section>
+
+        <!-- Section : Image -->
+        <section class="section is-wide">
+          <div class="section-inner">
+            <div class="img">
+              <img src="/images/work/phonebox/img-19.jpg" alt="" />
+            </div>
+          </div>
+        </section>
+        <!-- Section : Image -->
+        <section class="section is-wide">
+          <div class="section-inner">
+            <div class="img">
+              <img src="/images/work/phonebox/img-20.jpg" alt="" />
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer id="footer"></footer>
+  </body>
+</html>
