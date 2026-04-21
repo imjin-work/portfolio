@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <!-- 기본 -->
@@ -39,30 +39,39 @@
 
     <!-- 웹폰트 -->
     <link rel="stylesheet" href="https://use.typekit.net/jsf4yyr.css" />
+    <link
+      rel="stylesheet"
+      as="style"
+      crossorigin
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css"
+    />
 
     <!-- 스타일 -->
     <link rel="stylesheet" href="../../css/style.css" />
 
     <!-- 스크립트 -->
     <script defer src="../../js/common.js"></script>
-    <script
-      src="https://code.jquery.com/jquery-3.6.3.min.js"
-      integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.19.0/matter.min.js"></script>
 
     <!-- AOS.js -->
     <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
-    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script defer src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
     <script defer src="../../js/aos.js"></script>
 
     <!-- GSAP -->
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js"></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"
+    ></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js"
+    ></script>
 
-<!-- ScrollTrigger -->
-<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+    <!-- ScrollTrigger -->
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"
+    ></script>
   </head>
 
   <body>
@@ -83,8 +92,16 @@
       <section class="section intro" data-theme="light">
         <div class="section-inner layout-grid">
           <!-- Title -->
-          <div class="intro__title start-2 span-10 md:start-1 md:span-8 split">
+          <div
+            class="intro__title start-2 span-10 md:start-1 md:span-8 split lang-en"
+          >
             A Small Mistake
+          </div>
+          <div
+            class="intro__title start-2 span-10 md:start-1 md:span-8 split lang-ko"
+            hidden
+          >
+            사소한 실수
           </div>
 
           <!-- Meta -->
@@ -106,16 +123,24 @@
 
           <!-- Summary -->
           <div class="intro__summary start-6 span-6 md:start-3 md:span-6">
-            <h1 class="tit">
+            <h1 class="tit lang-en">
               Translating collective memory of disasters into tactile form
             </h1>
+            <h1 class="tit lang-ko" hidden>
+              재난의 집단적 기억을 촉각적 형태로 번역하다
+            </h1>
 
-            <p class="desc">
+            <p class="desc lang-en">
               This exhibition visualizes records of major national disasters in
               Korea through a series of nine books, each dedicated to a specific
               event. Every volume embodies the characteristics of the disaster
               it represents — with variations in texture, paper, color, size,
               and layout translating impact into physical experience.
+            </p>
+            <p class="desc lang-ko" hidden>
+              한국의 주요 국가 재난을 기록한 전시 프로젝트입니다. 각 사건을 담은
+              9권의 책으로 구성되며, 책마다 해당 재난의 특성을 질감, 종이, 색상,
+              크기, 레이아웃으로 풀어내 그 충격을 물리적인 경험으로 전달합니다.
             </p>
           </div>
         </div>
@@ -128,11 +153,10 @@
             <div class="vid">
               <video
                 src="/videos/play/smallmistake/vid-01.mp4"
-                autoplay
                 loop
                 muted
                 playsinline
-                preload="metadata"
+                preload="none"
                 poster="/images/play/smallmistake/img-01.jpg"
               ></video>
             </div>
@@ -143,8 +167,16 @@
         <section class="section is-wide">
           <div class="section-inner">
             <div class="img double">
-              <img src="/images/play/smallmistake/img-02-01.jpg" alt="" />
-              <img src="/images/play/smallmistake/img-02-02.jpg" alt="" />
+              <img
+                loading="lazy"
+                src="/images/play/smallmistake/img-02-01.jpg"
+                alt=""
+              />
+              <img
+                loading="lazy"
+                src="/images/play/smallmistake/img-02-02.jpg"
+                alt=""
+              />
             </div>
           </div>
         </section>
@@ -153,7 +185,11 @@
         <section class="section is-full">
           <div class="section-inner">
             <div class="img">
-              <img src="/images/play/smallmistake/img-03.jpg" alt="" />
+              <img
+                loading="lazy"
+                src="/images/play/smallmistake/img-03.jpg"
+                alt=""
+              />
             </div>
           </div>
         </section>
@@ -162,7 +198,11 @@
         <section class="section is-wide">
           <div class="section-inner">
             <div class="img">
-              <img src="/images/play/smallmistake/img-04.jpg" alt="" />
+              <img
+                loading="lazy"
+                src="/images/play/smallmistake/img-04.jpg"
+                alt=""
+              />
             </div>
           </div>
         </section>
@@ -171,8 +211,16 @@
         <section class="section is-wide">
           <div class="section-inner">
             <div class="img double">
-              <img src="/images/play/smallmistake/img-05-01.jpg" alt="" />
-              <img src="/images/play/smallmistake/img-05-02.jpg" alt="" />
+              <img
+                loading="lazy"
+                src="/images/play/smallmistake/img-05-01.jpg"
+                alt=""
+              />
+              <img
+                loading="lazy"
+                src="/images/play/smallmistake/img-05-02.jpg"
+                alt=""
+              />
             </div>
           </div>
         </section>
@@ -181,8 +229,16 @@
         <section class="section is-wide">
           <div class="section-inner">
             <div class="img double">
-              <img src="/images/play/smallmistake/img-06-01.jpg" alt="" />
-              <img src="/images/play/smallmistake/img-06-02.jpg" alt="" />
+              <img
+                loading="lazy"
+                src="/images/play/smallmistake/img-06-01.jpg"
+                alt=""
+              />
+              <img
+                loading="lazy"
+                src="/images/play/smallmistake/img-06-02.jpg"
+                alt=""
+              />
             </div>
           </div>
         </section>
@@ -191,7 +247,11 @@
         <section class="section is-wide">
           <div class="section-inner">
             <div class="img">
-              <img src="/images/play/smallmistake/img-07.jpg" alt="" />
+              <img
+                loading="lazy"
+                src="/images/play/smallmistake/img-07.jpg"
+                alt=""
+              />
             </div>
           </div>
         </section>
@@ -200,8 +260,16 @@
         <section class="section is-wide">
           <div class="section-inner">
             <div class="img rightwide">
-              <img src="/images/play/smallmistake/img-08-01.jpg" alt="" />
-              <img src="/images/play/smallmistake/img-08-02.jpg" alt="" />
+              <img
+                loading="lazy"
+                src="/images/play/smallmistake/img-08-01.jpg"
+                alt=""
+              />
+              <img
+                loading="lazy"
+                src="/images/play/smallmistake/img-08-02.jpg"
+                alt=""
+              />
             </div>
           </div>
         </section>
@@ -210,7 +278,11 @@
         <section class="section is-wide">
           <div class="section-inner">
             <div class="img">
-              <img src="/images/play/smallmistake/img-09.jpg" alt="" />
+              <img
+                loading="lazy"
+                src="/images/play/smallmistake/img-09.jpg"
+                alt=""
+              />
             </div>
           </div>
         </section>

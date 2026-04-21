@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <!-- 기본 -->
@@ -39,30 +39,39 @@
 
     <!-- 웹폰트 -->
     <link rel="stylesheet" href="https://use.typekit.net/jsf4yyr.css" />
+    <link
+      rel="stylesheet"
+      as="style"
+      crossorigin
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css"
+    />
 
     <!-- 스타일 -->
     <link rel="stylesheet" href="../../css/style.css" />
 
     <!-- 스크립트 -->
     <script defer src="../../js/common.js"></script>
-    <script
-      src="https://code.jquery.com/jquery-3.6.3.min.js"
-      integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.19.0/matter.min.js"></script>
 
     <!-- AOS.js -->
     <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
-    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script defer src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
     <script defer src="../../js/aos.js"></script>
 
     <!-- GSAP -->
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js"></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"
+    ></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js"
+    ></script>
 
     <!-- ScrollTrigger -->
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"
+    ></script>
   </head>
 
   <body>
@@ -118,17 +127,29 @@
 
           <!-- Summary -->
           <div class="intro__summary start-6 span-6 md:start-3 md:span-6">
-            <h1 class="tit">
+            <h1 class="tit lang-en">
               Creating a cohesive visual system to strengthen PhoneBox’s brand
               experience
             </h1>
+            <h1 class="tit lang-ko" hidden>
+              브랜드의 모든 접점을 하나로 잇는 비주얼 시스템 구축
+            </h1>
 
-            <p class="desc">
-              I established an updated brand design system for PhoneBox—defining
-              a cohesive visual language across the logo, color system,
-              packaging, and email communication. This system enables consistent
-              brand expression and a clearer user experience across all internal
-              and customer-facing touchpoints.
+            <p class="desc lang-en">
+              PhoneBox is a Canadian MVNO offering affordable mobile plans and
+              multilingual customer support, primarily serving immigrants,
+              international students, and travelers. With approximately 60% of
+              its user base made up of international students, the brand needed
+              a visual system that feels immediately trustworthy and easy to
+              navigate — for users making decisions in an unfamiliar
+              environment.
+            </p>
+            <p class="desc lang-ko" hidden>
+              PhoneBox는 합리적인 요금제와 다국어 고객 지원을 강점으로 하는
+              캐나다 기반 MVNO로, 이민자·유학생·여행자를 주요 고객으로 두고
+              있습니다. 전체 고객의 약 60%가 유학생인 만큼, 낯선 환경에서
+              통신사를 선택해야 하는 사용자들이 첫 접점부터 신뢰감을 느낄 수
+              있는 비주얼 시스템이 필요했습니다.
             </p>
           </div>
         </div>
@@ -141,11 +162,10 @@
             <div class="vid">
               <video
                 src="/videos/work/phonebox/vid-01.mp4"
-                autoplay
                 loop
                 muted
                 playsinline
-                preload="metadata"
+                preload="none"
                 poster="/images/work/phonebox/img-01.jpg"
               ></video>
             </div>
@@ -157,21 +177,36 @@
           <div class="section-inner">
             <div class="txt">
               <p class="eyebrow">Project Goal</p>
-              <h1 class="tit">
+              <h1 class="tit lang-en">
                 Unifying a fragmented brand into one clear, modern system
               </h1>
-              <p class="desc">
-                PhoneBox’s visual identity had become inconsistent across web,
-                email, and packaging, making it difficult for users—and even
-                internal teams—to recognize a single cohesive brand. The goal of
-                this project was to consolidate scattered assets, refine legacy
-                elements, and establish a unified visual standard that
-                strengthens brand recognition and delivers a more consistent
-                experience across all touchpoints.
+              <h1 class="tit lang-ko" hidden>
+                파편화된 브랜드를 하나의 명확한 시스템으로
+              </h1>
+              <p class="desc lang-en">
+                Prior to this project, PhoneBox lacked a consistent visual
+                language across web, email, social media, and packaging.
+                Layouts, type choices, and color usage varied across channels,
+                making it difficult to build a coherent brand impression. The
+                goal was to consolidate these scattered assets into a unified,
+                scalable system — one that could grow with the brand as it
+                expands into new markets.
+              </p>
+              <p class="desc lang-ko" hidden>
+                프로젝트 이전의 PhoneBox는 웹·이메일·소셜 미디어·패키징 전반에
+                걸쳐 일관된 비주얼 언어가 부재했습니다. 채널마다 레이아웃, 서체,
+                컬러 사용이 제각각이었고, 이는 일관된 브랜드 이미지를 인식하기
+                어렵게 만들었습니다. 이 프로젝트의 목표는 산재된 리소스를 하나의
+                확장 가능한 시스템으로 통합하고, 향후 신규 시장 진출에도
+                유연하게 대응할 수 있는 기반을 마련하는 것이었습니다.
               </p>
             </div>
             <div class="img">
-              <img src="/images/work/phonebox/img-02.jpg" alt="" />
+              <img
+                loading="lazy"
+                src="/images/work/phonebox/img-02.jpg"
+                alt=""
+              />
             </div>
           </div>
         </section>
@@ -180,21 +215,74 @@
         <section class="section is-wide">
           <div class="section-inner">
             <div class="img triple">
-              <img src="/images/work/phonebox/img-03-01.jpg" alt="" />
-              <img src="/images/work/phonebox/img-03-02.jpg" alt="" />
-              <img src="/images/work/phonebox/img-03-03.jpg" alt="" />
+              <img
+                loading="lazy"
+                src="/images/work/phonebox/img-03-01.jpg"
+                alt=""
+              />
+              <img
+                loading="lazy"
+                src="/images/work/phonebox/img-03-02.jpg"
+                alt=""
+              />
+              <img
+                loading="lazy"
+                src="/images/work/phonebox/img-03-03.jpg"
+                alt=""
+              />
             </div>
           </div>
-          <p class="cap">Previous PhoneBox designs for social media, packaging, and email</p>
+          <p class="cap lang-en">
+            Previous PhoneBox designs for social media, packaging, and email
+          </p>
+          <p class="cap lang-ko" hidden>
+            리뉴얼 이전 PhoneBox의 소셜 미디어, 패키징, 이메일 디자인
+          </p>
         </section>
 
         <!-- Section : Image Triple -->
         <section class="section is-wide mt-200">
           <div class="section-inner">
             <div class="img triple mo-ver">
-              <img src="/images/work/phonebox/img-04-01.jpg" alt="" />
-              <img src="/images/work/phonebox/img-04-02.jpg" alt="" />
-              <img src="/images/work/phonebox/img-04-03.jpg" alt="" />
+              <img
+                class="lang-en"
+                loading="lazy"
+                src="/images/work/phonebox/img-04-01.jpg"
+                alt=""
+              />
+              <img
+                class="lang-en"
+                loading="lazy"
+                src="/images/work/phonebox/img-04-02.jpg"
+                alt=""
+              />
+              <img
+                class="lang-en"
+                loading="lazy"
+                src="/images/work/phonebox/img-04-03.jpg"
+                alt=""
+              />
+              <img
+                class="lang-ko"
+                hidden
+                loading="lazy"
+                src="/images/work/phonebox/img-04-01-ko.jpg"
+                alt=""
+              />
+              <img
+                class="lang-ko"
+                hidden
+                loading="lazy"
+                src="/images/work/phonebox/img-04-02-ko.jpg"
+                alt=""
+              />
+              <img
+                class="lang-ko"
+                hidden
+                loading="lazy"
+                src="/images/work/phonebox/img-04-03-ko.jpg"
+                alt=""
+              />
             </div>
           </div>
         </section>
@@ -204,11 +292,14 @@
           <div class="section-inner">
             <div class="txt">
               <p class="eyebrow">Brand Strategy</p>
-              <h1 class="tit">
+              <h1 class="tit lang-en">
                 Driving clarity, consistency, and approachability across the
                 brand
               </h1>
-              <p class="desc">
+              <h1 class="tit lang-ko" hidden>
+                명확하게, 일관되게, 그리고 더 가깝게
+              </h1>
+              <p class="desc lang-en">
                 To strengthen PhoneBox’s visual and verbal identity, the brand
                 strategy was built around three core principles: Clear
                 Communication for instant understanding, Unified Experience for
@@ -216,6 +307,16 @@
                 energetic brand tone. Together, these pillars reshape PhoneBox
                 into a clearer, more cohesive, and more welcoming experience
                 across every touchpoint.
+              </p>
+              <p class="desc lang-ko" hidden>
+                PhoneBox의 브랜드 전략은 세 가지 핵심 원칙을 중심으로
+                수립했습니다. 누구나 즉각적으로 이해할 수 있는 명확한
+                커뮤니케이션 <sup>Clear Communication</sup>, 모든 채널에서
+                동일하게 작동하는 통합된 경험 <sup>Unified Experience</sup>,
+                그리고 보다 친근하고 활기찬 브랜드 인상을 위한 접근성
+                <sup>Approachability</sup>. 이 세 원칙은 PhoneBox가 어떤
+                접점에서도 일관되고 신뢰할 수 있는 브랜드로 자리잡을 수 있도록
+                모든 디자인 결정의 기준이 되었습니다.
               </p>
             </div>
           </div>
@@ -225,7 +326,11 @@
         <section class="section is-wide">
           <div class="section-inner">
             <div class="img">
-              <img src="/images/work/phonebox/img-05.jpg" alt="" />
+              <img
+                loading="lazy"
+                src="/images/work/phonebox/img-05.jpg"
+                alt=""
+              />
             </div>
           </div>
         </section>
@@ -236,18 +341,34 @@
             <div class="img quad">
               <div class="row">
                 <div class="logo border" style="background-color: white">
-                  <img src="/images/work/phonebox/img-06-01.svg" alt="" />
+                  <img
+                    loading="lazy"
+                    src="/images/work/phonebox/img-06-01.svg"
+                    alt=""
+                  />
                 </div>
                 <div class="logo" style="background-color: #050f1f">
-                  <img src="/images/work/phonebox/img-06-02.svg" alt="" />
+                  <img
+                    loading="lazy"
+                    src="/images/work/phonebox/img-06-02.svg"
+                    alt=""
+                  />
                 </div>
               </div>
               <div class="row">
                 <div class="logo" style="background-color: #0cacf0">
-                  <img src="/images/work/phonebox/img-06-03.svg" alt="" />
+                  <img
+                    loading="lazy"
+                    src="/images/work/phonebox/img-06-03.svg"
+                    alt=""
+                  />
                 </div>
                 <div class="logo" style="background-color: #050f1f">
-                  <img src="/images/work/phonebox/img-06-04.svg" alt="" />
+                  <img
+                    loading="lazy"
+                    src="/images/work/phonebox/img-06-04.svg"
+                    alt=""
+                  />
                 </div>
               </div>
             </div>
@@ -258,14 +379,21 @@
         <section class="section is-media-txt">
           <div class="section-inner">
             <div class="img">
-              <img src="/images/work/phonebox/img-07.jpg" alt="" />
+              <img
+                loading="lazy"
+                src="/images/work/phonebox/img-07.jpg"
+                alt=""
+              />
             </div>
             <div class="txt">
               <p class="eyebrow">Logo Refinement</p>
-              <h1 class="tit">
+              <h1 class="tit lang-en">
                 Strengthening the brand’s core mark for clarity and consistency
               </h1>
-              <p class="desc">
+              <h1 class="tit lang-ko" hidden>
+                브랜드의 핵심인 로고, 더 정확하고 일관성 있게
+              </h1>
+              <p class="desc lang-en">
                 To resolve inconsistencies caused by outdated and unstructured
                 logo files, the PhoneBox logotype was rebuilt and standardized
                 across all formats (AI/SVG/PNG). Kerning and baseline alignment
@@ -273,6 +401,15 @@
                 adjustments improved clarity in digital environments. The result
                 is a cleaner, more reliable core mark that enhances the
                 credibility of the entire design system.
+              </p>
+              <p class="desc lang-ko" hidden>
+                관리되지 않은 구버전 파일로 인한 불일치 문제를 해소하기 위해,
+                PhoneBox 로고타입을 다양한 포맷<sup>AI/SVG/PNG</sup>에 걸쳐
+                재정비하고 표준화했습니다. 자간과 베이스라인 정렬을 다듬어
+                시각적 균형을 확보하고, 디지털 환경에서의 가독성을 높이기 위한
+                섬세한 시각 조정을 더했습니다. 또한 기존의 로고 베리에이션
+                방식을 개선해, 심볼과 로고타입에 각각 다른 색상을 적용하는
+                방식으로 전환하여 브랜드 인식률과 가독성을 함께 높였습니다.
               </p>
             </div>
           </div>
@@ -364,15 +501,27 @@
           <div class="section-inner">
             <div class="txt">
               <p class="eyebrow">Color System</p>
-              <h1 class="tit">
+              <h1 class="tit lang-en">
                 Updating legacy colours for a younger, more energetic audience
               </h1>
-              <p class="desc">
+              <h1 class="tit lang-ko" hidden>
+                더 젊고 선명하게, 그리고 확장을 고려한 컬러 시스템
+              </h1>
+              <p class="desc lang-en">
                 To modernize PhoneBox’s visual presence, the core blue, navy,
                 and green palette was refined with brighter, higher-contrast
                 tones. The updated colours maintain the brand’s legacy identity
                 while delivering a fresher look that resonates better with
                 students and travellers — PhoneBox’s most active user groups.
+              </p>
+              <p class="desc lang-ko" hidden>
+                기존 PhoneBox의 컬러를 유지하되, 주요 고객층인 유학생과
+                여행자에게 더 잘 어필할 수 있도록 채도를 높여 전반적으로 생동감
+                있는 팔레트로 개선했습니다. 또한 캐나다 시장의 메인 컬러를
+                기반으로, 향후 미국·남미 등 신규 시장 진출을 고려한 확장 컬러를
+                함께 정의했습니다. 각 컬러는 메인 컬러와 채도·명도를 맞춰
+                선정하여, 시장이 달라져도 브랜드의 시각적 일관성이 유지될 수
+                있도록 했습니다.
               </p>
             </div>
           </div>
@@ -382,10 +531,22 @@
         <section class="section is-wide">
           <div class="section-inner">
             <div class="img double">
-              <img src="/images/work/phonebox/img-08-01.jpg" alt="" />
+              <img
+                loading="lazy"
+                src="/images/work/phonebox/img-09-01.jpg"
+                alt=""
+              />
               <div class="col">
-                <img src="/images/work/phonebox/img-08-02.jpg" alt="" />
-                <img src="/images/work/phonebox/img-08-03.jpg" alt="" />
+                <img
+                  loading="lazy"
+                  src="/images/work/phonebox/img-09-02.jpg"
+                  alt=""
+                />
+                <img
+                  loading="lazy"
+                  src="/images/work/phonebox/img-09-03.jpg"
+                  alt=""
+                />
               </div>
             </div>
           </div>
@@ -396,10 +557,13 @@
           <div class="section-inner">
             <div class="txt">
               <p class="eyebrow">Typography</p>
-              <h1 class="tit">
+              <h1 class="tit lang-en">
                 A streamlined system built for clarity and consistency
               </h1>
-              <p class="desc">
+              <h1 class="tit lang-ko" hidden>
+                가독성을 중시하면서 메시지를 강하게 전달하는 서체 시스템
+              </h1>
+              <p class="desc lang-en">
                 PhoneBox uses a paired typographic system designed to keep
                 communication clean and accessible. Inter delivers high
                 readability for all body copy, while Inter Tight provides a
@@ -407,23 +571,23 @@
                 creates clear hierarchy across every touchpoint without adding
                 visual noise.
               </p>
-              <p class="desc">
+              <p class="desc lang-en">
                 For social media communication, two additional display typefaces
                 introduce flexibility and personality. These fonts are reserved
                 exclusively for high-impact posts and promotional visuals,
                 ensuring the core brand identity remains consistent across
                 product and service touchpoints.
               </p>
-            </div>
-          </div>
-        </section>
-
-        <!-- Section : Image Double -->
-        <section class="section is-wide">
-          <div class="section-inner">
-            <div class="img double">
-              <img src="/images/work/phonebox/img-09-01.jpg" alt="" />
-              <img src="/images/work/phonebox/img-09-02.jpg" alt="" />
+              <p class="desc lang-ko" hidden>
+                PhoneBox의 타이포그래피는 명확한 위계와 가독성을 중심으로
+                구성했습니다. 본문에는 PhoneBox의 주된 커뮤니케이션 플랫폼인
+                디지털 환경에 최적화된 Inter를, 헤드라인에는 강하고 직접적인
+                메시지 전달에 적합한 Inter Tight를 사용해 브랜드 전반에 걸쳐
+                깔끔하고 일관된 인상을 만들었습니다. 소셜 미디어 콘텐츠에는
+                별도의 디스플레이 서체를 추가해 유연성과 개성을 부여하되, 핵심
+                브랜드 접점에서는 기본 서체 시스템을 유지해 정체성의 일관성을
+                지켰습니다.
+              </p>
             </div>
           </div>
         </section>
@@ -432,7 +596,56 @@
         <section class="section is-wide">
           <div class="section-inner">
             <div class="img">
-              <img src="/images/work/phonebox/img-10.jpg" alt="" />
+              <img
+                loading="lazy"
+                src="/images/work/phonebox/img-10.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+        </section>
+
+        <!-- Section : Image -->
+        <section class="section is-wide">
+          <div class="section-inner">
+            <div class="img">
+              <img
+                loading="lazy"
+                src="/images/work/phonebox/img-11.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+        </section>
+
+        <!-- Section : Text Right -->
+        <section class="section is-txt-right">
+          <div class="section-inner">
+            <div class="txt">
+              <p class="eyebrow">Social Media Communication</p>
+              <h1 class="tit lang-en">
+                Establishing a clear visual standard across all channels
+              </h1>
+              <h1 class="tit lang-ko" hidden>
+                채널 전반에 걸친 명확한 비주얼 기준 수립
+              </h1>
+              <p class="desc lang-en">
+                PhoneBox had no defined rules for typography, imagery, or colour
+                usage on social media, resulting in mixed styles across posts. I
+                consolidated the scattered assets and set practical guidelines
+                for type, photo selection, and colour ranges, enabling the team
+                to produce consistent, on-brand content across all digital
+                channels.
+              </p>
+              <p class="desc lang-ko" hidden>
+                기존 PhoneBox의 소셜 미디어 콘텐츠는 서체·이미지·컬러 사용에
+                명확한 기준이 없어 게시물마다 스타일이 달랐습니다. 분산된
+                리소스를 정리하고 사진 선택 기준, 컬러 사용 범위, 서체 규칙을
+                정의해 팀 누구나 일관된 콘텐츠를 제작할 수 있는 실용적인
+                가이드라인을 마련했습니다. 또한 개별 캠페인에는 캠페인 성격에
+                맞는 별도 서체 사용을 허용하여, 브랜드 일관성을 유지하면서도 각
+                캠페인이 고유한 개성과 확장성을 가질 수 있도록 했습니다.
+              </p>
             </div>
           </div>
         </section>
@@ -443,48 +656,30 @@
             <div class="vid">
               <video
                 src="/videos/work/phonebox/vid-02.mp4"
-                autoplay
                 loop
                 muted
                 playsinline
-                preload="metadata"
-                poster="/images/work/phonebox/img-11.jpg"
+                preload="none"
+                poster="/images/work/phonebox/img-12.jpg"
               ></video>
             </div>
           </div>
         </section>
 
-        <!-- Section : Text Right -->
-        <section class="section is-txt-right">
+        <!-- Section : Image Double -->
+        <section class="section is-wide">
           <div class="section-inner">
-            <div class="txt">
-              <p class="eyebrow">Social Media Communication</p>
-              <h1 class="tit">
-                Establishing a clear visual standard across all channels
-              </h1>
-              <p class="desc">
-                PhoneBox had no defined rules for typography, imagery, or colour
-                usage on social media, resulting in mixed styles across posts. I
-                consolidated the scattered assets and set practical guidelines
-                for type, photo selection, and colour ranges, enabling the team
-                to produce consistent, on-brand content across all digital
-                channels.
-              </p>
-            </div>
-          </div>
-        </section>
-
-        <!-- Section : Image Left Stack  -->
-        <section class="section is-leftstack">
-          <div class="section-inner">
-            <div class="wrap">
-              <div class="img as-is">
-                <img src="/images/work/phonebox/img-12-01.jpg" alt="" />
-              </div>
-
-              <div class="img">
-                <img src="/images/work/phonebox/img-12-02.jpg" alt="" />
-              </div>
+            <div class="img double">
+              <img
+                loading="lazy"
+                src="/images/work/phonebox/img-13-01.jpg"
+                alt=""
+              />
+              <img
+                loading="lazy"
+                src="/images/work/phonebox/img-13-02.jpg"
+                alt=""
+              />
             </div>
           </div>
         </section>
@@ -493,7 +688,19 @@
         <section class="section is-wide">
           <div class="section-inner">
             <div class="img">
-              <img src="/images/work/phonebox/img-13.jpg" alt="" />
+              <img
+                class="lang-en"
+                loading="lazy"
+                src="/images/work/phonebox/img-14.jpg"
+                alt=""
+              />
+              <img
+                class="lang-ko"
+                hidden
+                loading="lazy"
+                src="/images/work/phonebox/img-14-ko.jpg"
+                alt=""
+              />
             </div>
           </div>
         </section>
@@ -503,10 +710,13 @@
           <div class="section-inner">
             <div class="txt">
               <p class="eyebrow">Email Design System</p>
-              <h1 class="tit">
+              <h1 class="tit lang-en">
                 Creating a consistent, user-focused email experience
               </h1>
-              <p class="desc">
+              <h1 class="tit lang-ko" hidden>
+                사용자 중심으로 재설계한 이메일 경험
+              </h1>
+              <p class="desc lang-en">
                 All service emails were redesigned under a unified structure,
                 aligning visuals and messaging across the entire user journey.
                 Missing information was clarified, frequently-asked details were
@@ -514,9 +724,21 @@
                 readability. This consolidation strengthened clarity and built a
                 more reliable, cohesive brand experience.
               </p>
+              <p class="desc lang-ko" hidden>
+                모든 서비스 이메일을 통합된 구조로 재설계하여 전체 사용자 여정에
+                걸쳐 일관된 비주얼과 메시지를 전달할 수 있도록 했습니다. 누락된
+                정보를 보완하고, 자주 문의되는 내용을 우선순위에 맞게
+                재배치했으며, 반응형 레이아웃을 도입해 어떤 기기에서도 읽기 편한
+                구조를 만들었습니다. 이를 통해 브랜드 신뢰도를 높이고 보다
+                응집력 있는 고객 경험을 구축했습니다.
+              </p>
             </div>
             <div class="img">
-              <img src="/images/work/phonebox/img-14.jpg" alt="" />
+              <img
+                loading="lazy"
+                src="/images/work/phonebox/img-15.jpg"
+                alt=""
+              />
             </div>
           </div>
         </section>
@@ -526,18 +748,21 @@
           <div class="section-inner">
             <div class="wrap">
               <div class="img as-is">
-                <img src="/images/work/phonebox/img-15-01.jpg" alt="" />
+                <img
+                  loading="lazy"
+                  src="/images/work/phonebox/img-16-01.jpg"
+                  alt=""
+                />
               </div>
 
               <div class="vid">
                 <video
                   src="/videos/work/phonebox/vid-03.mp4"
-                  autoplay
                   loop
                   muted
                   playsinline
-                  preload="metadata"
-                  poster="/images/work/phonebox/img-15-02.jpg"
+                  preload="none"
+                  poster="/images/work/phonebox/img-16-02.jpg"
                 ></video>
               </div>
             </div>
@@ -548,7 +773,19 @@
         <section class="section is-wide">
           <div class="section-inner">
             <div class="img">
-              <img src="/images/work/phonebox/img-16.jpg" alt="" />
+              <img
+                class="lang-en"
+                loading="lazy"
+                src="/images/work/phonebox/img-17.jpg"
+                alt=""
+              />
+              <img
+                class="lang-ko"
+                hidden
+                loading="lazy"
+                src="/images/work/phonebox/img-17-ko.jpg"
+                alt=""
+              />
             </div>
           </div>
         </section>
@@ -558,8 +795,13 @@
           <div class="section-inner">
             <div class="txt">
               <p class="eyebrow">Packaging System</p>
-              <h1 class="tit">Creating a clear, unified unboxing experience</h1>
-              <p class="desc">
+              <h1 class="tit lang-en">
+                Creating a clear, unified unboxing experience
+              </h1>
+              <h1 class="tit lang-ko" hidden>
+                어느 제품에서나 일관된 제품 경험
+              </h1>
+              <p class="desc lang-en">
                 To eliminate fragmentation across regions, all package formats
                 used in Canada, the U.S., and Amazon were consolidated into one
                 cohesive system. Product information was reorganized into a
@@ -569,6 +811,68 @@
                 card, improving protection during shipping and elevating the
                 unboxing experience.
               </p>
+              <p class="desc lang-ko" hidden>
+                캐나다·미국·아마존 등 유통 채널별로 분산되어 있던 패키지 포맷을
+                하나의 통합 시스템으로 정리했습니다. 제품 정보를 명확한 위계로
+                재구성해 사용자가 구매 내용을 즉시 파악할 수 있도록 했으며,
+                기존의 단순 접지 카드 형태에서 SIM 핀과 SIM 카드를 안전하게
+                고정할 수 있는 구조로 개선해 배송 중 파손을 방지하고 언박싱
+                경험의 완성도를 높였습니다.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Section : Image -->
+        <section class="section is-wide">
+          <div class="section-inner">
+            <div class="img">
+              <img
+                loading="lazy"
+                src="/images/work/phonebox/img-18.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+        </section>
+
+        <!-- Section : Text + Image -->
+        <section class="section is-txt-media">
+          <div class="section-inner">
+            <div class="txt">
+              <p class="eyebrow">Character Design</p>
+              <h1 class="tit lang-en">
+                Building a character system in 2D and 3D
+              </h1>
+              <h1 class="tit lang-ko" hidden>
+                팀 전체가 함께 쓸 수 있는 캐릭터 시스템 구축
+              </h1>
+              <p class="desc lang-en">
+                The character system was designed not just as a visual asset,
+                but as a scalable resource for the wider team. Starting from 2D
+                sketches, AI tools were used to accelerate the 3D development
+                process — iterating on forms and expressions efficiently. To
+                ensure consistency and extend usability, a prompt guideline was
+                developed alongside the assets, allowing social media managers
+                and designers to independently generate on-brand character
+                imagery without starting from scratch each time.
+              </p>
+              <p class="desc lang-ko" hidden>
+                캐릭터 시스템은 단순한 비주얼 에셋을 넘어, 소셜 미디어 담당자와
+                디자이너가 독립적으로 활용할 수 있는 확장 가능한 리소스로
+                설계했습니다. 2D 스케치를 바탕으로 AI 툴을 활용해 3D 전환 과정을
+                효율화하고 형태와 표정을 빠르게 반복 검토했습니다. 일관성 유지와
+                활용 범위 확대를 위해 프롬프트 가이드라인도 함께 제작하여, 매번
+                처음부터 시작하지 않고도 브랜드 톤에 맞는 캐릭터 이미지를 생성할
+                수 있는 환경을 만들었습니다.
+              </p>
+            </div>
+            <div class="img">
+              <img
+                loading="lazy"
+                src="/images/work/phonebox/img-19.jpg"
+                alt=""
+              />
             </div>
           </div>
         </section>
@@ -579,12 +883,11 @@
             <div class="vid">
               <video
                 src="/videos/work/phonebox/vid-04.mp4"
-                autoplay
                 loop
                 muted
                 playsinline
-                preload="metadata"
-                poster="/images/work/phonebox/img-17.jpg"
+                preload="none"
+                poster="/images/work/phonebox/img-20.jpg"
               ></video>
             </div>
           </div>
@@ -597,15 +900,18 @@
               <div class="vid">
                 <video
                   src="/videos/work/phonebox/vid-05.mp4"
-                  autoplay
                   loop
                   muted
                   playsinline
-                  preload="metadata"
-                  poster="/images/work/phonebox/img-18-01.jpg"
+                  preload="none"
+                  poster="/images/work/phonebox/img-21-01.jpg"
                 ></video>
               </div>
-              <img src="/images/work/phonebox/img-18-02.jpg" alt="" />
+              <img
+                loading="lazy"
+                src="/images/work/phonebox/img-21-02.jpg"
+                alt=""
+              />
             </div>
           </div>
         </section>
@@ -614,15 +920,42 @@
         <section class="section is-wide">
           <div class="section-inner">
             <div class="img">
-              <img src="/images/work/phonebox/img-19.jpg" alt="" />
+              <img
+                loading="lazy"
+                src="/images/work/phonebox/img-22.jpg"
+                alt=""
+              />
             </div>
           </div>
         </section>
+
         <!-- Section : Image -->
         <section class="section is-wide">
           <div class="section-inner">
             <div class="img">
-              <img src="/images/work/phonebox/img-20.jpg" alt="" />
+              <img
+                loading="lazy"
+                src="/images/work/phonebox/img-23.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+        </section>
+
+        <!-- Section : Image Double -->
+        <section class="section is-wide">
+          <div class="section-inner">
+            <div class="img double">
+              <img
+                loading="lazy"
+                src="/images/work/phonebox/img-24-01.jpg"
+                alt=""
+              />
+              <img
+                loading="lazy"
+                src="/images/work/phonebox/img-24-02.jpg"
+                alt=""
+              />
             </div>
           </div>
         </section>

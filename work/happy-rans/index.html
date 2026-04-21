@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <!-- 기본 -->
@@ -42,30 +42,39 @@
 
     <!-- 웹폰트 -->
     <link rel="stylesheet" href="https://use.typekit.net/jsf4yyr.css" />
+    <link
+      rel="stylesheet"
+      as="style"
+      crossorigin
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css"
+    />
 
     <!-- 스타일 -->
     <link rel="stylesheet" href="../../css/style.css" />
 
     <!-- 스크립트 -->
     <script defer src="../../js/common.js"></script>
-    <script
-      src="https://code.jquery.com/jquery-3.6.3.min.js"
-      integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.19.0/matter.min.js"></script>
 
     <!-- AOS.js -->
     <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
-    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script defer src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
     <script defer src="../../js/aos.js"></script>
 
     <!-- GSAP -->
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js"></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"
+    ></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js"
+    ></script>
 
     <!-- ScrollTrigger -->
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"
+    ></script>
   </head>
 
   <body>
@@ -136,18 +145,28 @@
 
           <!-- Summary -->
           <div class="intro__summary start-6 span-6 md:start-3 md:span-6">
-            <h1 class="tit">
+            <h1 class="tit lang-en">
               Visualizing empowerment and visibility through campaign
             </h1>
+            <h1 class="tit lang-ko" hidden>
+              캠페인을 통해 트랜스젠더의 존재를 드러내다
+            </h1>
 
-            <p class="desc">
+            <p class="desc lang-en">
               In collaboration with Amnesty and the Transgender Liberation
               Front, our team and I developed a campaign combining offline
               guerrilla events, advertisements, and a dedicated website. I also
-              created illustrations using bold black lines and a reinterpreted
+              created illustrations using black lines and a reinterpreted
               transgender symbol with heightened saturation, conveying a message
               of celebration and inclusion while emphasizing strength and
               visibility.
+            </p>
+            <p class="desc lang-ko" hidden>
+              앰네스티 인터내셔널 한국지부, 트랜스젠더 해방전선과 협력하여
+              오프라인 게릴라 이벤트, 광고, 전용 웹사이트를 결합한 통합 캠페인을
+              기획하고 디자인했습니다. 검정 선과 채도를 높인 트랜스젠더 심볼을
+              재해석한 일러스트레이션으로 축하와 연대의 메시지를, 그리고
+              트랜스젠더 커뮤니티의 존재와 힘을 시각적으로 표현했습니다.
             </p>
 
             <p class="cta">
@@ -167,7 +186,11 @@
         <section class="section is-wide">
           <div class="section-inner">
             <div class="img">
-              <img src="/images/work/happy-rans/img-01.jpg" alt="" />
+              <img
+                loading="lazy"
+                src="/images/work/happy-rans/img-01.jpg"
+                alt=""
+              />
             </div>
           </div>
         </section>
@@ -176,20 +199,34 @@
         <section class="section is-media-txt">
           <div class="section-inner">
             <div class="img">
-              <img src="/images/work/happy-rans/img-02.jpg" alt="" />
+              <img
+                loading="lazy"
+                src="/images/work/happy-rans/img-02.jpg"
+                alt=""
+              />
             </div>
             <div class="txt">
               <p class="eyebrow">Project Goal</p>
-              <h1 class="tit">
+              <h1 class="tit lang-en">
                 Raising visibility and awareness of transgender lives in Korean
                 society
               </h1>
-              <p class="desc">
+              <h1 class="tit lang-ko" hidden>
+                한국 사회 속 트랜스젠더의 존재를 가시화하다
+              </h1>
+              <p class="desc lang-en">
                 In Korea, transgender individuals face ongoing discrimination,
                 hate crimes, and social invisibility. The goal of the campaign
                 was to honor those who have been lost while bringing visibility
                 to those living within society today — highlighting their
                 existence, resilience, and right to be seen and recognized.
+              </p>
+              <p class="desc lang-ko" hidden>
+                한국의 트랜스젠더 개인들은 지속적인 차별과 혐오 범죄, 사회적
+                비가시성에 노출되어 있습니다. 이 캠페인의 목표는 세상을 떠난
+                이들을 기리는 동시에, 오늘을 살아가는 트랜스젠더들의 존재와
+                회복력, 그리고 보여지고 인정받을 권리를 사회에 알리는
+                것이었습니다.
               </p>
             </div>
           </div>
@@ -199,7 +236,11 @@
         <section class="section is-wide">
           <div class="section-inner">
             <div class="img">
-              <img src="/images/work/happy-rans/img-03.jpg" alt="" />
+              <img
+                loading="lazy"
+                src="/images/work/happy-rans/img-03.jpg"
+                alt=""
+              />
             </div>
           </div>
         </section>
@@ -208,7 +249,11 @@
         <section class="section is-wide">
           <div class="section-inner">
             <div class="img">
-              <img src="/images/work/happy-rans/img-04.jpg" alt="" />
+              <img
+                loading="lazy"
+                src="/images/work/happy-rans/img-04.jpg"
+                alt=""
+              />
             </div>
           </div>
         </section>
@@ -218,10 +263,13 @@
           <div class="section-inner">
             <div class="txt">
               <p class="eyebrow">Campaign Strategy</p>
-              <h1 class="tit">
+              <h1 class="tit lang-en">
                 A dual approach: visibility at scale and a reframed narrative
               </h1>
-              <p class="desc">
+              <h1 class="tit lang-ko" hidden>
+                더 넓은 접근을 위한 서사의 전환
+              </h1>
+              <p class="desc lang-en">
                 Maximizing visibility was the core objective of the campaign —
                 ensuring that as many people as possible could encounter,
                 recognize, and acknowledge the presence of transgender
@@ -230,13 +278,26 @@
                 celebrates trans lives, emphasizing dignity, joy, and
                 solidarity.
               </p>
-              <p class="desc">
+              <p class="desc lang-en">
                 This strategic shift provided a more empowering storyline while
                 making the campaign more accessible to the general public. To
                 amplify reach, we executed the campaign simultaneously across
                 digital and offline channels, including nationwide pop-ups, bus
                 wraps, and street posters, ensuring the message appeared in
                 everyday public spaces.
+              </p>
+              <p class="desc lang-ko" hidden>
+                캠페인의 핵심 목표는 최대한 많은 사람들이 트랜스젠더 커뮤니티의
+                존재를 마주하고 인식할 수 있도록 가시성을 극대화하는
+                것이었습니다. 이를 위해 슬픔과 추모 중심의 서사에서 벗어나
+                트랜스젠더의 삶을 축하하는 방향으로 메시지를 전환하여 존엄,
+                기쁨, 연대를 전면에 내세웠습니다.
+              </p>
+              <p class="desc lang-ko" hidden>
+                이러한 전략적 전환은 캠페인을 일반 대중에게 더 열린 방식으로
+                전달하는 데 효과적이었습니다. 도달 범위를 넓히기 위해 디지털과
+                오프라인 채널을 동시에 운영했으며, 전국 팝업, 버스 래핑, 거리
+                포스터를 통해 일상적인 공공 공간에서 메시지를 전달했습니다.
               </p>
             </div>
           </div>
@@ -246,7 +307,11 @@
         <section class="section is-wide">
           <div class="section-inner">
             <div class="img">
-              <img src="/images/work/happy-rans/img-05.jpg" alt="" />
+              <img
+                loading="lazy"
+                src="/images/work/happy-rans/img-05.jpg"
+                alt=""
+              />
             </div>
           </div>
         </section>
@@ -256,22 +321,34 @@
           <div class="section-inner">
             <div class="txt">
               <p class="eyebrow">Visual Direction</p>
-              <h1 class="tit">
+              <h1 class="tit lang-en">
                 A Celebratory Visual Language Designed for Maximum Visibility
               </h1>
-              <p class="desc">
+              <h1 class="tit lang-ko" hidden>가시성을 높인 시각 언어</h1>
+              <p class="desc lang-en">
                 To reflect the campaign’s message of celebration — and the idea
                 of emerging from a period of grief with the support of many
                 allies — the main visual uses a birthday-cake motif as a clear
-                symbol of joy and renewal. Strong black outlines paired with the
-                pink and blue of the transgender flag create a striking,
+                symbol of joy and renewal. Black outlines paired with the pink
+                and blue of the transgender flag create a striking,
                 high-visibility illustration style that aligns with the
                 campaign’s goal of making trans lives seen across both digital
                 and offline spaces.
               </p>
+              <p class="desc lang-ko" hidden>
+                많은 연대자들의 지지 속에 슬픔을 딛고 나아간다는 캠페인의
+                메시지를 담아, 메인 비주얼의 주요 모티프로 생일 케이크를
+                사용했습니다. 검정 아웃라인과 트랜스젠더 깃발의 핑크·블루 컬러를
+                결합해 디지털과 오프라인 환경 모두에서 강한 존재감을 갖는
+                일러스트레이션 스타일을 완성했습니다.
+              </p>
             </div>
             <div class="img">
-              <img src="/images/work/happy-rans/img-06.jpg" alt="" />
+              <img
+                loading="lazy"
+                src="/images/work/happy-rans/img-06.jpg"
+                alt=""
+              />
             </div>
           </div>
         </section>
@@ -280,9 +357,21 @@
         <section class="section is-wide">
           <div class="section-inner">
             <div class="img triple">
-              <img src="/images/work/happy-rans/img-07-01.jpg" alt="" />
-              <img src="/images/work/happy-rans/img-07-02.jpg" alt="" />
-              <img src="/images/work/happy-rans/img-07-03.jpg" alt="" />
+              <img
+                loading="lazy"
+                src="/images/work/happy-rans/img-07-01.jpg"
+                alt=""
+              />
+              <img
+                loading="lazy"
+                src="/images/work/happy-rans/img-07-02.jpg"
+                alt=""
+              />
+              <img
+                loading="lazy"
+                src="/images/work/happy-rans/img-07-03.jpg"
+                alt=""
+              />
             </div>
           </div>
         </section>
@@ -293,11 +382,10 @@
             <div class="vid">
               <video
                 src="/videos/work/happy-rans/vid-01.mp4"
-                autoplay
                 loop
                 muted
                 playsinline
-                preload="metadata"
+                preload="none"
                 poster="/images/work/happy-rans/img-08.jpg"
               ></video>
             </div>
@@ -308,7 +396,11 @@
         <section class="section is-wide">
           <div class="section-inner">
             <div class="img">
-              <img src="/images/work/happy-rans/img-09.jpg" alt="" />
+              <img
+                loading="lazy"
+                src="/images/work/happy-rans/img-09.jpg"
+                alt=""
+              />
             </div>
           </div>
         </section>
@@ -317,34 +409,62 @@
         <section class="section is-wide">
           <div class="section-inner">
             <div class="img">
-              <img src="/images/work/happy-rans/img-10.jpg" alt="" />
+              <img
+                loading="lazy"
+                src="/images/work/happy-rans/img-10.jpg"
+                alt=""
+              />
             </div>
           </div>
-          <p class="cap">
-            Email Designs used for campaign outreach and participant engagement
+          <p class="cap lang-en">
+            Email designs for campaign outreach and audience engagement
+          </p>
+          <p class="cap lang-ko" hidden>
+            캠페인 홍보 및 참여 유도를 위해 제작한 이메일 디자인
           </p>
         </section>
 
-        <!-- Section : Text Right -->
-        <section class="section is-txt-right">
+        <!-- Section : Image + Text -->
+        <section class="section is-media-txt">
           <div class="section-inner">
+            <div class="img">
+              <img
+                loading="lazy"
+                src="/images/work/happy-rans/img-11.jpg"
+                alt=""
+              />
+            </div>
             <div class="txt">
               <p class="eyebrow">Online Campaign</p>
-              <h1 class="tit">
+              <h1 class="tit lang-en">
                 Driving reach and participation through multi-channel execution
               </h1>
-              <p class="desc">
+              <h1 class="tit lang-ko" hidden>
+                멀티채널 운영으로 참여와 인지도를 확대하다
+              </h1>
+              <p class="desc lang-en">
                 The online campaign supported the offline activations while
                 enabling us to reach a much broader audience. Using a
                 combination of a campaign website, social media, and email
                 marketing, we maximized awareness and participation.
               </p>
-              <p class="desc">
+              <p class="desc lang-en">
                 The website served two key roles: delivering objective
                 information on the realities transgender people face in Korea,
                 and collecting supportive messages from the public. This allowed
                 the digital experience to function both as an informational
                 resource and as a space where allies could express solidarity.
+              </p>
+              <p class="desc lang-ko" hidden>
+                온라인 캠페인은 오프라인 활동을 보완하는 동시에 더 넓은 대중에게
+                닿을 수 있는 채널로 운영했습니다. 캠페인 웹사이트, 소셜 미디어,
+                이메일 마케팅을 결합하여 인지도와 참여를 최대화했습니다.
+              </p>
+              <p class="desc lang-ko" hidden>
+                웹사이트는 두 가지 역할을 담당했습니다. 한국 트랜스젠더의 현실에
+                관한 객관적인 정보를 제공하는 것과 일반 시민들의 응원 메시지를
+                수집하는 것입니다. 이를 통해 디지털 경험이 정보 전달의 공간이자
+                연대를 표현하는 공간으로 기능할 수 있도록 했습니다.
               </p>
             </div>
           </div>
@@ -354,9 +474,21 @@
         <section class="section is-wide">
           <div class="section-inner">
             <div class="img triple">
-              <img src="/images/work/happy-rans/img-11-01.jpg" alt="" />
-              <img src="/images/work/happy-rans/img-11-02.jpg" alt="" />
-              <img src="/images/work/happy-rans/img-11-03.jpg" alt="" />
+              <img
+                loading="lazy"
+                src="/images/work/happy-rans/img-12-01.jpg"
+                alt=""
+              />
+              <img
+                loading="lazy"
+                src="/images/work/happy-rans/img-12-02.jpg"
+                alt=""
+              />
+              <img
+                loading="lazy"
+                src="/images/work/happy-rans/img-12-03.jpg"
+                alt=""
+              />
             </div>
           </div>
         </section>
@@ -367,12 +499,11 @@
             <div class="vid">
               <video
                 src="/videos/work/happy-rans/vid-02.mp4"
-                autoplay
                 loop
                 muted
                 playsinline
-                preload="metadata"
-                poster="/images/work/happy-rans/img-12.jpg"
+                preload="none"
+                poster="/images/work/happy-rans/img-13.jpg"
               ></video>
             </div>
           </div>
@@ -383,10 +514,18 @@
           <div class="section-inner">
             <div class="wrap">
               <div class="img">
-                <img src="/images/work/happy-rans/img-13-01.jpg" alt="" />
+                <img
+                  loading="lazy"
+                  src="/images/work/happy-rans/img-14-01.jpg"
+                  alt=""
+                />
               </div>
               <div class="img">
-                <img src="/images/work/happy-rans/img-13-02.jpg" alt="" />
+                <img
+                  loading="lazy"
+                  src="/images/work/happy-rans/img-14-02.jpg"
+                  alt=""
+                />
               </div>
             </div>
           </div>
@@ -397,8 +536,13 @@
           <div class="section-inner">
             <div class="txt">
               <p class="eyebrow">Offline Campaign</p>
-              <h1 class="tit">Maximizing impact within a limited budget</h1>
-              <p class="desc">
+              <h1 class="tit lang-en">
+                Maximizing impact within a limited budget
+              </h1>
+              <h1 class="tit lang-ko" hidden>
+                제한된 예산 안에서 최대의 임팩트를
+              </h1>
+              <p class="desc lang-en">
                 To achieve the strongest visibility with limited resources, all
                 offline media were launched simultaneously across multiple
                 locations. Rather than producing large quantities of materials,
@@ -407,6 +551,14 @@
                 Bus wraps, street posters, and a large inflatable installation
                 were deployed at the same time, ensuring the message reached
                 diverse audiences across the city in a short but powerful burst.
+              </p>
+              <p class="desc lang-ko" hidden>
+                한정된 예산으로 가장 강한 가시성을 확보하기 위해 모든 오프라인
+                매체를 동시에 런칭했습니다. 많은 수량을 제작하는 대신 트랜스젠더
+                추모의 날에 맞춰 노출을 집중시키는 전략을 선택했습니다. 버스
+                래핑, 거리 포스터, 대형 공기 조형물을 같은 시간에 도시 곳곳에
+                배치하여 짧은 기간 동안 다양한 시민들에게 메시지가 닿도록
+                했습니다.
               </p>
             </div>
           </div>
@@ -418,12 +570,11 @@
             <div class="vid">
               <video
                 src="/videos/work/happy-rans/vid-03.mp4"
-                autoplay
                 loop
                 muted
                 playsinline
-                preload="metadata"
-                poster="/images/work/happy-rans/img-14.jpg"
+                preload="none"
+                poster="/images/work/happy-rans/img-15.jpg"
               ></video>
             </div>
           </div>
@@ -433,7 +584,11 @@
         <section class="section is-wide">
           <div class="section-inner">
             <div class="img">
-              <img src="/images/work/happy-rans/img-15.jpg" alt="" />
+              <img
+                loading="lazy"
+                src="/images/work/happy-rans/img-16.jpg"
+                alt=""
+              />
             </div>
           </div>
         </section>
@@ -443,8 +598,13 @@
           <div class="section-inner">
             <div class="txt">
               <p class="eyebrow">Pop-up Activation</p>
-              <h1 class="tit">Bringing the campaign into public space</h1>
-              <p class="desc">
+              <h1 class="tit lang-en">
+                Bringing the campaign into public space
+              </h1>
+              <h1 class="tit lang-ko" hidden>
+                캠페인을 공공 공간으로 가져오다
+              </h1>
+              <p class="desc lang-en">
                 The inflatable sculpture inspired by the campaign’s visual motif
                 was installed as a traveling activation, placed at multiple
                 high-traffic locations over a two-week period. Each site was
@@ -453,6 +613,14 @@
                 learn more, guiding curiosity toward the campaign website —
                 where they could access information about transgender issues and
                 leave messages of support.
+              </p>
+              <p class="desc lang-ko" hidden>
+                캠페인 비주얼 모티프를 형상화한 인플레이터블 조형물을 2주에 걸쳐
+                유동 인구가 많은 여러 장소에 순차적으로 설치했습니다. 보행
+                흐름을 방해하지 않으면서도 충분한 가시성을 확보할 수 있도록
+                사전에 설치 장소를 직접 답사하고 선정했습니다. 조형물 뒷면의
+                QR코드를 통해 캠페인 웹사이트로 연결하여 트랜스젠더 이슈에 대한
+                정보와 응원 메시지를 남길 수 있도록 했습니다.
               </p>
             </div>
           </div>
@@ -464,12 +632,11 @@
             <div class="vid">
               <video
                 src="/videos/work/happy-rans/vid-04.mp4"
-                autoplay
                 loop
                 muted
                 playsinline
-                preload="metadata"
-                poster="/images/work/happy-rans/img-16.jpg"
+                preload="none"
+                poster="/images/work/happy-rans/img-17.jpg"
               ></video>
             </div>
           </div>
@@ -480,22 +647,27 @@
         <section class="section is-media-txt">
           <div class="section-inner">
             <div class="img">
-              <img src="/images/work/happy-rans/img-17.jpg" alt="" />
+              <img
+                loading="lazy"
+                src="/images/work/happy-rans/img-18.jpg"
+                alt=""
+              />
             </div>
             <div class="txt">
               <p class="eyebrow">Impact</p>
-              <h1 class="tit">
+              <h1 class="tit lang-en">
                 Driving visibility and public awareness through collective
                 participation
               </h1>
-              <p class="desc">
+              <h1 class="tit lang-ko" hidden>숫자와 목소리로 증명된 캠페인</h1>
+              <p class="desc lang-en">
                 Over 1,000 messages of support were submitted through the
                 campaign website, demonstrating meaningful engagement from both
                 the LGBTQ+ community and allies. All 500 physical kits were
                 fully claimed, showing strong public interest despite the
                 campaign’s limited resources.
               </p>
-              <p class="desc">
+              <p class="desc lang-en">
                 The project was featured across more than 10 media outlets,
                 amplifying national awareness of transgender issues and sparking
                 broader conversations around visibility and equality in Korea.
@@ -503,6 +675,19 @@
                 discovering the campaign unexpectedly gave them strength — a
                 direct affirmation of the campaign’s emotional impact and
                 purpose.
+              </p>
+              <p class="desc lang-ko" hidden>
+                캠페인 웹사이트를 통해 1,000개 이상의 응원 메시지가
+                접수되었으며, LGBTQ+ 커뮤니티와 연대자 모두의 적극적인 참여를
+                확인할 수 있었습니다. 제작된 500개의 오프라인 키트는 전량
+                소진되어 한정된 예산에도 불구하고 높은 관심을 이끌어냈습니다.
+              </p>
+              <p class="desc lang-ko" hidden>
+                프로젝트는 10개 이상의 언론에 소개되어 트랜스젠더 이슈에 대한
+                사회적 관심을 높이는 데 기여했습니다. 또한 캠페인을 우연히
+                발견한 한 트랜스젠더 참여자가 이를 통해 힘을 얻었다는 이야기를
+                전해주었습니다. 이는 캠페인이 의도한 정서적 목적이 실제로
+                닿았다는 가장 직접적인 확인이었습니다.
               </p>
             </div>
           </div>

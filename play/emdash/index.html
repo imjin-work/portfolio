@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <!-- 기본 -->
@@ -47,30 +47,39 @@
 
     <!-- 웹폰트 -->
     <link rel="stylesheet" href="https://use.typekit.net/jsf4yyr.css" />
+    <link
+      rel="stylesheet"
+      as="style"
+      crossorigin
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css"
+    />
 
     <!-- 스타일 -->
     <link rel="stylesheet" href="../../css/style.css" />
 
     <!-- 스크립트 -->
     <script defer src="../../js/common.js"></script>
-    <script
-      src="https://code.jquery.com/jquery-3.6.3.min.js"
-      integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.19.0/matter.min.js"></script>
 
     <!-- AOS.js -->
     <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
-    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script defer src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
     <script defer src="../../js/aos.js"></script>
 
     <!-- GSAP -->
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js"></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"
+    ></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js"
+    ></script>
 
     <!-- ScrollTrigger -->
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"
+    ></script>
   </head>
 
   <body>
@@ -117,17 +126,27 @@
 
           <!-- Summary -->
           <div class="intro__summary start-6 span-6 md:start-3 md:span-6">
-            <h1 class="tit">
+            <h1 class="tit lang-en">
               Crafting tactile expressions of brand philosophy
             </h1>
+            <h1 class="tit lang-ko" hidden>
+              브랜드 철학을 손끝으로 전달하는 패키징 디자인
+            </h1>
 
-            <p class="desc">
+            <p class="desc lang-en">
               I created a range of brand applications for EMDASH, including
               brand cards, packaging, and delivery boxes. To reflect EMDASH’s
               core concept — finding clarity within ambiguity — thick tracing
               paper was chosen as a key material, adding depth and tactility to
               the unboxing experience. This material choice communicates the
               brand’s subtle tension between transparency and concealment.
+            </p>
+            <p class="desc lang-ko" hidden>
+              EMDASH의 브랜드 카드, 패키징, 배송 박스 등 브랜드 애플리케이션
+              전반을 디자인했습니다. '모호함 속에서 명확함을 찾는다'는 EMDASH의
+              핵심 콘셉트를 담아 두꺼운 트레이싱 페이퍼를 주요 소재로
+              선택했습니다. 투명함과 가림 사이의 미묘한 긴장감을 통해 브랜드의
+              철학을 언박싱 경험으로 풀어냈습니다.
             </p>
           </div>
         </div>
@@ -138,7 +157,7 @@
         <section class="section is-wide">
           <div class="section-inner">
             <div class="img">
-              <img src="/images/play/emdash/img-01.jpg" alt="" />
+              <img loading="lazy" src="/images/play/emdash/img-01.jpg" alt="" />
             </div>
           </div>
         </section>
@@ -148,13 +167,20 @@
           <div class="section-inner">
             <div class="txt">
               <p class="eyebrow">Brand Background</p>
-              <h1 class="tit">Wearing a message that sparks change</h1>
-              <p class="desc">
+              <h1 class="tit lang-en">Wearing a message that sparks change</h1>
+              <h1 class="tit lang-ko" hidden>옷 속에 메시지를 담다</h1>
+              <p class="desc lang-en">
                 EMDASH is a Korean fashion brand that embeds messages within
                 clothing, encouraging people to express their beliefs and
                 inspire positive change through what they wear. Each collection
                 turns garments into statements — transforming everyday fashion
                 into a medium for self-expression and social dialogue.
+              </p>
+              <p class="desc lang-ko" hidden>
+                EMDASH는 의류에 메시지를 담아 입는 사람이 자신의 신념을 표현하고
+                긍정적인 변화를 이끌도록 하는 한국 패션 브랜드입니다. 매
+                컬렉션은 옷을 하나의 발언으로 만들어 일상적인 패션을 자기표현과
+                사회적 대화의 매체로 전환합니다.
               </p>
             </div>
           </div>
@@ -164,7 +190,7 @@
         <section class="section is-wide">
           <div class="section-inner">
             <div class="img">
-              <img src="/images/play/emdash/img-02.jpg" alt="" />
+              <img loading="lazy" src="/images/play/emdash/img-02.jpg" alt="" />
             </div>
           </div>
         </section>
@@ -174,13 +200,24 @@
           <div class="section-inner">
             <div class="txt">
               <p class="eyebrow">Project Goal</p>
-              <h1 class="tit">Delivering brand values through packaging</h1>
-              <p class="desc">
+              <h1 class="tit lang-en">
+                Delivering brand values through packaging
+              </h1>
+              <h1 class="tit lang-ko" hidden>
+                패키징으로 브랜드 가치를 전달하다
+              </h1>
+              <p class="desc lang-en">
                 The goal was to design EMDASH’s brand card and packaging,
                 enclosed with each product shipment. The packaging was intended
                 to make the brand’s concept visually tangible — allowing
                 customers to immediately sense EMDASH’s identity and philosophy
                 the moment they receive their order.
+              </p>
+              <p class="desc lang-ko" hidden>
+                제품과 함께 동봉되는 브랜드 카드와 패키징을 디자인하는 것이
+                목표였습니다. 고객이 주문을 받는 순간 EMDASH의 아이덴티티와
+                철학을 즉각적으로 감각할 수 있도록 브랜드 콘셉트를 시각적으로
+                구체화했습니다.
               </p>
             </div>
           </div>
@@ -190,8 +227,16 @@
         <section class="section is-wide">
           <div class="section-inner">
             <div class="img rightwide">
-              <img src="/images/play/emdash/img-03-01.jpg" alt="" />
-              <img src="/images/play/emdash/img-03-02.jpg" alt="" />
+              <img
+                loading="lazy"
+                src="/images/play/emdash/img-03-01.jpg"
+                alt=""
+              />
+              <img
+                loading="lazy"
+                src="/images/play/emdash/img-03-02.jpg"
+                alt=""
+              />
             </div>
           </div>
         </section>
@@ -201,17 +246,37 @@
           <div class="section-inner">
             <div class="txt">
               <p class="eyebrow">Solution</p>
-              <h1 class="tit">Expressing mystery through form and material</h1>
-              <p class="desc">
+              <h1 class="tit lang-en">
+                Expressing mystery through form and material
+              </h1>
+              <h1 class="tit lang-ko" hidden>
+                형태와 소재로 표현하는 신비로움
+              </h1>
+              <p class="desc lang-en">
                 To visualize EMDASH’s philosophy of delivering hidden messages
                 through fashion, embossed typography and semi-opaque tracing
                 paper were combined to evoke a sense of intrigue and discovery.
                 The design invites viewers to look closer — revealing meaning
                 through layers, much like the brand itself.
               </p>
+              <p class="desc lang-ko" hidden>
+                패션을 통해 숨겨진 메시지를 전달한다는 EMDASH의 철학을
+                시각화하기 위해 엠보싱 타이포그래피와 반투명 트레이싱 페이퍼를
+                결합했습니다. 레이어를 통해 의미가 서서히 드러나는 구조는 브랜드
+                자체의 방식과 닮아 있습니다.
+              </p>
             </div>
             <div class="img">
-              <img src="/images/play/emdash/img-04.jpg" alt="" />
+              <img loading="lazy" src="/images/play/emdash/img-04.jpg" alt="" />
+            </div>
+          </div>
+        </section>
+
+        <!-- Section : Image -->
+        <section class="section is-wide">
+          <div class="section-inner">
+            <div class="img">
+              <img loading="lazy" src="/images/play/emdash/img-05.jpg" alt="" />
             </div>
           </div>
         </section>

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <!-- 기본 -->
@@ -39,30 +39,39 @@
 
     <!-- 웹폰트 -->
     <link rel="stylesheet" href="https://use.typekit.net/jsf4yyr.css" />
+    <link
+      rel="stylesheet"
+      as="style"
+      crossorigin
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css"
+    />
 
     <!-- 스타일 -->
     <link rel="stylesheet" href="../../css/style.css" />
 
     <!-- 스크립트 -->
     <script defer src="../../js/common.js"></script>
-    <script
-      src="https://code.jquery.com/jquery-3.6.3.min.js"
-      integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.19.0/matter.min.js"></script>
 
     <!-- AOS.js -->
     <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
-    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script defer src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
     <script defer src="../../js/aos.js"></script>
 
     <!-- GSAP -->
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js"></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"
+    ></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js"
+    ></script>
 
     <!-- ScrollTrigger -->
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"
+    ></script>
   </head>
 
   <body>
@@ -107,18 +116,27 @@
 
           <!-- Summary -->
           <div class="intro__summary start-6 span-6 md:start-3 md:span-6">
-            <h1 class="tit">
+            <h1 class="tit lang-en">
               Floyd — a premium suitcase brand known for its playful design and
               vibrant aesthetics
             </h1>
+            <h1 class="tit lang-ko" hidden>
+              유쾌하고 대담한 디자인으로 알려진 프리미엄 캐리어 브랜드, Floyd
+            </h1>
 
-            <p class="desc">
+            <p class="desc lang-en">
               As the brand expanded to Korea, I localized and developed its
               Korean website — preserving Floyd’s bold visual identity while
               tailoring the user experience to local expectations. The result is
               a seamless blend of global creativity and regional relevance,
               ensuring the brand’s distinct voice resonates with Korean
               travelers.
+            </p>
+            <p class="desc lang-ko" hidden>
+              브랜드의 한국 진출을 계기로 한국 웹사이트를 현지화하고
+              개발했습니다. Floyd의 강렬한 비주얼 아이덴티티를 유지하면서 한국
+              사용자 경험에 맞게 조율하여, 글로벌 브랜드의 개성이 한국
+              시장에서도 온전히 전달될 수 있도록 했습니다.
             </p>
 
             <p class="cta">
@@ -140,11 +158,10 @@
             <div class="vid">
               <video
                 src="/videos/work/floyd/vid-01.mp4"
-                autoplay
                 loop
                 muted
                 playsinline
-                preload="metadata"
+                preload="none"
                 poster="/images/work/floyd/img-01.jpg"
               ></video>
             </div>
@@ -156,10 +173,13 @@
           <div class="section-inner">
             <div class="txt">
               <p class="eyebrow">Project Goal</p>
-              <h1 class="tit">
+              <h1 class="tit lang-en">
                 Localizing a global brand for the Korean market
               </h1>
-              <p class="desc">
+              <h1 class="tit lang-ko" hidden>
+                글로벌 브랜드를 한국 시장에 맞게 현지화하다
+              </h1>
+              <p class="desc lang-en">
                 The main objective was to adapt Floyd’s global website for a
                 Korean audience — maintaining the brand’s original visual
                 identity while refining the layout and user experience to suit
@@ -167,9 +187,16 @@
                 ensured that Floyd’s vibrant personality and premium positioning
                 resonated naturally within the Korean market.
               </p>
+              <p class="desc lang-ko" hidden>
+                Floyd의 글로벌 웹사이트를 한국 사용자에게 맞게 조정하는 것이
+                핵심 목표였습니다. 브랜드 본연의 비주얼 아이덴티티를 유지하면서
+                레이아웃과 UX를 현지 사용 패턴에 맞게 정비했습니다. 이를 통해
+                Floyd의 활기찬 개성과 프리미엄 포지셔닝이 한국 시장에서도
+                자연스럽게 전달되도록 했습니다.
+              </p>
             </div>
             <div class="img">
-              <img src="/images/work/floyd/img-02.jpg" alt="" />
+              <img loading="lazy" src="/images/work/floyd/img-02.jpg" alt="" />
             </div>
           </div>
         </section>
@@ -182,21 +209,28 @@
                 <div class="vid">
                   <video
                     src="/videos/work/floyd/vid-02.mp4"
-                    autoplay
                     loop
                     muted
                     playsinline
-                    preload="metadata"
+                    preload="none"
                     poster="/images/work/floyd/img-03-01.jpg"
                   ></video>
                 </div>
                 <div class="img">
-                  <img src="/images/work/floyd/img-03-02.jpg" alt="" />
+                  <img
+                    loading="lazy"
+                    src="/images/work/floyd/img-03-02.jpg"
+                    alt=""
+                  />
                 </div>
               </div>
 
               <div class="img">
-                <img src="/images/work/floyd/img-03-03.jpg" alt="" />
+                <img
+                  loading="lazy"
+                  src="/images/work/floyd/img-03-03.jpg"
+                  alt=""
+                />
               </div>
             </div>
           </div>
@@ -207,40 +241,70 @@
           <div class="section-inner">
             <div class="txt">
               <p class="eyebrow">Brand Background</p>
-              <h1 class="tit">
+              <h1 class="tit lang-en">
                 Redefining modern travel through color and individuality
               </h1>
-              <p class="desc">
+              <h1 class="tit lang-ko" hidden>
+                컬러와 개성으로 현대적인 여행을 재정의하다
+              </h1>
+              <p class="desc lang-en">
                 Floyd is a premium suitcase brand inspired by skateboard wheels,
                 combining durability with bold, playful design. Created to stand
                 out from the uniform black luggage crowding airports, Floyd
                 turns travel into a form of self-expression.
+              </p>
+              <p class="desc lang-ko" hidden>
+                Floyd는 스케이트보드 바퀴에서 영감을 받은 프리미엄 캐리어
+                브랜드로, 내구성과 대담하고 유쾌한 디자인을 결합했습니다. 공항을
+                가득 채운 획일적인 블랙 캐리어와 차별화하여 여행을 자기표현의 한
+                형태로 만들고자 탄생했습니다.
               </p>
             </div>
           </div>
         </section>
 
         <!-- Section : Image Triple Flip -->
-        <section class="section is-wide">
+        <section class="section is-center">
           <div class="section-inner">
             <div class="img triple flip">
-              <img
+              <!-- ENG -->
+              <img class="lang-en flip-img"
+                loading="lazy"
                 src="/images/work/floyd/img-04-01.jpg"
                 data-alt="/images/work/floyd/img-04-01b.jpg"
                 alt=""
-                class="flip-img"
               />
-              <img
+              <img class="lang-en flip-img"
+                loading="lazy"
                 src="/images/work/floyd/img-04-02.jpg"
                 data-alt="/images/work/floyd/img-04-02b.jpg"
                 alt=""
-                class="flip-img"
               />
-              <img
+              <img class="lang-en flip-img"
+                loading="lazy"
                 src="/images/work/floyd/img-04-03.jpg"
                 data-alt="/images/work/floyd/img-04-03b.jpg"
                 alt=""
-                class="flip-img"
+              />
+
+              <!-- KOR -->
+              <img class="lang-ko flip-img" hidden
+                loading="lazy"
+                src="/images/work/floyd/img-04-01-ko.jpg"
+                data-alt="/images/work/floyd/img-04-01b-ko.jpg"
+                alt=""
+              />
+              <img class="lang-ko flip-img" hidden
+                loading="lazy"
+                src="/images/work/floyd/img-04-02-ko.jpg"
+                data-alt="/images/work/floyd/img-04-02b-ko.jpg"
+                alt=""
+              />
+              <img class="lang-ko flip-img" hidden
+                loading="lazy"
+                src="/images/work/floyd/img-04-03-ko.jpg"
+                data-alt="/images/work/floyd/img-04-03b-ko.jpg"
+                alt=""
               />
             </div>
           </div>
@@ -251,11 +315,14 @@
           <div class="section-inner">
             <div class="txt">
               <p class="eyebrow">Target Audience</p>
-              <h1 class="tit">
+              <h1 class="tit lang-en">
                 Designing for users who balance efficiency, individuality, and
                 experience
               </h1>
-              <p class="desc">
+              <h1 class="tit lang-ko" hidden>
+                효율성, 개성, 경험을 동시에 추구하는 사용자를 위한 설계
+              </h1>
+              <p class="desc lang-en">
                 Floyd primarily appeals to modern travelers in their 20s and 30s
                 who seek both practicality and personality. To meet the
                 expectations of Korean users — who value speed, clarity, and
@@ -265,6 +332,14 @@
                 diversity, aligning with style-driven consumers who favor bold
                 aesthetics and expressive design.
               </p>
+              <p class="desc lang-ko" hidden>
+                Floyd는 실용성과 개성 모두를 추구하는 20-30대 여행자를 주요
+                타겟으로 합니다. 속도, 명확성, 직관적인 탐색을 중시하는 한국
+                사용자의 특성에 맞춰 현지화된 UX는 단순화하되 Floyd 특유의
+                강렬한 비주얼은 그대로 유지했습니다. 블랙을 전면에 활용해 대비를
+                높이고 제품 컬러의 다양성을 부각시켜, 개성 있는 디자인을
+                선호하는 사용자층과의 접점을 만들었습니다.
+              </p>
             </div>
           </div>
         </section>
@@ -273,7 +348,7 @@
         <section class="section is-wide">
           <div class="section-inner">
             <div class="img">
-              <img src="/images/work/floyd/img-05.jpg" alt="" />
+              <img loading="lazy" src="/images/work/floyd/img-05.jpg" alt="" />
             </div>
           </div>
         </section>
@@ -282,8 +357,16 @@
         <section class="section is-wide">
           <div class="section-inner">
             <div class="img rightwide">
-              <img src="/images/work/floyd/img-06-01.jpg" alt="" />
-              <img src="/images/work/floyd/img-06-02.jpg" alt="" />
+              <img
+                loading="lazy"
+                src="/images/work/floyd/img-06-01.jpg"
+                alt=""
+              />
+              <img
+                loading="lazy"
+                src="/images/work/floyd/img-06-02.jpg"
+                alt=""
+              />
             </div>
           </div>
         </section>
@@ -293,10 +376,13 @@
           <div class="section-inner">
             <div class="txt">
               <p class="eyebrow">Solution</p>
-              <h1 class="tit">
+              <h1 class="tit lang-en">
                 Adapting design and experience to local behavior
               </h1>
-              <p class="desc">
+              <h1 class="tit lang-ko" hidden>
+                현지 사용자의 구매 패턴에 맞춘 디자인과 경험
+              </h1>
+              <p class="desc lang-en">
                 To make the shopping experience more intuitive for Korean users,
                 the layout was restructured using navigation patterns and button
                 placements familiar in local e-commerce. Korean typeface with
@@ -305,6 +391,14 @@
                 and cultural alignment. The result is a localized experience
                 that feels both authentic to the brand and natural to Korean
                 consumers.
+              </p>
+              <p class="desc lang-ko" hidden>
+                한국 사용자에게 더 직관적인 쇼핑 경험을 제공하기 위해 국내
+                이커머스에서 익숙한 내비게이션 패턴과 버튼 배치로 레이아웃을
+                재구성했습니다. Floyd의 오리지널 영문 폰트와 시각적 특성이
+                유사하면서도 가독성과 문화적 적합성을 갖춘 한글 서체를
+                선정했습니다. 브랜드 아이덴티티를 유지하면서도 한국 사용자에게
+                자연스럽게 느껴지는 현지화 경험을 완성했습니다.
               </p>
             </div>
           </div>
@@ -316,11 +410,10 @@
             <div class="vid">
               <video
                 src="/videos/work/floyd/vid-03.mp4"
-                autoplay
                 loop
                 muted
                 playsinline
-                preload="metadata"
+                preload="none"
                 poster="/images/work/floyd/img-07.jpg"
               ></video>
             </div>
@@ -333,26 +426,35 @@
             <div class="vid">
               <video
                 src="/videos/work/floyd/vid-04.mp4"
-                autoplay
                 loop
                 muted
                 playsinline
-                preload="metadata"
+                preload="none"
                 poster="/images/work/floyd/img-08.jpg"
               ></video>
             </div>
             <div class="txt">
               <p class="eyebrow">Navigation Redesign</p>
-              <h1 class="tit">
+              <h1 class="tit lang-en">
                 Simplifying structure and emphasizing hierarchy
               </h1>
-              <p class="desc">
+              <h1 class="tit lang-ko" hidden>
+                구조를 단순화하고 위계를 명확하게
+              </h1>
+              <p class="desc lang-en">
                 To align with Clarity, secondary products were grouped under an
                 Extras category, keeping the focus on Floyd’s main items —
                 suitcases and bags. Unnecessary icons such as language toggles
                 and brand mini-games were removed for a cleaner interface. The
                 Floyd logo was enlarged and recolored in black to strengthen
                 Contrast and visual balance within the header.
+              </p>
+              <p class="desc lang-ko" hidden>
+                명확성을 높이기 위해 부가 제품군을 Extras 카테고리로 통합하여
+                Floyd의 핵심 제품인 캐리어와 가방에 집중할 수 있도록 했습니다.
+                언어 전환 아이콘, 브랜드 미니게임 등 불필요한 요소를 제거해
+                인터페이스를 정리했습니다. Floyd 로고는 크기를 키우고 블랙으로
+                변경하여 헤더 내 시각적 균형과 대비를 강화했습니다.
               </p>
             </div>
           </div>
@@ -362,14 +464,17 @@
         <section class="section is-wide">
           <div class="section-inner">
             <div class="img double long">
-              <img src="/images/work/floyd/img-09-01.jpg" alt="" />
+              <img
+                loading="lazy"
+                src="/images/work/floyd/img-09-01.jpg"
+                alt=""
+              />
               <video
                 src="/videos/work/floyd/vid-05.mp4"
-                autoplay
                 loop
                 muted
                 playsinline
-                preload="metadata"
+                preload="none"
                 poster="/images/work/floyd/img-09-02.jpg"
               ></video>
             </div>
@@ -381,8 +486,13 @@
           <div class="section-inner">
             <div class="txt">
               <p class="eyebrow">Button and Typography</p>
-              <h1 class="tit">Balancing friendliness with visual strength</h1>
-              <p class="desc">
+              <h1 class="tit lang-en">
+                Balancing friendliness with visual strength
+              </h1>
+              <h1 class="tit lang-ko" hidden>
+                강렬한 브랜드 톤에 친근함을 더하다
+              </h1>
+              <p class="desc lang-en">
                 While Floyd’s original design language carried a strong,
                 distinctive tone, it could also feel rigid and overly bold. To
                 create a friendlier impression for the Korean market, rounded
@@ -390,6 +500,13 @@
                 curved edges of Floyd’s signature suitcases. This update
                 replaced the brand’s strict aesthetic with a warmer, more
                 approachable look.
+              </p>
+              <p class="desc lang-ko" hidden>
+                Floyd의 오리지널 디자인 언어는 강렬하고 독특하지만, 다소 경직된
+                인상을 줄 수 있었습니다. 한국 시장에서 더 친근한 느낌을 만들기
+                위해 Floyd 캐리어의 특징적인 둥근 모서리에서 영감을 받아 라운드
+                버튼과 부드러운 타이포그래피를 적용했습니다. 강한 인상을
+                유지하면서도 보다 따뜻하고 접근하기 쉬운 분위기로 조율했습니다.
               </p>
             </div>
           </div>
@@ -401,15 +518,27 @@
             <div class="wrap">
               <div class="col">
                 <div class="img">
-                  <img src="/images/work/floyd/img-10-01.jpg" alt="" />
+                  <img
+                    loading="lazy"
+                    src="/images/work/floyd/img-10-01.jpg"
+                    alt=""
+                  />
                 </div>
                 <div class="img">
-                  <img src="/images/work/floyd/img-10-02.jpg" alt="" />
+                  <img
+                    loading="lazy"
+                    src="/images/work/floyd/img-10-02.jpg"
+                    alt=""
+                  />
                 </div>
               </div>
 
               <div class="img">
-                <img src="/images/work/floyd/img-10-03.jpg" alt="" />
+                <img
+                  loading="lazy"
+                  src="/images/work/floyd/img-10-03.jpg"
+                  alt=""
+                />
               </div>
             </div>
           </div>
@@ -465,14 +594,17 @@
         <section class="section is-wide mt-200">
           <div class="section-inner">
             <div class="img rightwide">
-              <img src="/images/work/floyd/img-12-01.jpg" alt="" />
+              <img
+                loading="lazy"
+                src="/images/work/floyd/img-12-01.jpg"
+                alt=""
+              />
               <video
                 src="/videos/work/floyd/vid-06.mp4"
-                autoplay
                 loop
                 muted
                 playsinline
-                preload="metadata"
+                preload="none"
                 poster="/images/work/floyd/img-12-02.jpg"
               ></video>
             </div>
@@ -484,12 +616,19 @@
           <div class="section-inner">
             <div class="txt">
               <p class="eyebrow">Purchase Section</p>
-              <h1 class="tit">Improving clarity in color selection</h1>
-              <p class="desc">
+              <h1 class="tit lang-en">Improving clarity in color selection</h1>
+              <h1 class="tit lang-ko" hidden>컬러 선택 경험을 더 명확하게</h1>
+              <p class="desc lang-en">
                 Floyd’s diverse color palette is one of its defining strengths,
                 but it can also be overwhelming for new visitors. A hover
                 interaction displaying color names was introduced to bring
                 clarity and help users browse options effortlessly.
+              </p>
+              <p class="desc lang-ko" hidden>
+                Floyd의 다양한 컬러 라인업은 브랜드의 핵심 강점이지만, 처음
+                방문한 사용자에게는 선택지가 많아 오히려 혼란스러울 수 있습니다.
+                컬러 위에 마우스를 올렸을 때 색상 이름이 표시되는 호버
+                인터랙션을 추가하여 탐색을 더 직관적으로 만들었습니다.
               </p>
             </div>
           </div>
@@ -501,11 +640,10 @@
             <div class="vid">
               <video
                 src="/videos/work/floyd/vid-07.mp4"
-                autoplay
                 loop
                 muted
                 playsinline
-                preload="metadata"
+                preload="none"
                 poster="/images/work/floyd/img-13.jpg"
               ></video>
             </div>

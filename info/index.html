@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <!-- 기본 -->
@@ -20,10 +20,7 @@
       property="og:description"
       content="Jinkyeong Lim — a multidisciplinary designer bringing clarity and purpose to every project"
     />
-    <meta
-      property="og:image"
-      content="https://jinkyeong.work/og-image.jpg"
-    />
+    <meta property="og:image" content="https://jinkyeong.work/og-image.jpg" />
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="en_CA" />
     <meta property="og:site_name" content="Info | Jinkyeong Lim" />
@@ -35,40 +32,46 @@
       name="twitter:description"
       content="Jinkyeong Lim — a multidisciplinary designer bringing clarity and purpose to every project"
     />
-    <meta
-      name="twitter:image"
-      content="https://jinkyeong.work/og-image.jpg"
-    />
+    <meta name="twitter:image" content="https://jinkyeong.work/og-image.jpg" />
 
     <!-- Favicon (루트에 파일 두고 절대경로 권장) -->
     <link rel="icon" href="/favicon.ico" sizes="any" />
 
     <!-- 웹폰트 -->
     <link rel="stylesheet" href="https://use.typekit.net/jsf4yyr.css" />
+    <link
+      rel="stylesheet"
+      as="style"
+      crossorigin
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css"
+    />
 
     <!-- 스타일 -->
     <link rel="stylesheet" href="../css/style.css" />
 
     <!-- 스크립트 -->
     <script defer src="../js/common.js"></script>
-    <script
-      src="https://code.jquery.com/jquery-3.6.3.min.js"
-      integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.19.0/matter.min.js"></script>
 
     <!-- AOS.js -->
     <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
-    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script defer src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
     <script defer src="../js/aos.js"></script>
 
     <!-- GSAP -->
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js"></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"
+    ></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js"
+    ></script>
 
-<!-- ScrollTrigger -->
-<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+    <!-- ScrollTrigger -->
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"
+    ></script>
   </head>
 
   <body>
@@ -78,62 +81,74 @@
       <!-- About / Hero -->
       <section class="about" id="about-hero" aria-labelledby="about-title">
         <div class="about__inner section-inner layout-grid">
-          <div class="about-hero__txt start-2 span-4 md:start-1">
+          <div class="about-hero__txt start-3 span-4 md:start-1">
             <div id="about-title" class="tit split">
               Hi there,<br />I'm Jinkyeong!
             </div>
-            <div class="desc">
-              <p>
-                I’ve worked on diverse projects spanning social media,
-                marketing, posters, editorials, UX/UI, exhibitions, and
-                installations. I’m passionate about using design to solve
-                problems and create a positive impact on society.
-              </p>
-              <p>
-                Throughout my career, I’ve had the opportunity to oversee
-                projects from start to finish — first at a design and marketing
-                agency, and later by running my own studio. I’ve handled every
-                stage of the process, from budgeting and client communication to
-                market research, on-site inspections, planning and strategy,
-                design, development, and QA.
-              </p>
-              <p>
-                I’m currently seeking new opportunities in Vancouver, Canada.
-              </p>
+            <div>
+              <div class="desc lang-en">
+                <p>
+                  I’ve worked on diverse projects spanning social media,
+                  marketing, posters, editorials, UX/UI, exhibitions, and
+                  installations. I’m passionate about using design to solve
+                  problems and create a positive impact on society.
+                </p>
+                <p>
+                  Throughout my career, I’ve had the opportunity to oversee
+                  projects from start to finish — first at a design and
+                  marketing agency, and later by running my own studio. I’ve
+                  handled every stage of the process, from budgeting and client
+                  communication to market research, on-site inspections,
+                  planning and strategy, design, development, and QA.
+                </p>
+              </div>
+              <div class="desc lang-ko" hidden>
+                <p>
+                  소셜 미디어, 마케팅, 포스터, 에디토리얼, UX/UI, 전시, 설치물
+                  등 다양한 분야의 프로젝트를 경험했습니다. 디자인으로 문제를
+                  해결하고 사회에 긍정적인 영향을 만드는 데 열정을 가지고
+                  있습니다.
+                </p>
+                <p>
+                  에이전시를 다니고, 스튜디오를 운영하며, 예산 수립부터
+                  클라이언트 커뮤니케이션, 시장 조사, 현장 점검, 기획, 디자인,
+                  개발, QA까지 프로젝트의 처음부터 끝까지 전 과정을 직접
+                  이끌어왔습니다.
+                </p>
+              </div>
+              <ul class="links">
+                <li>
+                  <a
+                    class="btn btn-link"
+                    href="https://www.linkedin.com/in/imjin/"
+                    target="_blank"
+                    aria-label="LinkedIn"
+                    >LinkedIn</a
+                  >
+                </li>
+                <!-- <li>
+                  <a
+                    class="btn btn-link"
+                    href="https://www.instagram.com/studio.imjin"
+                    target="_blank"
+                    aria-label="Instagram"
+                    >Instagram</a
+                  >
+                </li> -->
+                <li>
+                  <a
+                    class="btn btn-link"
+                    href="mailto:imjin.work@gmail.com"
+                    aria-label="Email"
+                    >Email</a
+                  >
+                </li>
+              </ul>
             </div>
-
-            <ul class="links">
-              <li>
-                <a
-                  class="btn btn-link"
-                  href="https://www.linkedin.com/in/imjin/"
-                  target="_blank"
-                  aria-label="LinkedIn"
-                  >LinkedIn</a
-                >
-              </li>
-              <li>
-                <a
-                  class="btn btn-link"
-                  href="https://www.instagram.com/studio.imjin"
-                  target="_blank"
-                  aria-label="Instagram"
-                  >Instagram</a
-                >
-              </li>
-              <li>
-                <a
-                  class="btn btn-link"
-                  href="mailto:imjin.work@gmail.com"
-                  aria-label="Email"
-                  >Email</a
-                >
-              </li>
-            </ul>
           </div>
 
           <figure
-            class="about-hero__img start-7 span-5 md:start-5 md:span-4 ar-5-6"
+            class="about-hero__img start-7 span-4 md:start-5 md:span-4 ar-5-6"
           >
             <img
               src="../images/info-profile.jpg"
@@ -145,30 +160,130 @@
       </section>
 
       <!-- Work Experience -->
-      <section
-        class="experience"
-        id="experience"
-        aria-labelledby="exp-title">
+      <section class="experience" id="experience" aria-labelledby="exp-title">
         <div class="experience__inner section-inner layout-grid">
-          <h1 id="exp-title" class="tit start-2 span-3 md:start-1 md:span-3" data-aos="fade-up">Work Experience</h1>
+          <h1
+            id="exp-title"
+            class="tit start-2 span-3 md:start-1 md:span-3"
+            data-aos="fade-up"
+          >
+            Work Experience
+          </h1>
 
-          <div class="experience__list start-5 span-7 md:start-4 md:span-5" data-aos="fade-up">
+          <div
+            class="experience__list start-5 span-7 md:start-4 md:span-5"
+            data-aos="fade-up"
+          >
             <!-- item -->
             <div class="exp__row">
               <div class="exp__meta">
                 <h3 class="company">studio imjin</h3>
-                <p class="term">Nov 2021 - Present</p>
+                <p class="term">Jun 2022 - Present</p>
               </div>
               <div class="exp__desc">
-                I managed relationships with 17 diverse clients from concept to
-                completion, creating tailored design solutions that met their
-                unique business goals. Throughout this period, I developed
-                comprehensive brand guides and marketing collateral for over 15
-                clients, resulting in consistent brand identities across all
-                platforms and increased customer recognition. I also led the
-                end-to-end design and development of 8+ responsive websites for
-                local businesses, which improved their online presence and
-                garnered positive client feedback.
+                <ul>
+                  <li class="lang-en">
+                    Developed brand guidelines, typography, and color systems
+                    for 20+ clients including PhoneBox
+                    <sup>Canadian telecom</sup>, Rementary <sup>fashion</sup>,
+                    and Floyd <sup>luggage</sup>, covering end-to-end visual
+                    design
+                  </li>
+                  <li class="lang-en">
+                    Planned and produced multi-channel digital assets including
+                    campaign visuals, social media content, and responsive
+                    layouts
+                  </li>
+                  <li class="lang-en">
+                    Built and developed e-commerce and campaign websites using
+                    HTML/CSS/JS, including custom component libraries
+                  </li>
+                  <li class="lang-en">
+                    Independently managed full project lifecycle — client
+                    communication, scheduling, and feedback integration
+                  </li>
+
+                  <li class="lang-ko" hidden>
+                    PhoneBox<sup>캐나다 통신사</sup>, Rementary<sup>패션</sup>,
+                    Floyd<sup>캐리어</sup> 등 20여 개 클라이언트의 브랜드
+                    가이드라인, 타이포그래피, 컬러 시스템 구축 및 전방위 시각
+                    디자인
+                  </li>
+                  <li class="lang-ko" hidden>
+                    캠페인 비주얼, 소셜 콘텐츠, 반응형 레이아웃 등 다채널 디지털
+                    에셋 기획 및 제작
+                  </li>
+                  <li class="lang-ko" hidden>
+                    HTML/CSS/JS 기반 커머스·캠페인 웹사이트 직접 개발 및
+                    컴포넌트 라이브러리 구축
+                  </li>
+                  <li class="lang-ko" hidden>
+                    기획·납품 전 과정 독립 관리 — 클라이언트 커뮤니케이션, 일정
+                    조율, 피드백 반영
+                  </li>
+                </ul>
+
+                <div class="exp__proj">
+                  <p class="tit">Key Project</p>
+                  <ul>
+                    <li>
+                      <span class="lang-en">
+                        PhoneBox — Visual identity system for a Canadian telecom
+                        brand
+                      </span>
+                      <span class="lang-ko" hidden>
+                        PhoneBox — 캐나다 통신 브랜드 비주얼 시스템 구축
+                      </span>
+                      <a
+                        class="btn btn-link btn-link-round"
+                        href="../work/phonebox/index.html"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        >Link</a
+                      >
+                    </li>
+                    <li>
+                      <span class="lang-en">
+                        Rementary — Website design and digital brand experience
+                        for a fashion brand
+                      </span>
+                      <span class="lang-ko" hidden>
+                        Rementary — 패션 브랜드 웹사이트 구축 및 디지털 브랜드
+                        경험 디자인
+                      </span>
+                      <a
+                        class="btn btn-link btn-link-round"
+                        href="../work/rementary/index.html"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        >Link</a
+                      >
+                    </li>
+                    <li>
+                      <span class="lang-en"
+                        >Floyd — Website design for a global luggage brand</span
+                      >
+                      <span class="lang-ko" hidden>
+                        Floyd — 글로벌 캐리어 브랜드 웹사이트 디자인
+                      </span>
+                      <a
+                        class="btn btn-link btn-link-round"
+                        href="../work/floyd/index.html"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        >Link</a
+                      >
+                    </li>
+                    <li>
+                      <span class="lang-en"
+                        >Seoul KFEM — Brand identity renewal</span
+                      >
+                      <span class="lang-ko" hidden>
+                        서울환경연합 — 브랜드 아이덴티티 리뉴얼
+                      </span>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
 
@@ -178,14 +293,113 @@
                 <p class="term">Oct 2018 - Oct 2021<br />Seoul, South Korea</p>
               </div>
               <div class="exp__desc">
-                I contributed to the design and launch of over 25 websites for
-                various NGOs and businesses, focusing on creating intuitive user
-                interfaces and engaging visual elements. I mentored and guided a
-                team of 3 junior designers, providing constructive feedback that
-                elevated design quality and ensured on-time project delivery. I
-                also played a key design role in a collaborative website project
-                that won a 2020 GDWEB Design Award, contributing significantly
-                to its visual and user experience success.
+                <ul>
+                  <li class="lang-en">
+                    Led visual strategy and identity system development for NGO
+                    campaigns including UNICEF, Amnesty International, and Oxfam
+                  </li>
+                  <li class="lang-en">
+                    Planned and produced multi-channel content for brands
+                    including Desker and Queicker across Instagram, YouTube, and
+                    Naver Blog
+                  </li>
+                  <li class="lang-en">
+                    Designed and developed campaign websites and landing pages
+                    with HTML/CSS implementation (collaborated with planners and
+                    developers)
+                  </li>
+                  <li class="lang-en">
+                    Managed 2 interns and 1 junior designer, and oversaw full
+                    project operations including vendor communication and
+                    external partnerships
+                  </li>
+                  <li class="lang-ko" hidden>
+                    유니세프·앰네스티·옥스팜 등 비영리단체 캠페인 비주얼 전략
+                    수립 및 아이덴티티 시스템 제작
+                  </li>
+                  <li class="lang-ko" hidden>
+                    데스커·퀘이커 등 브랜드의 인스타그램·유튜브·네이버 블로그
+                    멀티채널 콘텐츠 기획 및 제작
+                  </li>
+                  <li class="lang-ko" hidden>
+                    캠페인 웹사이트·랜딩 페이지 디자인 및 아임웹·HTML/CSS 기반
+                    구현 (기획자·개발자 협업)
+                  </li>
+                  <li>
+                    인턴 2명·주니어 디자이너 1명 매니징, 견적·외부 업체 소통 등
+                    프로젝트 운영 전반
+                  </li>
+                </ul>
+
+                <div class="exp__proj">
+                  <p class="tit">Key Project</p>
+                  <ul>
+                    <li>
+                      <span class="lang-en">
+                        Happy Birthday, Rans — Amnesty International outdoor
+                        campaign & multi-channel design
+                      </span>
+                      <span class="lang-ko" hidden>
+                        랜스야, 생일 축하해 — 국제앰네스티 옥외 캠페인 &
+                        멀티채널 디자인
+                      </span>
+                      <a
+                        class="btn btn-link btn-link-round"
+                        href="../work/happy-rans/index.html"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        >Link</a
+                      >
+                    </li>
+                    <li>
+                      <span class="lang-en"
+                        >Amnesty International — Digital brand experience
+                        design</span
+                      >
+                      <span class="lang-ko" hidden>
+                        국제앰네스티 — 디지털 브랜드 경험 디자인
+                      </span>
+                      <a
+                        class="btn btn-link btn-link-round"
+                        href="../work/amnesty-mkt/index.html"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        >Link</a
+                      >
+                    </li>
+                    <li>
+                      <span class="lang-en">
+                        DESKER — Digital brand experience design & content
+                        management
+                      </span>
+                      <span class="lang-ko" hidden>
+                        DESKER — 디지털 브랜드 경험 디자인 & 콘텐츠 운영
+                      </span>
+                      <a
+                        class="btn btn-link btn-link-round"
+                        href="../work/desker-mkt/index.html"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        >Link</a
+                      >
+                    </li>
+                    <li>
+                      <span class="lang-en"
+                        >Double A Note — Brand product & character design</span
+                      >
+                      <span class="lang-ko" hidden>
+                        Double A 노트 — 브랜드 제품 디자인 & 캐릭터 개발
+                      </span>
+                      <a
+                        class="btn btn-link btn-link-round"
+                        href="../work/double-a/index.html"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        >Link</a
+                      >
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
 
@@ -195,11 +409,45 @@
                 <p class="term">Oct 2017 - Apr 2018<br />Seoul, South Korea</p>
               </div>
               <div class="exp__desc">
-                I designed the primary promotional poster and a 50-page
-                catalogue for an exhibition, contributing to a record attendance
-                of over 50,000 visitors. I also designed logos and mock-up
-                designs for newly launched brands, supporting their visual
-                identity development.
+                <ul>
+                  <li class="lang-en">
+                    Designed exhibition posters and a 50-page catalogue for
+                    Kansong Cultural Foundation (50,000+ visitors)
+                  </li>
+                  <li class="lang-en">
+                    Assisted in brand identity and guideline development for
+                    cosmetics and sound platform brands
+                  </li>
+                  <li class="lang-ko" hidden>
+                    간송문화재단 전시 포스터 및 50페이지 도록 디자인 담당
+                    (관람객 50,000명+)
+                  </li>
+                  <li class="lang-ko" hidden>
+                    화장품·사운드 플랫폼 등 브랜드 아이덴티티 및 가이드라인 제작
+                    보조
+                  </li>
+                </ul>
+
+                <div class="exp__proj">
+                  <p class="tit">Key Project</p>
+                  <ul>
+                    <li>
+                      <span class="lang-en"
+                        >Drawn by the Wind — Exhibition poster design</span
+                      >
+                      <span class="lang-ko" hidden
+                        >〈바람을 그리다〉 전시 포스터 디자인</span
+                      >
+                      <a
+                        class="btn btn-link btn-link-round"
+                        href="../work/drawn-wind/index.html"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        >Link</a
+                      >
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
@@ -207,16 +455,19 @@
       </section>
 
       <!-- Speaking & Community -->
-      <section
-        class="community"
-        id="community"
-        aria-labelledby="com-title">
+      <section class="community" id="community" aria-labelledby="com-title">
         <div class="community__inner section-inner layout-grid">
-          <h1 id="com-title" class="start-2 span-3 md:start-1 md:span-3" data-aos="fade-up">Speaking & Community</h1>
+          <h1
+            id="com-title"
+            class="start-2 span-3 md:start-1 md:span-3"
+            data-aos="fade-up"
+          >
+            Speaking & Community
+          </h1>
 
           <div class="community__list start-6 span-6 md:start-4 md:span-5">
             <!-- 01 -->
-            <div class="com-item" data-aos="fade-up">
+            <!-- <div class="com-item" data-aos="fade-up">
               <figure class="com-item__img ar-2-1">
                 <img
                   src="../images/info-speak-01.jpg"
@@ -226,15 +477,18 @@
               </figure>
               <div class="com-item__txt">
                 <h3 class="tit">Leading a Designer Community</h3>
-                <p class="desc">
+                <p class="desc lang-en">
                   Served as a core organizer for FDSC (Feminist Designer Social
                   Club), a community for women designers in Korea. Shaped the
                   organization's vision and goals while managing finances,
                   maintaining the website, and fostering connections among
                   members.
                 </p>
+                <p class="desc lang-ko" hidden>
+                  한국 여성 디자이너 커뮤니티인 FDSC(페미니스트 디자이너 소셜 클럽)의 핵심 운영진으로 활동했습니다. 조직의 비전과 목표를 수립하고, 재정 관리, 웹사이트 운영, 회원 간 연결을 도모했습니다.
+                </p>
               </div>
-            </div>
+            </div> -->
 
             <!-- 02 -->
             <div class="com-item" data-aos="fade-up">
@@ -246,13 +500,20 @@
                 />
               </figure>
               <div class="com-item__txt">
-                <h3 class="tit">Improving Designer Work Culture</h3>
-                <p class="desc">
+                <h3 class="tit lang-en">Improving Designer Work Culture</h3>
+                <h3 class="tit lang-ko" hidden>디자이너 업무 문화 개선</h3>
+                <p class="desc lang-en">
                   Organized and led workshops on legal knowledge for designers,
                   focusing on contract and proposal writing. Also facilitated
                   design theory and history study groups to help designers build
                   stronger professional foundations and expand their theoretical
                   understanding.
+                </p>
+                <p class="desc lang-ko" hidden>
+                  디자이너를 위한 법률 지식 워크숍을 기획하고 진행했습니다.
+                  계약서·제안서 작성을 중심으로 실무에 필요한 법적 지식을
+                  다뤘으며, 디자인 이론 및 역사 스터디 그룹을 운영하여
+                  디자이너들이 전문적 기반을 탄탄히 쌓을 수 있도록 지원했습니다.
                 </p>
               </div>
             </div>
@@ -267,12 +528,18 @@
                 />
               </figure>
               <div class="com-item__txt">
-                <h3 class="tit">Teaching Web Design & Development</h3>
-                <p class="desc">
+                <h3 class="tit lang-en">Teaching Web Design & Development</h3>
+                <h3 class="tit lang-ko" hidden>웹 디자인 & 개발 강의</h3>
+                <p class="desc lang-en">
                   Taught foundational web design and development skills to
                   designers, helping early-career professionals build their
                   portfolios and providing ongoing mentorship as they developed
                   their online presence.
+                </p>
+                <p class="desc lang-ko" hidden>
+                  디자이너들에게 웹 디자인과 개발의 기초를 가르치며 초기
+                  경력자들의 포트폴리오 구축을 도왔습니다. 온라인 활동 전반에
+                  걸쳐 지속적인 멘토링을 제공했습니다.
                 </p>
               </div>
             </div>
@@ -287,15 +554,24 @@
                 />
               </figure>
               <div class="com-item__txt">
-                <h3 class="tit">
+                <h3 class="tit lang-en">
                   Talk: Designing for Urban Heritage Preservation
                 </h3>
-                <p class="desc">
+                <h3 class="tit lang-ko" hidden>
+                  토론회: 온라인에 도시를 기록한다는 것
+                </h3>
+                <p class="desc lang-en">
                   Collaborated with Cheongyecheon Anti-Gentrification Alliance,
                   an advocacy group opposing unplanned redevelopment in Seoul,
                   and presented on the design process behind the project,
                   exploring how design can support community-led urban
                   preservation efforts.
+                </p>
+                <p class="desc lang-ko" hidden>
+                  서울의 무분별한 재개발에 반대하는 청계천을지로보존연대와
+                  협업하여 프로젝트의 디자인 과정을 발표했습니다. 디자인이
+                  지역사회 주도의 도시 보전 활동을 어떻게 뒷받침할 수 있는지를
+                  함께 탐구했습니다.
                 </p>
               </div>
             </div>
@@ -306,7 +582,13 @@
       <!-- In My Free Time -->
       <section class="free" id="free-time" aria-labelledby="free-title">
         <div class="free__inner section-inner layout-grid">
-          <h1 id="free-title" class="start-2 span-3 md:start-1 md:span-3" data-aos="fade-up">In My Free Time</h1>
+          <h1
+            id="free-title"
+            class="start-2 span-3 md:start-1 md:span-3"
+            data-aos="fade-up"
+          >
+            In My Free Time
+          </h1>
 
           <div class="free__list start-6 span-6 md:start-4 md:span-5">
             <!-- Photography -->
@@ -357,7 +639,7 @@
               </ul>
               <div class="free__txt">
                 <h4 class="tit">Photography</h4>
-                <div class="desc">
+                <div class="desc lang-en">
                   <p>
                     I love photography because it captures the moments I want to
                     remember most vividly. Finding the right composition,
@@ -365,7 +647,21 @@
                     can see more of my work on my Instagram highlights!
                   </p>
                   <a
-                    class="btn btn-link btn-link-sm"
+                    class="btn btn-link btn-link-round"
+                    href="https://www.instagram.com/s/aGlnaGxpZ2h0OjE4MDIzODk1ODMzNDczNjM0?igsh=MXY2NnNocjMwdGQ4NA=="
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Instagram</a
+                  >
+                </div>
+                <div class="desc lang-ko" hidden>
+                  <p>
+                    가장 선명하게 기억하고 싶은 순간들을 담을 수 있어서 사진을
+                    좋아합니다. 좋은 구도, 색감, 빛을 찾는 과정에서 예상치 못한
+                    즐거움을 느낍니다.
+                  </p>
+                  <a
+                    class="btn btn-link btn-link-round"
                     href="https://www.instagram.com/s/aGlnaGxpZ2h0OjE4MDIzODk1ODMzNDczNjM0?igsh=MXY2NnNocjMwdGQ4NA=="
                     target="_blank"
                     rel="noopener noreferrer"
@@ -423,7 +719,7 @@
               </ul>
               <div class="free__txt">
                 <h4 class="tit">Travel</h4>
-                <div class="desc">
+                <div class="desc lang-en">
                   <p>
                     Experiencing new cultures, meeting people, and stepping into
                     unfamiliar places gives me the energy and refresh I need to
@@ -438,7 +734,27 @@
                     mine! Check out my travel vlogs!
                   </p>
                   <a
-                    class="btn btn-link btn-link-sm"
+                    class="btn btn-link btn-link-round"
+                    href="https://www.youtube.com/@imjinlog"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Youtube</a
+                  >
+                </div>
+                <div class="desc lang-ko" hidden>
+                  <p>
+                    새로운 문화를 경험하고 사람들을 만나고 낯선 곳에 발을 들이는
+                    것은 디자인에 다시 집중할 수 있는 에너지를 줍니다.
+                    아이슬란드 워크캠프와 몽골 봉사 활동, 핀란드를 가로지르는
+                    야간 기차까지 각각의 경험이 다음 도전의 발판이 되었습니다.
+                    제가 다녀온 곳들이에요: 🇲🇳🇨🇳🇹🇼🇵🇭🇮🇸🇨🇭🇬🇧🏴󠁧󠁢󠁳󠁣󠁴󠁿🇳🇱🇫🇷🇫🇮🇬🇺🇯🇵🇺🇸🇨🇦
+                  </p>
+                  <p>
+                    여행 후 영상을 편집하는 것도 빠질 수 없는 즐거움이에요! 여행
+                    브이로그도 확인해보세요!
+                  </p>
+                  <a
+                    class="btn btn-link btn-link-round"
                     href="https://www.youtube.com/@imjinlog"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -448,7 +764,7 @@
               </div>
             </div>
 
-            <!-- Travel -->
+            <!-- Cat Companion -->
             <div class="free__item" data-aos="fade-up">
               <ul class="free__img" aria-label="Travel images">
                 <li class="item">
@@ -463,12 +779,19 @@
               </ul>
               <div class="free__txt">
                 <h4 class="tit">Cat Companion</h4>
-                <div class="desc">
+                <div class="desc lang-en">
                   <p>
                     About a year ago, I met my new family member—Cookie, an
                     11-year-old cat who came into my life like fate. I'm still
                     learning how to live together, and every day is a new lesson
                     in companionship.
+                  </p>
+                </div>
+                <div class="desc lang-ko" hidden>
+                  <p>
+                    캐나다에서 새 가족을 만났어요. 11살 고양이 쿠키입니다. 아직
+                    함께 사는 법을 배우는 중이고, 덕분에 매일이 새로운 발견의
+                    연속이에요.
                   </p>
                 </div>
               </div>

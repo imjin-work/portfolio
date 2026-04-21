@@ -22,6 +22,10 @@ function setupMobileMenu(root) {
       e.stopPropagation();
       navMenu.classList.add("active");
       navMenu.setAttribute("aria-hidden", "false");
+      // 모바일 메뉴 열린 후 thumb 위치 재계산
+      requestAnimationFrame(() => {
+        updateLangThumb(localStorage.getItem(LANG_KEY) || getDefaultLang());
+      });
       console.debug("[menu] OPEN: .header-mo.active added");
     });
     openBtn.__bound = true;
@@ -52,34 +56,52 @@ function setupMobileMenu(root) {
 }
 
 // 섹션의 data-theme(light|dark)에 따라 헤더 색상 토글
+let _themeScrollBound = false;
+
 function initHeaderThemeObserver() {
   const header = document.querySelector("#header");
   if (!header) return;
 
-  const themed = document.querySelectorAll("[data-theme]");
+  const themed = [...document.querySelectorAll("[data-theme]")];
   if (!themed.length) return;
 
-  // 초기 상태: 가장 먼저 보이는 섹션의 테마 적용
-  const apply = (el) => {
-    const val = el?.dataset?.theme || "light";
-    header.setAttribute("data-theme", val);
+  const HEADER_H = header.offsetHeight || 64;
+
+  // 현재 헤더 하단 위치에 걸쳐있는 섹션의 테마 반환
+  // data-theme이 없는 섹션은 마지막으로 지나친 data-theme 섹션 값 유지
+  const getTheme = () => {
+    const checkY = HEADER_H; // viewport 기준 헤더 하단 y
+    let last = themed[0]; // 기본값: 첫 번째 섹션
+
+    for (const sec of themed) {
+      const rect = sec.getBoundingClientRect();
+      if (rect.top <= checkY) last = sec; // 헤더 아래로 지나간 가장 최근 섹션
+      else break;
+    }
+    return last.dataset.theme || "light";
   };
 
-  const io = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          apply(entry.target);
-        }
-      });
-    },
-    {
-      threshold: 0.35,
-      rootMargin: "-64px 0px 0px 0px", // fixed header 높이만큼 보정
-    }
-  );
+  const update = () => {
+    header.setAttribute("data-theme", getTheme());
+  };
 
-  themed.forEach((sec) => io.observe(sec));
+  // 초기 적용
+  update();
+
+  // scroll 이벤트 (rAF로 스로틀)
+  if (!_themeScrollBound) {
+    let ticking = false;
+    window.addEventListener("scroll", () => {
+      if (!ticking) {
+        requestAnimationFrame(() => {
+          update();
+          ticking = false;
+        });
+        ticking = true;
+      }
+    }, { passive: true });
+    _themeScrollBound = true;
+  }
 }
 
 // 헤더 불러오기
@@ -103,16 +125,21 @@ async function loadPartial(targetSelector, url) {
         const norm = (a.getAttribute("href") || "/").replace(/\/+$/, "") || "/";
         if (norm === here) a.classList.add("nav__link--active");
       });
+      // 헤더 로드 후 언어 버튼 상태 동기화
+      applyLang(localStorage.getItem(LANG_KEY) || getDefaultLang());
     }
   } catch (e) {
     console.warn(`[partials] ${url} 로드 실패:`, e);
   }
+
+  // partial 삽입으로 레이아웃이 바뀌었을 수 있으므로 AOS 위치 재계산
+  if (window.AOS) AOS.refresh();
 }
 
 document.addEventListener("DOMContentLoaded", () => {
   loadPartial("#header", "/partials/header.html");
   loadPartial("#footer", "/partials/footer.html");
-  setTimeout(initHeaderThemeObserver, 0);
+  // initHeaderThemeObserver는 헤더 partial 로드 완료 후 호출됨
 });
 
 // 타이틀 애니메이션
@@ -172,7 +199,14 @@ function initTripleFlip() {
   const wrap = document.querySelector(".img.triple.flip");
   if (!wrap) return;
 
-  gsap.registerPlugin(ScrollTrigger);
+  // ScrollTrigger가 이미 등록되어 있는지 확인
+  if (!gsap.plugins.ScrollTrigger) {
+    try {
+      gsap.registerPlugin(ScrollTrigger);
+    } catch (e) {
+      return;
+    }
+  }
 
   const imgs = Array.from(wrap.querySelectorAll(".flip-img[data-alt]"));
   if (!imgs.length) return;
@@ -201,7 +235,11 @@ function initTripleFlip() {
         gsap.fromTo(
           img,
           { rotationY: -90 },
-          { duration: 0.22, rotationY: 0, ease: "sine.inOut" }
+          {
+            duration: 0.22,
+            rotationY: 0,
+            ease: "sine.inOut"
+          }
         );
       },
     });
@@ -242,26 +280,47 @@ function initTripleFlip() {
     });
   }
 
+  // 실제 스크롤 전에 onEnter가 잘못 실행되는 걸 방지
+  let ready = false;
+
+  // 페이지 로드 상태에 따라 ready 설정
+  if (document.readyState === 'complete') {
+    // 페이지가 이미 완전히 로드된 경우 (중간에서 들어온 경우) 즉시 ready
+    ready = true;
+  } else {
+    // 페이지가 로딩 중인 경우 첫 스크롤 또는 타임아웃 후 ready
+    const onFirstScroll = () => {
+      ready = true;
+      window.removeEventListener("scroll", onFirstScroll);
+    };
+    window.addEventListener("scroll", onFirstScroll, { once: true });
+
+    // 2초 후에도 ready를 true로 설정 (사용자가 스크롤하지 않았을 수도 있으므로)
+    setTimeout(() => {
+      if (!ready) {
+        ready = true;
+        window.removeEventListener("scroll", onFirstScroll);
+      }
+    }, 2000);
+  }
+
   // 기존 트리거 제거 방지용: matchMedia로 데스크톱/모바일 분리
   ScrollTrigger.matchMedia({
     // 🖥 Desktop: 세 장을 하나의 블록으로 처리
     "(min-width: 769px)": () => {
       ScrollTrigger.create({
         trigger: wrap,
-        start: "center 65%", // triple 중앙이 화면 높이 65% 지점에 올 때 (센터보다 살짝 이르게)
-        end: "center+=200 center", // 약간의 구간
+        start: "center 60%",
+        end: "center+=200 center",
         onEnter() {
-          if (!imgs[0].__isFlipped) {
-            flipAllToAlt();
-          }
+          if (!ready || imgs[0].__isFlipped) return;
+          flipAllToAlt();
         },
         onEnterBack() {
-          if (!imgs[0].__isFlipped) {
-            flipAllToAlt();
-          }
+          if (!ready || imgs[0].__isFlipped) return;
+          flipAllToAlt();
         },
         onLeaveBack() {
-          // 위로 벗어날 때 원래 이미지로 복귀
           flipAllToOriginal();
         },
       });
@@ -272,20 +331,17 @@ function initTripleFlip() {
       imgs.forEach((img) => {
         ScrollTrigger.create({
           trigger: img,
-          start: "center 65%", // 이미지가 화면 높이 65% 지점에 올 때 (센터보다 살짝 이르게)
+          start: "center 60%",
           end: "center+=150 center",
           onEnter() {
-            if (!img.__isFlipped) {
-              flipToAlt(img);
-            }
+            if (!ready || img.__isFlipped) return;
+            flipToAlt(img);
           },
           onEnterBack() {
-            if (!img.__isFlipped) {
-              flipToAlt(img);
-            }
+            if (!ready || img.__isFlipped) return;
+            flipToAlt(img);
           },
           onLeaveBack() {
-            // 위로 벗어날 때 원래 이미지로 복귀
             flipToOriginal(img);
           },
         });
@@ -294,14 +350,110 @@ function initTripleFlip() {
   });
 }
 
-// DOMContentLoaded 이후: GSAP & ScrollTrigger 로드 확인 후 플립 초기화
-document.addEventListener("DOMContentLoaded", () => {
+// window load 이후: lazy 이미지 포함 전체 레이아웃 확정 후 플립 초기화
+function initFlipWhenReady() {
   function waitForFlipDeps() {
-    if (window.gsap && window.ScrollTrigger) {
+    // GSAP와 ScrollTrigger 스크립트가 모두 로드되었는지 확인
+    if (window.gsap && typeof gsap !== 'undefined' && typeof ScrollTrigger !== 'undefined') {
       initTripleFlip();
     } else {
       setTimeout(waitForFlipDeps, 50);
     }
   }
   waitForFlipDeps();
+}
+
+// 페이지 로드 상태에 따라 처리
+if (document.readyState === 'loading') {
+  // 아직 로딩 중이면 load 이벤트 대기
+  window.addEventListener("load", initFlipWhenReady);
+} else {
+  // 이미 로드 완료됨 (페이지 중간으로 직접 이동한 경우)
+  setTimeout(initFlipWhenReady, 100);
+}
+
+// ─── 언어 토글 ────────────────────────────────────────────────
+const LANG_KEY = "preferred-lang";
+
+// 브라우저 언어 설정에서 기본값 결정 (ko 계열이면 ko, 나머지는 en)
+function getDefaultLang() {
+  const browserLang = (navigator.language || navigator.userLanguage || "en").toLowerCase();
+  return browserLang.startsWith("ko") ? "ko" : "en";
+}
+
+// thumb 위치를 활성 버튼에 맞게 이동
+function updateLangThumb(lang) {
+  document.querySelectorAll(".header__lang").forEach((track) => {
+    const thumb = track.querySelector(".lang-thumb");
+    const activeBtn = track.querySelector(`.btn-lang[data-lang="${lang}"]`);
+    if (!thumb || !activeBtn) return;
+
+    const btnRect = activeBtn.getBoundingClientRect();
+    if (btnRect.width === 0) return; // 숨겨진 요소는 skip
+
+    const trackRect = track.getBoundingClientRect();
+    thumb.style.left = btnRect.left - trackRect.left + "px";
+    thumb.style.width = btnRect.width + "px";
+  });
+}
+
+function applyLang(lang) {
+  document.querySelectorAll(".lang-en").forEach((el) => {
+    el.hidden = lang !== "en";
+  });
+  document.querySelectorAll(".lang-ko").forEach((el) => {
+    el.hidden = lang !== "ko";
+  });
+  document.querySelectorAll(".btn-lang").forEach((btn) => {
+    btn.classList.toggle("active", btn.dataset.lang === lang);
+  });
+  document.documentElement.setAttribute("lang", lang);
+  localStorage.setItem(LANG_KEY, lang);
+  updateLangThumb(lang);
+}
+
+function initLangToggle() {
+  // localStorage 저장값 우선, 없으면 브라우저 언어 사용
+  const saved = localStorage.getItem(LANG_KEY) || getDefaultLang();
+  applyLang(saved);
+
+  if (!document.__langToggleBound) {
+    document.addEventListener("click", (e) => {
+      const btn = e.target.closest(".btn-lang");
+      if (btn && btn.dataset.lang) {
+        applyLang(btn.dataset.lang);
+      }
+    });
+    document.__langToggleBound = true;
+  }
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  initLangToggle();
+});
+
+// 영상 Intersection Observer: viewport 진입 시 재생, 벗어나면 정지
+document.addEventListener("DOMContentLoaded", () => {
+  const videos = document.querySelectorAll("video[preload='none'], video[preload=none]");
+  if (!videos.length) return;
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        const video = entry.target;
+        if (entry.isIntersecting) {
+          video.play().catch(() => {});
+        } else {
+          video.pause();
+        }
+      });
+    },
+    { threshold: 0.25 }
+  );
+
+  videos.forEach((video) => {
+    video.muted = true;
+    video.loop = true;
+    observer.observe(video);
+  });
 });

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <!-- 기본 -->
@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!-- 페이지별 고유값 -->
-    <title>Desker | Jinkyeong Lim</title>
+    <title>DESKER | Jinkyeong Lim</title>
     <meta
       name="description"
       content="A multidisciplinary designer bringing clarity and purpose to every project"
@@ -15,7 +15,7 @@
     <meta property="og:url" content="https://jinkyeong.work/" />
 
     <!-- Open Graph -->
-    <meta property="og:title" content="Desker | Jinkyeong Lim" />
+    <meta property="og:title" content="DESKER | Jinkyeong Lim" />
     <meta
       property="og:description"
       content="Jinkyeong Lim — a multidisciplinary designer bringing clarity and purpose to every project"
@@ -23,11 +23,11 @@
     <meta property="og:image" content="https://jinkyeong.work/og-image.jpg" />
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="en_CA" />
-    <meta property="og:site_name" content="Desker | Jinkyeong Lim" />
+    <meta property="og:site_name" content="DESKER | Jinkyeong Lim" />
 
     <!-- Twitter 카드 -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Desker | Jinkyeong Lim" />
+    <meta name="twitter:title" content="DESKER | Jinkyeong Lim" />
     <meta
       name="twitter:description"
       content="Jinkyeong Lim — a multidisciplinary designer bringing clarity and purpose to every project"
@@ -39,30 +39,39 @@
 
     <!-- 웹폰트 -->
     <link rel="stylesheet" href="https://use.typekit.net/jsf4yyr.css" />
+    <link
+      rel="stylesheet"
+      as="style"
+      crossorigin
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css"
+    />
 
     <!-- 스타일 -->
     <link rel="stylesheet" href="../../css/style.css" />
 
     <!-- 스크립트 -->
     <script defer src="../../js/common.js"></script>
-    <script
-      src="https://code.jquery.com/jquery-3.6.3.min.js"
-      integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.19.0/matter.min.js"></script>
 
     <!-- AOS.js -->
     <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
-    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script defer src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
     <script defer src="../../js/aos.js"></script>
 
     <!-- GSAP -->
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js"></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"
+    ></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js"
+    ></script>
 
     <!-- ScrollTrigger -->
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"
+    ></script>
   </head>
 
   <body>
@@ -74,7 +83,7 @@
         <figure class="img">
           <img
             src="/images/work/desker/hero.jpg"
-            alt="Desker Brand Book hero"
+            alt="DESKER Brand Book hero"
           />
         </figure>
       </section>
@@ -127,18 +136,29 @@
 
           <!-- Summary -->
           <div class="intro__summary start-6 span-6 md:start-3 md:span-6">
-            <h1 class="tit">
+            <h1 class="tit lang-en">
               Creating a unified brand asset for internal communication
             </h1>
+            <h1 class="tit lang-ko" hidden>
+              내부 커뮤니케이션을 위한 통합 브랜드 자산 구축
+            </h1>
 
-            <p class="desc">
-              As Desker grew in scale and sales, the need for consistent brand
+            <p class="desc lang-en">
+              As DESKER grew in scale and sales, the need for consistent brand
               communication became essential. The goal was to create an internal
               brand book that consolidates Desker’s core assets — defining its
               visual rules, tone, and external communication guidelines. This
               publication serves as a foundation for maintaining coherence
               across all brand touchpoints, both inside and outside the
               organization.
+            </p>
+            <p class="desc lang-ko" hidden>
+              DESKER는 규모와 매출 면에서 성장하면서 일관된 브랜드
+              커뮤니케이션의 필요성이 높아졌습니다. DESKER의 핵심 자산을 한데
+              정리하고 비주얼 규칙, 톤, 대외 커뮤니케이션 가이드라인을 정의하는
+              내부용 브랜드북을 제작하는 것이 목표였습니다. 이 책자는 조직
+              내외부의 모든 브랜드 접점에서 일관성을 유지하기 위한 기반으로
+              활용됩니다.
             </p>
           </div>
         </div>
@@ -149,7 +169,7 @@
         <section class="section is-wide">
           <div class="section-inner">
             <div class="img">
-              <img src="/images/work/desker/img-01.jpg" alt="" />
+              <img loading="lazy" src="/images/work/desker/img-01.jpg" alt="" />
             </div>
           </div>
         </section>
@@ -158,21 +178,31 @@
         <section class="section is-media-txt">
           <div class="section-inner">
             <div class="img">
-              <img src="/images/work/desker/img-02.jpg" alt="" />
+              <img loading="lazy" src="/images/work/desker/img-02.jpg" alt="" />
             </div>
             <div class="txt">
               <p class="eyebrow">Solution</p>
-              <h1 class="tit">
+              <h1 class="tit lang-en">
                 Visualizing brand philosophy through material and restraint
               </h1>
-              <p class="desc">
-                I designed the Desker brand book to embody the company’s three
+              <h1 class="tit lang-ko" hidden>
+                소재와 절제로 브랜드 철학을 시각화하다
+              </h1>
+              <p class="desc lang-en">
+                I designed the DESKER brand book to embody the company’s three
                 core values — Simple, Fundamental, and Expanding. The cover
                 design embraces minimalism by relying solely on print without
                 ink, reflecting the brand’s focus on essentials. This restrained
                 approach not only highlights clarity and precision but also
                 symbolizes the limitless expansion that grows from a strong
                 foundation.
+              </p>
+              <p class="desc lang-ko" hidden>
+                DESKER의 세 가지 핵심 가치인 Simple, Fundamental, Expanding을
+                브랜드북 디자인 전반에 녹였습니다. 표지는 잉크 없이 인쇄만으로
+                완성하는 미니멀한 방식을 택하여 본질에 집중하는 브랜드의 태도를
+                담았습니다. 이 절제된 접근은 명확함과 정밀함을 강조하는 동시에,
+                단단한 기반에서 무한히 확장될 수 있다는 가능성을 상징합니다.
               </p>
             </div>
           </div>
@@ -184,11 +214,10 @@
             <div class="vid">
               <video
                 src="/videos/work/desker/vid-01.mp4"
-                autoplay
                 loop
                 muted
                 playsinline
-                preload="metadata"
+                preload="none"
                 poster="/images/work/desker/img-03.jpg"
               ></video>
             </div>
@@ -200,10 +229,13 @@
           <div class="section-inner">
             <div class="txt">
               <p class="eyebrow">Layout System</p>
-              <h1 class="tit">
+              <h1 class="tit lang-en">
                 Translating Desker’s values into structured composition
               </h1>
-              <p class="desc">
+              <h1 class="tit lang-ko" hidden>
+                DESKER의 가치를 구조적 레이아웃으로 번역하다
+              </h1>
+              <p class="desc lang-en">
                 The brand book layout was built around Desker’s core principles
                 — Simple, Fundamental, and Expanding. Thin lines and pared-back
                 typography were arranged in a consistent grid to reflect the
@@ -211,6 +243,14 @@
                 introduce subtle variations, hinting at the idea of Expanding by
                 showing how the system can flex into multiple expressions while
                 staying grounded in clarity.
+              </p>
+              <p class="desc lang-ko" hidden>
+                브랜드북의 레이아웃은 DESKER의 핵심 원칙인 Simple, Fundamental,
+                Expanding을 중심으로 설계했습니다. 얇은 선과 군더더기 없는
+                타이포그래피를 일관된 그리드 위에 배치하여 브랜드의 미니멀하고
+                기능적인 아이덴티티를 반영했습니다. 챕터 타이틀 페이지에는
+                미묘한 변주를 주어 명확함을 유지하면서도 시스템이 다양한
+                표현으로 확장될 수 있다는 Expanding의 개념을 암시했습니다.
               </p>
             </div>
           </div>
@@ -220,8 +260,16 @@
         <section class="section is-wide">
           <div class="section-inner">
             <div class="img leftwide">
-              <img src="/images/work/desker/img-04-01.jpg" alt="" />
-              <img src="/images/work/desker/img-04-02.jpg" alt="" />
+              <img
+                loading="lazy"
+                src="/images/work/desker/img-04-01.jpg"
+                alt=""
+              />
+              <img
+                loading="lazy"
+                src="/images/work/desker/img-04-02.jpg"
+                alt=""
+              />
             </div>
           </div>
         </section>
@@ -230,7 +278,7 @@
         <section class="section is-wide">
           <div class="section-inner">
             <div class="img">
-              <img src="/images/work/desker/img-05.jpg" alt="" />
+              <img loading="lazy" src="/images/work/desker/img-05.jpg" alt="" />
             </div>
           </div>
         </section>
@@ -239,8 +287,16 @@
         <section class="section is-wide">
           <div class="section-inner">
             <div class="img rightwide">
-              <img src="/images/work/desker/img-06-01.jpg" alt="" />
-              <img src="/images/work/desker/img-06-02.jpg" alt="" />
+              <img
+                loading="lazy"
+                src="/images/work/desker/img-06-01.jpg"
+                alt=""
+              />
+              <img
+                loading="lazy"
+                src="/images/work/desker/img-06-02.jpg"
+                alt=""
+              />
             </div>
           </div>
         </section>
@@ -249,7 +305,7 @@
         <section class="section is-wide">
           <div class="section-inner">
             <div class="img">
-              <img src="/images/work/desker/img-07.jpg" alt="" />
+              <img loading="lazy" src="/images/work/desker/img-07.jpg" alt="" />
             </div>
           </div>
         </section>
@@ -260,11 +316,10 @@
             <div class="vid">
               <video
                 src="/videos/work/desker/vid-02.mp4"
-                autoplay
                 loop
                 muted
                 playsinline
-                preload="metadata"
+                preload="none"
                 poster="/images/work/desker/img-08.jpg"
               ></video>
             </div>
@@ -276,15 +331,25 @@
           <div class="section-inner">
             <div class="txt">
               <p class="eyebrow">Design System Extension</p>
-              <h1 class="tit">
+              <h1 class="tit lang-en">
                 Translating brand rules into practical templates
               </h1>
-              <p class="desc">
+              <h1 class="tit lang-ko" hidden>
+                브랜드 규칙을 실용적인 템플릿으로 확장하다
+              </h1>
+              <p class="desc lang-en">
                 I created social media content examples using Desker’s graphic
                 guidelines — applying the brand’s typography, layout system,
                 color palette, and photography style. These examples serve as
                 internal references, enabling the team to produce consistent and
                 on-brand social media content in future campaigns.
+              </p>
+              <p class="desc lang-ko" hidden>
+                DESKER의 그래픽 가이드라인을 바탕으로 타이포그래피, 레이아웃
+                시스템, 컬러 팔레트, 사진 스타일을 적용한 소셜 미디어 콘텐츠
+                예시를 제작했습니다. 이 예시들은 내부 레퍼런스로 활용되어 팀이
+                향후 캠페인에서 일관되고 브랜드에 맞는 소셜 미디어 콘텐츠를
+                제작할 수 있는 기반이 됩니다.
               </p>
             </div>
           </div>
@@ -294,7 +359,7 @@
         <section class="section is-wide">
           <div class="section-inner">
             <div class="img">
-              <img src="/images/work/desker/img-09.jpg" alt="" />
+              <img loading="lazy" src="/images/work/desker/img-09.jpg" alt="" />
             </div>
           </div>
         </section>

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <!-- 기본 -->
@@ -39,30 +39,39 @@
 
     <!-- 웹폰트 -->
     <link rel="stylesheet" href="https://use.typekit.net/jsf4yyr.css" />
+    <link
+      rel="stylesheet"
+      as="style"
+      crossorigin
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css"
+    />
 
     <!-- 스타일 -->
     <link rel="stylesheet" href="../../css/style.css" />
 
     <!-- 스크립트 -->
     <script defer src="../../js/common.js"></script>
-    <script
-      src="https://code.jquery.com/jquery-3.6.3.min.js"
-      integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.19.0/matter.min.js"></script>
 
     <!-- AOS.js -->
     <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
-    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script defer src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
     <script defer src="../../js/aos.js"></script>
 
     <!-- GSAP -->
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js"></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"
+    ></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js"
+    ></script>
 
-<!-- ScrollTrigger -->
-<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+    <!-- ScrollTrigger -->
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"
+    ></script>
   </head>
 
   <body>
@@ -80,8 +89,16 @@
       <section class="section intro" data-theme="light">
         <div class="section-inner layout-grid">
           <!-- Title -->
-          <div class="intro__title start-2 span-10 md:start-1 md:span-8 split">
+          <div
+            class="intro__title start-2 span-10 md:start-1 md:span-8 split lang-en"
+          >
             Jjirasi
+          </div>
+          <div
+            class="intro__title start-2 span-10 md:start-1 md:span-8 split lang-ko"
+            hidden
+          >
+            전단展
           </div>
 
           <!-- Meta -->
@@ -104,11 +121,14 @@
 
           <!-- Summary -->
           <div class="intro__summary start-6 span-6 md:start-3 md:span-6">
-            <h1 class="tit">
+            <h1 class="tit lang-en">
               Questioning the weight of political promises through motion design
             </h1>
+            <h1 class="tit lang-ko" hidden>
+              정치적 공약의 무게를 모션 포스터를 통해 묻다
+            </h1>
 
-            <p class="desc">
+            <p class="desc lang-en">
               During the presidential election, politicians flooded the public
               with grand promises — words that often felt as fleeting as flyers
               scattered on the streets. In Korea, such flyers are colloquially
@@ -117,6 +137,14 @@
               featuring motion posters for each candidate designed in this
               style, visually echoing the hollowness of political rhetoric and
               the ease with which words lose their weight.
+            </p>
+            <p class="desc lang-ko" hidden>
+              대통령 선거 기간, 정치인들은 거리의 찌라시처럼 수많은 공약을
+              쏟아냈습니다. 찌라시는 근거 없는 정보나 소문을 담아 뿌리는
+              인쇄물을 뜻하는 속어로, 쉽게 버려지는 말들의 가벼움을 담고
+              있습니다. 각 후보의 공약을 이 찌라시 스타일로 디자인한 모션
+              포스터를 제작하고, 이를 웹사이트로 구현하여 정치적 수사의 공허함을
+              시각적으로 표현했습니다.
             </p>
           </div>
         </div>
@@ -127,9 +155,21 @@
         <section class="section is-wide">
           <div class="section-inner">
             <div class="img triple">
-              <img src="/images/play/jjirasi/img-01-01.jpg" alt="" />
-              <img src="/images/play/jjirasi/img-01-02.jpg" alt="" />
-              <img src="/images/play/jjirasi/img-01-03.jpg" alt="" />
+              <img
+                loading="lazy"
+                src="/images/play/jjirasi/img-01-01.jpg"
+                alt=""
+              />
+              <img
+                loading="lazy"
+                src="/images/play/jjirasi/img-01-02.jpg"
+                alt=""
+              />
+              <img
+                loading="lazy"
+                src="/images/play/jjirasi/img-01-03.jpg"
+                alt=""
+              />
             </div>
           </div>
         </section>
@@ -140,11 +180,10 @@
             <div class="vid">
               <video
                 src="/videos/play/jjirasi/vid-01.mp4"
-                autoplay
                 loop
                 muted
                 playsinline
-                preload="metadata"
+                preload="none"
                 poster="/images/play/jjirasi/img-02.jpg"
               ></video>
             </div>

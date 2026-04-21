@@ -10,8 +10,17 @@
       </li>
       <li class="header__item">
         <a
-          class="header__link"
-          href="/files/JinkyeongLim_Resume.pdf"
+          class="header__link lang-en"
+          href="/files/JinkyeongLim_Resume_en.pdf"
+          target="_blank"
+          rel="noopener"
+          type="application/pdf"
+          aria-label="Open resume PDF in a new tab"
+          >RESUME</a
+        >
+        <a
+          class="header__link lang-ko" hidden
+          href="/files/JinkyeongLim_Resume_ko.pdf"
           target="_blank"
           rel="noopener"
           type="application/pdf"
@@ -24,31 +33,38 @@
 
   <div class="logo"><a href="/">JINKYEONG LIM</a></div>
 
-  <ul class="header__contact pc-only">
-    <li>
-      <a
-        href="https://www.linkedin.com/in/imjin/"
-        target="_blank"
-        aria-label="LinkedIn"
-      >
-        <img src="/images/ico/linkedin.svg" alt="" />
-      </a>
-    </li>
-    <li>
-      <a
-        href="https://www.instagram.com/studio.imjin"
-        target="_blank"
-        aria-label="Instagram"
-      >
-        <img src="/images/ico/instagram.svg" alt="" />
-      </a>
-    </li>
-    <li>
-      <a href="mailto:imjin.work@gmail.com" aria-label="Email">
-        <img src="/images/ico/envelope.svg" alt="" />
-      </a>
-    </li>
-  </ul>
+  <div class="header__right pc-only">
+    <div class="header__lang">
+      <div class="lang-thumb" aria-hidden="true"></div>
+      <button class="btn-lang" data-lang="en" aria-label="Switch to English">EN</button>
+      <button class="btn-lang" data-lang="ko" aria-label="한국어로 전환">KO</button>
+    </div>
+    <ul class="header__contact">
+      <li>
+        <a
+          href="https://www.linkedin.com/in/imjin/"
+          target="_blank"
+          aria-label="LinkedIn"
+        >
+          <img src="/images/ico/linkedin.svg" alt="" />
+        </a>
+      </li>
+      <!-- <li>
+        <a
+          href="https://www.instagram.com/studio.imjin"
+          target="_blank"
+          aria-label="Instagram"
+        >
+          <img src="/images/ico/instagram.svg" alt="" />
+        </a>
+      </li> -->
+      <li>
+        <a href="mailto:imjin.work@gmail.com" aria-label="Email">
+          <img src="/images/ico/envelope.svg" alt="" />
+        </a>
+      </li>
+    </ul>
+  </div>
 
   <!-- Mobile -->
   <div class="header__toggle mo-only">
@@ -103,7 +119,7 @@
           <img src="/images/ico/linkedin.svg" alt="" />
         </a>
       </li>
-      <li>
+      <!-- <li>
         <a
           href="https://www.instagram.com/studio.imjin"
           target="_blank"
@@ -111,16 +127,23 @@
         >
           <img src="/images/ico/instagram.svg" alt="" />
         </a>
-      </li>
+      </li> -->
       <li>
         <a href="mailto:imjin.work@gmail.com" aria-label="Email">
           <img src="/images/ico/envelope.svg" alt="" />
         </a>
       </li>
     </ul>
-    <div class="header-mo__credit">
-      Designed and coded by Jinkyeong Lim<br />
-      © 2025 Jinkyeong Lim
+    <div class="header-mo__bottom">
+      <div class="header__lang">
+        <div class="lang-thumb" aria-hidden="true"></div>
+        <button class="btn-lang" data-lang="en" aria-label="Switch to English">EN</button>
+        <button class="btn-lang" data-lang="ko" aria-label="한국어로 전환">KO</button>
+      </div>
+      <div class="header-mo__credit">
+        Designed and coded by Jinkyeong Lim<br />
+        © 2025 Jinkyeong Lim
+      </div>
     </div>
   </div>
 </div>

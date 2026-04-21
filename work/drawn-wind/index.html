@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <!-- 기본 -->
@@ -48,30 +48,39 @@
 
     <!-- 웹폰트 -->
     <link rel="stylesheet" href="https://use.typekit.net/jsf4yyr.css" />
+    <link
+      rel="stylesheet"
+      as="style"
+      crossorigin
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css"
+    />
 
     <!-- 스타일 -->
     <link rel="stylesheet" href="../../css/style.css" />
 
     <!-- 스크립트 -->
     <script defer src="../../js/common.js"></script>
-    <script
-      src="https://code.jquery.com/jquery-3.6.3.min.js"
-      integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.19.0/matter.min.js"></script>
 
     <!-- AOS.js -->
     <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
-    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script defer src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
     <script defer src="../../js/aos.js"></script>
 
     <!-- GSAP -->
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js"></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"
+    ></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js"
+    ></script>
 
     <!-- ScrollTrigger -->
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"
+    ></script>
   </head>
 
   <body>
@@ -83,11 +92,10 @@
         <figure class="img">
           <video
             src="/videos/work/drawn-wind/hero.mp4"
-            autoplay
             loop
             muted
             playsinline
-            preload="metadata"
+            preload="none"
             poster="/images/work/drawn-wind/hero.jpg"
           ></video>
         </figure>
@@ -97,8 +105,16 @@
       <section class="section intro" data-theme="light">
         <div class="section-inner layout-grid">
           <!-- Title -->
-          <div class="intro__title start-2 span-10 md:start-1 md:span-8 split">
+          <div
+            class="intro__title start-2 span-10 md:start-1 md:span-8 split lang-en"
+          >
             Drawn by the Wind Exhibition
+          </div>
+          <div
+            class="intro__title start-2 span-10 md:start-1 md:span-8 split lang-ko"
+            hidden
+          >
+            〈바람을 그리다〉 전시 포스터 디자인
           </div>
 
           <!-- Meta -->
@@ -140,17 +156,24 @@
 
           <!-- Summary -->
           <div class="intro__summary start-6 span-6 md:start-3 md:span-6">
-            <h1 class="tit">
-              Bridging traditional art and modern motion design
+            <h1 class="tit lang-en">Bridging traditional art and media art</h1>
+            <h1 class="tit lang-ko" hidden>
+              전통 회화와 현대 미디어 아트를 잇다
             </h1>
 
-            <p class="desc">
+            <p class="desc lang-en">
               I designed a motion poster for the exhibition “Drawing the Wind:
               Shin Yun-bok · Jeong Seon,” organized by the Gansong Art
               Foundation and Brand Architects. The poster merges the paintings
               of the two artists, with their boundaries fluidly dissolving and
               reassembling — visually expressing the dialogue between tradition
               and reinterpretation.
+            </p>
+            <p class="desc lang-ko" hidden>
+              간송예술재단과 브랜드아키텍츠가 기획한 전시 '바람을 그리다 —
+              신윤복·정선'의 모션 포스터를 디자인했습니다. 두 작가의 그림이
+              경계를 유동적으로 허물며 재결합하는 방식으로 융합하여 전통과
+              재해석 사이의 대화를 시각적으로 표현했습니다.
             </p>
           </div>
         </div>
@@ -163,11 +186,10 @@
             <div class="vid">
               <video
                 src="/videos/work/drawn-wind/vid-01.mp4"
-                autoplay
                 loop
                 muted
                 playsinline
-                preload="metadata"
+                preload="none"
                 poster="/images/work/drawn-wind/img-01.jpg"
               ></video>
             </div>
@@ -180,11 +202,10 @@
             <div class="vid">
               <video
                 src="/videos/work/drawn-wind/vid-02.mp4"
-                autoplay
                 loop
                 muted
                 playsinline
-                preload="metadata"
+                preload="none"
                 poster="/images/work/drawn-wind/img-02.jpg"
               ></video>
             </div>
@@ -196,11 +217,14 @@
           <div class="section-inner">
             <div class="txt">
               <p class="eyebrow">Solution</p>
-              <h1 class="tit">
+              <h1 class="tit lang-en">
                 Bringing traditional paintings to life through motion and
                 abstraction
               </h1>
-              <p class="desc">
+              <h1 class="tit lang-ko" hidden>
+                모션과 추상으로 전통 회화에 생동감을 부여하다
+              </h1>
+              <p class="desc lang-en">
                 To align with the exhibition’s concept of merging traditional
                 art with media art, the original works of Shin Yun-bok and Jeong
                 Seon were reinterpreted through simplified, blended forms. By
@@ -208,6 +232,13 @@
                 motion poster, the design conveys the idea of historical
                 paintings coming alive — connecting the past and present in a
                 single visual rhythm.
+              </p>
+              <p class="desc lang-ko" hidden>
+                전통 미술과 미디어 아트의 융합이라는 전시 콘셉트에 맞춰 신윤복과
+                정선의 원작을 단순화하고 혼합된 형태로 재해석했습니다. 구도를
+                유동적으로 움직이는 모션 포스터로 전환하여 역사적 회화가 살아
+                숨쉬는 듯한 느낌을 전달하고, 과거와 현재를 하나의 시각적
+                리듬으로 연결했습니다.
               </p>
             </div>
           </div>
@@ -217,7 +248,11 @@
         <section class="section is-wide">
           <div class="section-inner">
             <div class="img">
-              <img src="/images/work/drawn-wind/img-03.jpg" alt="" />
+              <img
+                loading="lazy"
+                src="/images/work/drawn-wind/img-03.jpg"
+                alt=""
+              />
             </div>
           </div>
         </section>
@@ -226,8 +261,16 @@
         <section class="section is-wide">
           <div class="section-inner">
             <div class="img rightwide">
-              <img src="/images/work/drawn-wind/img-04-01.jpg" alt="" />
-              <img src="/images/work/drawn-wind/img-04-02.jpg" alt="" />
+              <img
+                loading="lazy"
+                src="/images/work/drawn-wind/img-04-01.jpg"
+                alt=""
+              />
+              <img
+                loading="lazy"
+                src="/images/work/drawn-wind/img-04-02.jpg"
+                alt=""
+              />
             </div>
           </div>
         </section>
@@ -237,13 +280,24 @@
           <div class="section-inner">
             <div class="txt">
               <p class="eyebrow">Impact</p>
-              <h1 class="tit">Reintroducing heritage through modern media</h1>
-              <p class="desc">
+              <h1 class="tit lang-en">
+                Reintroducing heritage through modern media
+              </h1>
+              <h1 class="tit lang-ko" hidden>
+                현대적 매체로 문화유산을 다시 소개하다
+              </h1>
+              <p class="desc lang-en">
                 From November 2017 to May 2018, the exhibition attracted over
                 50,000 visitors, receiving praise for reinterpreting classical
                 painters through media art. The project was recognized for
                 helping popularize cultural heritage by bridging traditional art
                 with contemporary digital expression.
+              </p>
+              <p class="desc lang-ko" hidden>
+                2017년 11월부터 2018년 5월까지 진행된 전시는 50,000명 이상의
+                관람객을 모으며 미디어 아트를 통한 고전 화가 재해석으로 호평을
+                받았습니다. 전통 미술과 현대 디지털 표현을 연결하여 문화유산을
+                보다 많은 사람들에게 알리는 데 기여한 프로젝트로 인정받았습니다.
               </p>
             </div>
           </div>

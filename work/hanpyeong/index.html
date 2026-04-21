@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <!-- 기본 -->
@@ -51,30 +51,39 @@
 
     <!-- 웹폰트 -->
     <link rel="stylesheet" href="https://use.typekit.net/jsf4yyr.css" />
+    <link
+      rel="stylesheet"
+      as="style"
+      crossorigin
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css"
+    />
 
     <!-- 스타일 -->
     <link rel="stylesheet" href="../../css/style.css" />
 
     <!-- 스크립트 -->
     <script defer src="../../js/common.js"></script>
-    <script
-      src="https://code.jquery.com/jquery-3.6.3.min.js"
-      integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.19.0/matter.min.js"></script>
 
     <!-- AOS.js -->
     <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
-    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script defer src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
     <script defer src="../../js/aos.js"></script>
 
     <!-- GSAP -->
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js"></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"
+    ></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js"
+    ></script>
 
     <!-- ScrollTrigger -->
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"
+    ></script>
   </head>
 
   <body>
@@ -95,8 +104,16 @@
       <section class="section intro">
         <div class="section-inner layout-grid">
           <!-- Title -->
-          <div class="intro__title start-2 span-10 md:start-1 md:span-8 split">
+          <div
+            class="intro__title start-2 span-10 md:start-1 md:span-8 split lang-en"
+          >
             Online Hanpyeong Park Website
+          </div>
+          <div
+            class="intro__title start-2 span-10 md:start-1 md:span-8 split lang-ko"
+            hidden
+          >
+            온라인 한평공원 웹사이트
           </div>
 
           <!-- Meta -->
@@ -131,11 +148,14 @@
 
           <!-- Summary -->
           <div class="intro__summary start-6 span-6 md:start-3 md:span-6">
-            <h1 class="tit">
+            <h1 class="tit lang-en">
               Preserving memory in a disappearing neighborhood
             </h1>
+            <h1 class="tit lang-ko" hidden>
+              재개발로 사라지는 동네를 기록하다
+            </h1>
 
-            <p class="desc">
+            <p class="desc lang-en">
               I participated in and designed the 54th Online Hanpyeong Park
               Project organized by Urbanactionnetwork — a civic organization
               dedicated to preserving urban history and fostering human-centered
@@ -145,6 +165,15 @@
               dismantle this industrial and cultural ecosystem, the project
               created a digital archive to remember what is being lost and
               preserve the neighborhood’s collective memory.
+            </p>
+            <p class="desc lang-ko" hidden>
+              도시의 역사를 보존하고 사람 중심의 도시를 만들기 위해 활동하는
+              시민단체 도시연대가 주관한 제54회 온라인 한평공원 프로젝트에
+              참여하고 디자인을 담당했습니다. 프로젝트의 무대는 입정동 — 숙련된
+              장인들과 창작 커뮤니티가 오랫동안 공존해온 역사적인 제조업
+              지역입니다. 재개발로 인해 이 산업·문화적 생태계가 해체될 위기에
+              처한 지금, 프로젝트는 사라지는 것들을 기억하고 동네의 집단적
+              기억을 보존하기 위한 디지털 아카이브를 만들었습니다.
             </p>
 
             <p class="cta">
@@ -164,8 +193,16 @@
         <section class="section is-wide">
           <div class="section-inner">
             <div class="img leftwide">
-              <img src="/images/work/hanpyeong/img-01-01.jpg" alt="" />
-              <img src="/images/work/hanpyeong/img-01-02.jpg" alt="" />
+              <img
+                loading="lazy"
+                src="/images/work/hanpyeong/img-01-01.jpg"
+                alt=""
+              />
+              <img
+                loading="lazy"
+                src="/images/work/hanpyeong/img-01-02.jpg"
+                alt=""
+              />
             </div>
           </div>
         </section>
@@ -175,10 +212,13 @@
           <div class="section-inner">
             <div class="txt">
               <p class="eyebrow">Project Background</p>
-              <h1 class="tit">
+              <h1 class="tit lang-en">
                 Uncontrolled redevelopment and the loss of urban identity
               </h1>
-              <p class="desc">
+              <h1 class="tit lang-ko" hidden>
+                무분별한 재개발과 도시 정체성의 소멸
+              </h1>
+              <p class="desc lang-en">
                 In Korea, overheated real estate speculation has fueled
                 widespread redevelopment across Seoul, often prioritizing profit
                 over thoughtful urban planning. Ipjeong-dong, once a
@@ -186,6 +226,13 @@
                 and cultural value, has been targeted for redevelopment that
                 disregards its existing character — replacing its unique urban
                 fabric with generic commercial zones.
+              </p>
+              <p class="desc lang-ko" hidden>
+                과열된 부동산 투기는 서울 전역에 걸쳐 광범위한 재개발을
+                촉진했으며, 이 과정에서 세심한 도시 계획보다 수익이 우선시되는
+                경우가 많았습니다. 산업적·기술적·문화적 가치를 지닌 역사 지역인
+                입정동 역시 그 고유한 도시 조직을 무시한 채 획일적인 상업 지구로
+                대체하는 재개발의 대상이 되었습니다.
               </p>
             </div>
           </div>
@@ -195,7 +242,11 @@
         <section class="section is-wide">
           <div class="section-inner">
             <div class="img">
-              <img src="/images/work/hanpyeong/img-02.jpg" alt="" />
+              <img
+                loading="lazy"
+                src="/images/work/hanpyeong/img-02.jpg"
+                alt=""
+              />
             </div>
           </div>
         </section>
@@ -204,20 +255,34 @@
         <section class="section is-media-txt">
           <div class="section-inner">
             <div class="img">
-              <img src="/images/work/hanpyeong/img-03.jpg" alt="" />
+              <img
+                loading="lazy"
+                src="/images/work/hanpyeong/img-03.jpg"
+                alt=""
+              />
             </div>
             <div class="txt">
               <p class="eyebrow">Project Goal</p>
-              <h1 class="tit">
+              <h1 class="tit lang-en">
                 Building a digital archive to preserve urban memory
               </h1>
-              <p class="desc">
+              <h1 class="tit lang-ko" hidden>
+                도시의 기억을 보존하는 디지털 아카이브 구축
+              </h1>
+              <p class="desc lang-en">
                 The goal was to create an online archive that preserves the
                 historical and cultural traces of Ipjeong-dong — documenting the
                 tools, streetscapes, spaces, and signage that embody the area’s
                 industrial past. The project focuses on remembering what once
                 existed, ensuring that the neighborhood’s history and identity
                 remain accessible even after its physical disappearance.
+              </p>
+              <p class="desc lang-ko" hidden>
+                입정동의 역사적·문화적 흔적을 보존하는 온라인 아카이브를 만드는
+                것이 목표였습니다. 이 지역의 산업적 과거를 담고 있는 도구, 거리
+                풍경, 공간, 간판을 기록하여 동네가 물리적으로 사라진 이후에도 그
+                역사와 정체성이 누구나 접근할 수 있는 형태로 남을 수 있도록
+                했습니다.
               </p>
             </div>
           </div>
@@ -229,11 +294,10 @@
             <div class="vid">
               <video
                 src="/videos/work/hanpyeong/vid-01.mp4"
-                autoplay
                 loop
                 muted
                 playsinline
-                preload="metadata"
+                preload="none"
                 poster="/images/work/hanpyeong/img-04.jpg"
               ></video>
             </div>
@@ -245,10 +309,13 @@
           <div class="section-inner">
             <div class="txt">
               <p class="eyebrow">Visual Conecpt</p>
-              <h1 class="tit">
+              <h1 class="tit lang-en">
                 Visualizing collective intelligence through organic motion
               </h1>
-              <p class="desc">
+              <h1 class="tit lang-ko" hidden>
+                유기적인 움직임으로 집단 지성을 시각화하다
+              </h1>
+              <p class="desc lang-en">
                 The main visual depicts clusters of moving dots that
                 continuously shift shape, representing the organic network of
                 craftsmen in Ipjeong-dong. This motion embodies the spirit of
@@ -257,6 +324,14 @@
                 this dynamic form and fluid animation, the website’s opening
                 scene conveys the neighborhood’s cooperative energy and
                 interconnected way of working.
+              </p>
+              <p class="desc lang-ko" hidden>
+                메인 비주얼은 끊임없이 형태를 바꾸며 움직이는 점들의 군집으로,
+                입정동 장인들의 유기적인 네트워크를 표현합니다. 이 움직임은 서로
+                기술을 나누고 도움을 주고받으며 복잡한 작업을 함께 해결하는 집단
+                지성의 정신을 담고 있습니다. 역동적인 형태와 흐르는 듯한
+                애니메이션을 통해 웹사이트의 오프닝 장면은 이 동네 특유의 협력적
+                에너지와 긴밀하게 연결된 작업 방식을 전달합니다.
               </p>
             </div>
           </div>
@@ -268,11 +343,10 @@
             <div class="vid">
               <video
                 src="/videos/work/hanpyeong/vid-02.mp4"
-                autoplay
                 loop
                 muted
                 playsinline
-                preload="metadata"
+                preload="none"
                 poster="/images/work/hanpyeong/img-05.jpg"
               ></video>
             </div>
@@ -283,14 +357,17 @@
         <section class="section is-wide">
           <div class="section-inner">
             <div class="img rightwide">
-              <img src="/images/work/hanpyeong/img-06-01.jpg" alt="" />
+              <img
+                loading="lazy"
+                src="/images/work/hanpyeong/img-06-01.jpg"
+                alt=""
+              />
               <video
                 src="/videos/work/hanpyeong/vid-03.mp4"
-                autoplay
                 loop
                 muted
                 playsinline
-                preload="metadata"
+                preload="none"
                 poster="/images/work/hanpyeong/img-06-02.jpg"
               ></video>
             </div>
@@ -302,17 +379,25 @@
           <div class="section-inner">
             <div class="txt">
               <p class="eyebrow">Interface Concept</p>
-              <h1 class="tit">
+              <h1 class="tit lang-en">
                 Bringing analog gestures into a digital archive
               </h1>
-              <p class="desc">
+              <h1 class="tit lang-ko" hidden>
+                아날로그의 감각을 디지털 아카이브로 옮기다
+              </h1>
+              <p class="desc lang-en">
                 The GNB menu takes inspiration from pulling out physical files,
                 translating the tactile memory of analog archiving into the
                 digital space. Its structure and typography reference
                 Ipjeong-dong’s layered signage — where visual chaos forms its
-                own order. The typeface Cy reinforces this mood with its
-                irregular balance of straight and curved strokes, reflecting the
-                district’s eclectic urban rhythm.
+                own order.
+              </p>
+              <p class="desc lang-ko" hidden>
+                GNB 메뉴는 물리적인 파일을 꺼내는 동작에서 착안하여 아날로그
+                아카이빙의 촉각적 기억을 디지털 공간으로 옮겼습니다. 메뉴의
+                구조와 타이포그래피는 입정동의 겹겹이 쌓인 간판에서 참조했으며,
+                시각적 혼재 속에서도 나름의 질서를 형성하는 그 특유의 풍경을
+                인터페이스 언어로 풀어냈습니다.
               </p>
             </div>
           </div>
@@ -322,8 +407,92 @@
         <section class="section is-wide">
           <div class="section-inner">
             <div class="img double">
-              <img src="/images/work/hanpyeong/img-07-01.jpg" alt="" />
-              <img src="/images/work/hanpyeong/img-07-02.jpg" alt="" />
+              <img
+                loading="lazy"
+                src="/images/work/hanpyeong/img-07-01.jpg"
+                alt=""
+              />
+              <img
+                loading="lazy"
+                src="/images/work/hanpyeong/img-07-02.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+        </section>
+
+        <!-- Section : Text + Image -->
+        <section class="section is-txt-media">
+          <div class="section-inner">
+            <div class="txt">
+              <p class="eyebrow">Typography</p>
+              <h1 class="tit lang-en">Echoing the district’s visual texture</h1>
+              <h1 class="tit lang-ko" hidden>동네의 시각적 질감을 담은 서체</h1>
+              <p class="desc lang-en">
+                The angular irregularity of Cy mirrors the layered street signs
+                scattered across Ijeongdong. Its mix of curves and sharp edges
+                grounds the interface in the neighborhood’s character — avoiding
+                the polished, generic feel that would contradict the site’s
+                purpose of preserving a place defined by its roughness.
+              </p>
+              <p class="desc lang-ko" hidden>
+                Cy의 각진 불규칙성은 입정동 곳곳에 층층이 붙어있는 간판들의
+                풍경을 연상시킵니다. 곡선과 날카로운 모서리가 공존하는 형태를
+                입정동 거리를 표현하였으며, 이 장소가 지닌 거친 모습 자체를
+                보존한다는 사이트의 목적과 어긋나는 매끈하고 무난한 느낌을
+                의도적으로 피했습니다.
+              </p>
+            </div>
+            <div class="img">
+              <img
+                loading="lazy"
+                src="/images/work/hanpyeong/img-08.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+        </section>
+
+        <!-- Section : Image -->
+        <section class="section is-wide">
+          <div class="section-inner">
+            <div class="img">
+              <img
+                loading="lazy"
+                src="/images/work/hanpyeong/img-09.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+        </section>
+
+        <!-- Section : Image + Text -->
+        <section class="section is-media-txt">
+          <div class="section-inner">
+            <div class="img">
+              <img
+                loading="lazy"
+                src="/images/work/hanpyeong/img-10.jpg"
+                alt=""
+              />
+            </div>
+            <div class="txt">
+              <p class="eyebrow">Color System</p>
+              <h1 class="tit lang-en">Inspired by analog binders</h1>
+              <h1 class="tit lang-ko" hidden>
+                아날로그 바인더에서 가져온 컬러 시스템
+              </h1>
+              <p class="desc lang-en">
+                The color system is based on the file folders found in physical
+                archival cabinets — each hue assigned to a different section,
+                letting users navigate the archive the way they would flip
+                through a binder.
+              </p>
+              <p class="desc lang-ko" hidden>
+                컬러 시스템은 실물 아카이브 캐비닛의 파일 폴더에서 착안했습니다.
+                각 색상을 섹션별로 지정하여 사용자가 바인더를 넘기듯 아카이브를
+                탐색할 수 있도록 했습니다.
+              </p>
             </div>
           </div>
         </section>
@@ -334,11 +503,10 @@
             <div class="vid">
               <video
                 src="/videos/work/hanpyeong/vid-04.mp4"
-                autoplay
                 loop
                 muted
                 playsinline
-                preload="metadata"
+                preload="none"
                 poster="/images/work/hanpyeong/img-08.jpg"
               ></video>
             </div>
@@ -350,10 +518,13 @@
           <div class="section-inner">
             <div class="txt">
               <p class="eyebrow">Archive Interface</p>
-              <h1 class="tit">
+              <h1 class="tit lang-en">
                 Designing intuitive access to industrial heritage
               </h1>
-              <p class="desc">
+              <h1 class="tit lang-ko" hidden>
+                산업 유산에 직관적으로 접근할 수 있는 아카이브 설계
+              </h1>
+              <p class="desc lang-en">
                 Each tab was designed with a layout and interaction style
                 tailored to its content type — from documents and images to
                 videos and interviews. This structure allows users to explore
@@ -361,6 +532,14 @@
                 media-specific experience. By combining digital browsing with
                 the spirit of physical exploration, the archive transforms
                 viewing into active discovery.
+              </p>
+              <p class="desc lang-ko" hidden>
+                각 탭은 문서, 이미지, 영상, 인터뷰 등 콘텐츠 유형에 맞춘
+                레이아웃과 인터랙션 방식으로 설계했습니다. 이 구조는 사용자가
+                입정동의 산업 유산을 각 미디어의 특성에 맞는 방식으로 탐색할 수
+                있게 합니다. 디지털 브라우징에 실제 공간을 탐험하는 감각을
+                결합하여 아카이브를 단순한 열람이 아닌 능동적인 발견의 경험으로
+                만들었습니다.
               </p>
             </div>
           </div>

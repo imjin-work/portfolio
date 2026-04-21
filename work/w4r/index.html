@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <!-- 기본 -->
@@ -45,30 +45,39 @@
 
     <!-- 웹폰트 -->
     <link rel="stylesheet" href="https://use.typekit.net/jsf4yyr.css" />
+    <link
+      rel="stylesheet"
+      as="style"
+      crossorigin
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css"
+    />
 
     <!-- 스타일 -->
     <link rel="stylesheet" href="../../css/style.css" />
 
     <!-- 스크립트 -->
     <script defer src="../../js/common.js"></script>
-    <script
-      src="https://code.jquery.com/jquery-3.6.3.min.js"
-      integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.19.0/matter.min.js"></script>
 
     <!-- AOS.js -->
     <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
-    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script defer src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
     <script defer src="../../js/aos.js"></script>
 
     <!-- GSAP -->
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js"></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"
+    ></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js"
+    ></script>
 
     <!-- ScrollTrigger -->
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"
+    ></script>
   </head>
 
   <body>
@@ -132,17 +141,27 @@
 
           <!-- Summary -->
           <div class="intro__summary start-6 span-6 md:start-3 md:span-6">
-            <h1 class="tit">
+            <h1 class="tit lang-en">
               Visualizing urgency and empathy through interactive storytelling
             </h1>
+            <h1 class="tit lang-ko" hidden>
+              인터랙티브 스토리텔링으로 긴박함과 공감을 시각화하다
+            </h1>
 
-            <p class="desc">
+            <p class="desc lang-en">
               For Amnesty International’s Write for Rights campaign, I designed
               animations where scattered fragments move responsively with the
               user’s cursor, creating a sense of tension and immediacy. Using
               simple yet expressive typography and a clean layout, the design
               emphasizes the emotional narratives of human rights defenders,
               turning their stories into a compelling digital experience.
+            </p>
+            <p class="desc lang-ko" hidden>
+              국제앰네스티의 Write for Rights 캠페인을 위해 흩어진 파편들이
+              사용자의 커서에 반응하여 움직이는 애니메이션을 디자인했습니다.
+              단순하면서도 표현력 있는 타이포그래피와 깔끔한 레이아웃으로 인권
+              활동가들의 이야기를 강조하고, 그 서사를 설득력 있는 디지털
+              경험으로 만들었습니다.
             </p>
           </div>
         </div>
@@ -153,7 +172,7 @@
         <section class="section is-wide">
           <div class="section-inner">
             <div class="img">
-              <img src="/images/work/w4r/img-01.jpg" alt="" />
+              <img loading="lazy" src="/images/work/w4r/img-01.jpg" alt="" />
             </div>
           </div>
         </section>
@@ -162,14 +181,17 @@
         <section class="section is-media-txt">
           <div class="section-inner">
             <div class="img">
-              <img src="/images/work/w4r/img-02.jpg" alt="" />
+              <img loading="lazy" src="/images/work/w4r/img-02.jpg" alt="" />
             </div>
             <div class="txt">
               <p class="eyebrow">Project Goal</p>
-              <h1 class="tit">
+              <h1 class="tit lang-en">
                 Encouraging immediate action and amplifying human rights stories
               </h1>
-              <p class="desc">
+              <h1 class="tit lang-ko" hidden>
+                즉각적인 행동을 이끌고 인권 이야기를 알리다
+              </h1>
+              <p class="desc lang-en">
                 Write for Rights (W4R) is Amnesty International’s largest annual
                 human rights campaign, held every December to commemorate Human
                 Rights Day. Supporters around the world write letters to defend
@@ -179,6 +201,14 @@
                 communicate the urgency of participation while presenting each
                 defender’s story with clarity and balance — ensuring that every
                 voice is seen and heard.
+              </p>
+              <p class="desc lang-ko" hidden>
+                Write for Rights(W4R)는 세계 인권의 날을 기념해 매년 12월
+                개최되는 국제앰네스티의 최대 인권 캠페인입니다. 전 세계
+                지지자들이 인권 침해를 겪은 개인을 위해 편지를 써 부당하게
+                수감된 이들의 석방을 이끌고 국제적 인식을 높입니다. 이
+                프로젝트는 참여의 긴박감을 전달하면서도 각 활동가의 이야기를
+                명확하고 균형 있게 표현하는 것을 목표로 했습니다.
               </p>
             </div>
           </div>
@@ -190,11 +220,10 @@
             <div class="vid">
               <video
                 src="/videos/work/w4r/vid-01.mp4"
-                autoplay
                 loop
                 muted
                 playsinline
-                preload="metadata"
+                preload="none"
                 poster="/images/work/w4r/img-03.jpg"
               ></video>
             </div>
@@ -206,16 +235,26 @@
           <div class="section-inner">
             <div class="txt">
               <p class="eyebrow">Solution</p>
-              <h1 class="tit">
+              <h1 class="tit lang-en">
                 Creating urgency and engagement through interactive storytelling
               </h1>
-              <p class="desc">
+              <h1 class="tit lang-ko" hidden>
+                인터랙티브 스토리텔링으로 긴박감과 참여를 이끌다
+              </h1>
+              <p class="desc lang-en">
                 The main page features disappearing silhouettes of supporters,
                 evoking a sense of tension and immediacy to encourage user
                 participation. A right-aligned global navigation bar provides
                 intuitive access to each defender’s story page, ensuring users
                 can easily explore and connect with individual narratives within
                 the campaign.
+              </p>
+              <p class="desc lang-ko" hidden>
+                메인 페이지에는 사라지는 지지자들의 실루엣을 배치하여 긴박감을
+                조성하고 사용자의 참여를 유도했습니다. 우측 정렬된 글로벌
+                내비게이션 바를 통해 각 활동가의 이야기 페이지로 직관적으로
+                접근할 수 있도록 하여 캠페인 내 개별 서사를 쉽게 탐색할 수
+                있도록 했습니다.
               </p>
             </div>
           </div>
@@ -227,11 +266,10 @@
             <div class="vid">
               <video
                 src="/videos/work/w4r/vid-02.mp4"
-                autoplay
                 loop
                 muted
                 playsinline
-                preload="metadata"
+                preload="none"
                 poster="/images/work/w4r/img-04.jpg"
               ></video>
             </div>
@@ -244,11 +282,10 @@
             <div class="vid">
               <video
                 src="/videos/work/w4r/vid-03.mp4"
-                autoplay
                 loop
                 muted
                 playsinline
-                preload="metadata"
+                preload="none"
                 poster="/images/work/w4r/img-05.jpg"
               ></video>
             </div>
@@ -260,10 +297,13 @@
           <div class="section-inner">
             <div class="txt">
               <p class="eyebrow">Solution</p>
-              <h1 class="tit">
+              <h1 class="tit lang-en">
                 Recreating the act of writing letters in a digital space
               </h1>
-              <p class="desc">
+              <h1 class="tit lang-ko" hidden>
+                편지쓰기의 경험을 디지털 공간으로 옮기다
+              </h1>
+              <p class="desc lang-en">
                 To translate the physical experience of Write for Rights into
                 the online environment, I designed an interactive flow where
                 users could compose a digital letter by selecting prewritten
@@ -271,6 +311,13 @@
                 turning empathy into action — allowing participants to feel
                 directly involved in supporting human rights defenders through
                 the simple act of writing.
+              </p>
+              <p class="desc lang-ko" hidden>
+                편지쓰기마라톤의 오프라인 경험을 온라인으로 옮기기 위해 사용자가
+                미리 작성된 문구를 선택해 디지털 편지를 구성하는 인터랙티브
+                흐름을 디자인했습니다. 공감을 행동으로 전환한다는 캠페인의
+                본질을 담아, 참가자들이 간단한 편지쓰기를 통해 인권 활동가를
+                직접 지지하는 경험을 만들었습니다.
               </p>
             </div>
           </div>
@@ -280,7 +327,7 @@
         <section class="section is-wide">
           <div class="section-inner">
             <div class="img">
-              <img src="/images/work/w4r/img-06.jpg" alt="" />
+              <img loading="lazy" src="/images/work/w4r/img-06.jpg" alt="" />
             </div>
           </div>
         </section>
@@ -289,7 +336,7 @@
         <section class="section is-wide">
           <div class="section-inner">
             <div class="img">
-              <img src="/images/work/w4r/img-07.jpg" alt="" />
+              <img loading="lazy" src="/images/work/w4r/img-07.jpg" alt="" />
             </div>
           </div>
         </section>
@@ -299,19 +346,28 @@
           <div class="section-inner">
             <div class="txt">
               <p class="eyebrow">Impact</p>
-              <h1 class="tit">
+              <h1 class="tit lang-en">
                 Driving large-scale participation and tangible results
               </h1>
-              <p class="desc">
+              <h1 class="tit lang-ko" hidden>
+                대규모 참여와 실질적인 성과를 이끌다
+              </h1>
+              <p class="desc lang-en">
                 Through the website’s interactive experience, the campaign
                 collected 35,401 letters in Korea. Over 90% of participants who
                 requested the physical letter kit completed their submissions,
                 and all distributed kits were fully utilized — demonstrating the
                 campaign’s strong engagement and real-world impact.
               </p>
+              <p class="desc lang-ko" hidden>
+                웹사이트의 인터랙티브 경험을 통해 한국에서 35,401통의 편지가
+                모였습니다. 실물 편지 키트를 신청한 참가자 중 90% 이상이 제출을
+                완료했으며, 배포된 키트는 전량 소진되었습니다. 캠페인의 높은
+                참여도와 실질적인 영향력을 보여주는 결과였습니다.
+              </p>
             </div>
             <div class="img">
-              <img src="/images/work/w4r/img-08.jpg" alt="" />
+              <img loading="lazy" src="/images/work/w4r/img-08.jpg" alt="" />
             </div>
           </div>
         </section>

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <!-- 기본 -->
@@ -48,30 +48,39 @@
 
     <!-- 웹폰트 -->
     <link rel="stylesheet" href="https://use.typekit.net/jsf4yyr.css" />
+    <link
+      rel="stylesheet"
+      as="style"
+      crossorigin
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css"
+    />
 
     <!-- 스타일 -->
     <link rel="stylesheet" href="../../css/style.css" />
 
     <!-- 스크립트 -->
     <script defer src="../../js/common.js"></script>
-    <script
-      src="https://code.jquery.com/jquery-3.6.3.min.js"
-      integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.19.0/matter.min.js"></script>
 
     <!-- AOS.js -->
     <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
-    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script defer src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
     <script defer src="../../js/aos.js"></script>
 
     <!-- GSAP -->
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js"></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"
+    ></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js"
+    ></script>
 
     <!-- ScrollTrigger -->
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"
+    ></script>
   </head>
 
   <body>
@@ -120,11 +129,14 @@
 
           <!-- Summary -->
           <div class="intro__summary start-6 span-6 md:start-3 md:span-6">
-            <h1 class="tit">
+            <h1 class="tit lang-en">
               A public cultural support card for underserved communitie
             </h1>
+            <h1 class="tit lang-ko" hidden>
+              문화 소외 계층을 위한 공공 문화 지원 카드
+            </h1>
 
-            <p class="desc">
+            <p class="desc lang-en">
               The Seoul Culture Nuri Card is a prepaid card issued by the Korean
               government to support basic cultural access for low-income
               individuals, including recipients of basic livelihood assistance
@@ -132,6 +144,12 @@
               cultural activities such as the arts, local travel, and sports,
               helping ensure that essential cultural experiences remain
               accessible to all.
+            </p>
+            <p class="desc lang-ko" hidden>
+              서울 문화 누리카드는 기초생활수급자와 차상위계층 등 저소득층의
+              기본적인 문화생활을 지원하기 위해 정부가 발급하는 선불카드입니다.
+              문화예술, 국내 여행, 체육 활동 등 다양한 문화생활에 활용할 수
+              있으며, 누구나 필수적인 문화 경험에 접근할 수 있도록 돕습니다.
             </p>
           </div>
         </div>
@@ -142,22 +160,34 @@
         <section class="section is-wide">
           <div class="section-inner">
             <div class="img">
-              <img src="/images/work/nuri/img-01.jpg" alt="" />
+              <img loading="lazy" src="/images/work/nuri/img-01.jpg" alt="" />
             </div>
           </div>
-          <p class="cap">ⒸYonhap News</p>
         </section>
 
         <!-- Section : Image -->
         <section class="section is-wide">
           <div class="section-inner">
             <div class="img triple">
-              <img src="/images/work/nuri/img-02-01.jpg" alt="" />
-              <img src="/images/work/nuri/img-02-02.jpg" alt="" />
-              <img src="/images/work/nuri/img-02-03.jpg" alt="" />
+              <img
+                loading="lazy"
+                src="/images/work/nuri/img-02-01.jpg"
+                alt=""
+              />
+              <img
+                loading="lazy"
+                src="/images/work/nuri/img-02-02.jpg"
+                alt=""
+              />
+              <img
+                loading="lazy"
+                src="/images/work/nuri/img-02-03.jpg"
+                alt=""
+              />
             </div>
           </div>
-          <p class="cap">Poster sketch progress</p>
+          <p class="cap lang-en">Poster sketch progress</p>
+          <p class="cap lang-ko" hidden>포스터 스케치 과정</p>
         </section>
 
         <!-- Section : Text + Image -->
@@ -165,19 +195,28 @@
           <div class="section-inner">
             <div class="txt">
               <p class="eyebrow">Solution</p>
-              <h1 class="tit">
+              <h1 class="tit lang-en">
                 Bringing warmth and clarity to the renewed mascot
               </h1>
-              <p class="desc">
+              <h1 class="tit lang-ko" hidden>
+                마스코트에 생동감과 명확함을 더하다
+              </h1>
+              <p class="desc lang-en">
                 The character was rebuilt in 3D to add a sense of liveliness —
                 creating a mascot that feels animated and approachable across
                 promotional materials. Elements representing the benefits of the
                 Culture Nuri Card were integrated into the poster design, making
                 the card’s purpose intuitive and easy to understand at a glance.
               </p>
+              <p class="desc lang-ko" hidden>
+                홍보물 전반에서 활기차고 친근하게 느껴지는 마스코트를 만들기
+                위해 캐릭터를 3D로 재구축했습니다. 문화 누리카드의 혜택을
+                상징하는 요소들을 포스터 디자인에 통합하여 카드의 목적을 한눈에
+                직관적으로 전달할 수 있도록 했습니다.
+              </p>
             </div>
             <div class="img">
-              <img src="/images/work/nuri/img-03.jpg" alt="" />
+              <img loading="lazy" src="/images/work/nuri/img-03.jpg" alt="" />
             </div>
           </div>
         </section>
@@ -186,8 +225,16 @@
         <section class="section is-wide">
           <div class="section-inner">
             <div class="img double">
-              <img src="/images/work/nuri/img-04-01.jpg" alt="" />
-              <img src="/images/work/nuri/img-04-02.jpg" alt="" />
+              <img
+                loading="lazy"
+                src="/images/work/nuri/img-04-01.jpg"
+                alt=""
+              />
+              <img
+                loading="lazy"
+                src="/images/work/nuri/img-04-02.jpg"
+                alt=""
+              />
             </div>
           </div>
         </section>
@@ -196,17 +243,26 @@
         <section class="section is-wide">
           <div class="section-inner">
             <div class="img">
-              <img src="/images/work/nuri/img-05.jpg" alt="" />
+              <img loading="lazy" src="/images/work/nuri/img-05.jpg" alt="" />
             </div>
           </div>
-          <p class="cap">Option B (Not Selected)</p>
+          <p class="cap lang-en">Option B (Not Selected)</p>
+          <p class="cap lang-ko" hidden>Option B (미채택안)</p>
         </section>
 
         <!-- Section : Image -->
         <section class="section is-wide">
           <div class="section-inner">
             <div class="img">
-              <img src="/images/work/nuri/img-06.jpg" alt="" />
+              <img loading="lazy" src="/images/work/nuri/img-06.jpg" alt="" />
+            </div>
+          </div>
+        </section>
+        <!-- Section : Image -->
+        <section class="section is-wide">
+          <div class="section-inner">
+            <div class="img">
+              <img loading="lazy" src="/images/work/nuri/img-07.jpg" alt="" />
             </div>
           </div>
         </section>
